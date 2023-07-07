@@ -1,0 +1,64 @@
+.header
+  background:
+    blend-mode: lighten
+    color: rgba(255,255,255,0.6)
+    image: url('../../images/space/space9.jpg')
+    repeat: no-repeat
+    size: cover
+  display: flex
+  flex:
+    direction: row  
+    wrap: wrap
+  padding: 16px
+  position: fixed
+  width: 100vw
+  position: relative
+
+  &-group
+    margin: 0 16px
+
+    &__title
+      margin:
+        bottom: 0
+        top: 0  
+      
+    &-nav
+      display: flex
+      flex-direction: row
+      list-style-type: none
+      margin-bottom: 0
+      padding-left: 0
+
+      &__item
+        margin: 8px
+
+        &:hover
+          transform: scale(1.2)
+
+        &-img
+          border:
+            color: grey
+            radius: 8px
+            style: ridge 
+            width: 2px
+
+  &-small
+    height: 0
+    img
+      height: 50px
+      position: relative
+      right: 0
+
+@keyframes fadeIn 
+  0% 
+    //top: -100px
+    height: 0px
+    opacity: 0
+  100% 
+    //top: 0
+    opacity: 1
+    height: 100px
+    // jak sie da height zamiast top to on przesuwa to co pod spodem plynnie
+      // jak sie da top to rezerwuje miejsce pod spodem i przesuwa tylko header a nie to co ponizej, w sensie ponizej jest presuniete od razu nie animacja
+  
+         

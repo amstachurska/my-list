@@ -1,0 +1,1422 @@
+{
+  "articles": [
+    {
+      "id": 1,
+      "date": "2020-05-10",
+      "cathegories": {
+        "main": "html",
+        "subcathegory1": "icon"
+      },
+      "title": "Adding icon in pure html",
+      "content": "In order to add star &#9734; &#9733 <strong> icon </strong> using pure HTML it is enough to include the code <code>&amp;#9734;</code> or <code>&amp;#9733</code>",
+      "source": [
+        {
+          "type": "link",
+          "link": "https://www.html.am/html-codes/character-codes/html-star-code.cfm"
+        },
+        {
+          "type": "link",
+          "link": "https://www.w3schools.com/html/html_symbols.asp"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "date": "2020-05-10",
+      "type": "home",
+      "title": "Relative path in Redirect",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "router"
+      },
+      "content": "When using <code>&lt;Redirect from='/' to='/my/movies' /&gt;</code> it redirects to the main root but when <code> &lt;Redirect from='/' to='my/movies' /&gt; </code> it redirects to path relative to present one eq '/my/programs/my/movies'"
+    },
+    {
+      "id": 3,
+      "date": "2020-05-10",
+      "title": "Rendering string as html element",
+      "type": "home",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "feature"
+      },
+      "content": "In order to add text from json or string as innerHtml it has to be added as <b> &ltp dangerouslySetInnerHtml={{__html: content}}&gt;&ltp&gt;</b>. However be carefull when handling escape marks -> for demonstraton check this json content property.",
+      "source": [
+        {
+          "type": "link",
+          "description": "Important link about difference between React and normal JS",
+          "link": "https://pl.reactjs.org/docs/dom-elements.html"
+        },
+        {
+          "type": "stackoverflow",
+          "description": "",
+          "link": "https://stackoverflow.com/questions/39758136/render-html-string-as-real-html-in-a-react-component"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "HTML element for details which can be hidden by used",
+      "type": "home",
+      "date": "2020-05-10",
+      "cathegories": {
+        "main": "html",
+        "subcathegory1": "elements"
+      },
+      "content": "This required <b>&lt;details&gt'</b> tag and <b>&lt;summary&gt;</b> tag inside. Summary tag should contain header or the part visible all the time. It also can be styled with pseudoelement <b>::-webkit-details-marker</b>. Similarly to dialog it also has open atttribute visible and toggled on details tag.",
+      "source": [
+        {
+          "type": "stackoverflow",
+          "description": "It is question about details inside details",
+          "link": "https://stackoverflow.com/questions/48814993/html-details-summary-element-marker-styling"
+        },
+        {
+          "type": "webdesign",
+          "link": "https://webdesign.tutsplus.com/tutorials/explaining-the-details-and-summary-elements--cms-21999"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Changing the path in json-server in routes.json",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "json-server"
+      },
+      "content": "When using <b>json-server </b> the <b>routes.json</b> file has to be added to the main folder of the aplication. In this file all available routes have to be listed as <br/><code>{<br/>\"/books\": \"/books\",<br/>\"/articles\": \"/articles\"<br/>} </code> <br/>in order for them to be visible by json-server. Value property corresponds to file.db  chosen when running json-server, which also has json structure. Property name can be adjusted in 'routes.json file' or different files can be created with differenty-named roots. <br/> <b>json-server</b> is run using <br/><b> <code> json-server --watch articles.json --port 3001 -r routes.json </code><b>"
+    },
+    {
+      "id": 6,
+      "title": "Including UTF-8 Miscellaneous Symbols as after or before pseudoelements",
+      "cathegories": {
+        "main": "styles",
+        "subcathegory1": "css",
+        "subcathegory2": "icons"
+      },
+      "date": "2020-05-11",
+      "content": "In order to use Miscellaneous Symbols in content property of before or after pseudoelement the code point after U+ should be used and there should be '\\' before it. Eg.<code> p:before { content:'\\0026'; }</code>",
+      "source": [
+        {
+          "type": "link",
+          "description": "Glyphs",
+          "link": "https://css-tricks.com/snippets/html/glyphs/"
+        },
+        {
+          "type": "w3schools",
+          "description": "List of UTF symbols",
+          "link": "https://www.w3schools.com/charsets/ref_utf_symbols.asp"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "date": "2020-05-12",
+      "title": "Table title",
+      "type": "home",
+      "cathegories": {
+        "main": "html",
+        "subcathegory1": "css"
+      },
+      "content": "For giving title to the table use <b>&lt;caption&gt; </b>between &lt;table&gt; and first &lt;tr&gt;. Using css property <b>'caption-side'</b> you can put the title on the top ('top') or below ('bottom' value) the table."
+    },
+    {
+      "id": 8,
+      "date": "2020-05-08",
+      "title": "Generate random Id for html element",
+      "type": "work",
+      "cathegories": {
+        "main": "js"
+      },
+      "content": "In order to generate <b>random id</b> use <code>Math.random().toString(36).substring(2))</code>"
+    },
+    {
+      "id": 9,
+      "date": "2020-05-11",
+      "type": "work",
+      "title": "React animations using 'react-transition-group'",
+      "cathegories": {
+        "main": "react",
+        "subcathegory1": "packages",
+        "subcathegory2": "react-transition-group",
+        "subcathegory3": "animations",
+        "subcathegory4": "styles"
+      },
+      "content": "One of possibility of making animations in React is using <b>react-transition-group</b>. <br/><br/>In order for transition to work it has to be <b>in</b> property in CSSTransiton element or conditional opening by <b>&&</b>. This conditional opening should be between<b> &lt;TransitionGroup&gt; </b>and <b>&lt;CSSTransiton&gt;</b>. The example is in this list sass file. <br/><br/>Generally there are sets of 3 classes added: <b>enter, enter-active </b>and <b>enter-done</b>. Enter-active is the one with transition property set. In enter-done the final setting of the component without need of additional class can be done. This classes are added to the first wrapping child element of CSSTransition and the class names are combined with mentioned before values and with className set in CSSTransiton element. There are 3 sets of 3: <b>'appear, 'enter'</b> and <b>'exit'</b> vs <b>'', 'active' </b>and <b>'done'</b>. <br/> <br/> There are 4 different types of transition componenets: <b>&lt;Transition&gt;</b> - styled by js inline styles, <b>&lt;CSSTransition&gt;</b> - styled in css file, <b>&lt;SwitchTransition&gt;</b> - animation for 2 components when first disappears second appears and <b>&lt;TransitionGroup&gt;</b> - for stylling components with children/nested components, eq. list which can be styled for each element action on remove or addElemnts - allows using styling for children elements.",
+      "source": [
+        {
+          "type": "link",
+          "description": "Link to documentation with exaamples of each for transiton components - components available via different subpages via header",
+          "link": "http://reactcommunity.org/react-transition-group/switch-transition"
+        },
+        {
+          "type": "link",
+          "description": "Link with different ways to create animations in React. Including pure css, react-transition-group, react-animatons, react-reveal with nice animation of sliding list with full screen items, and TweenOne and animation in Ant Design",
+          "link": "https://medium.com/@dmitrynozhenko/5-ways-to-animate-a-reactjs-app-in-2019-56eb9af6e3bf"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "date": "2020-05-12",
+      "type": "home",
+      "title": "Wrapping json files in VSCode",
+      "content": "In order to wrap json files in VSCode go <b>View &rarr; Command Palette &rarr; View: Toggle Word Wrap",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "vscode",
+        "subcathegory2": "utils"
+      }
+    },
+
+    {
+      "id": 12,
+      "date": "2020-05-13",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "events"
+      },
+      "title": "Addding event listener on resize",
+      "content": "In React there is no event on resize. <b><code>window.addEventListener('resize', functionName) </code> </b> has to be included. When components unmounts listening should be removed by <b><code>window.removeEventListener('resize', functionName)</code></b>.",
+      "source": [
+        {
+          "type": "blog",
+          "link": "https://www.hawatel.com/blog/handle-window-resize-in-react/"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "date": "2020-05-13",
+      "title": "Three ways to store variables within functional components",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "func "
+      },
+      "content": "<cite>There are three ways to store variables within functional components: <br/>1) We can define a simple <b>const</b> or <b>let</b> whose value will always be reinitialized with every component re-rendering. <br/>2)  We can use <b>useState</b> whose value persists across re-renderings, and if you change it, it will also trigger re-rendering.<br/>3)  We can use <b>useRef</b>.<br/>The useRef hook is primarily used to access the DOM, but it’s more than that. It is a mutable object that persists a value across multiple re-renderings. It is really similar to the useState hook except you read and write its value through its .current property, and changing its value won’t re-render the component.<br/></cite><br/><br/> In<b> setState</b> if this is different component it will have tirggered useEffect with [] or ComponentDidMount. Additionally rerender is of already existing DOM component. <br/><b>const</b> and <b>let</b> can be used for constant values but not random id because it cannot be changed during rerender. Updating let and const values will not trigger rerender so if these values are used inside return code it will not be updated. <br/>In <b>useRef</b> value persist through multiple renders but its changing will not trigger re-render. However it can be accumulated between rerenders. <br/><code> const variable = useRef(5)<br/>setTimeout(()=>{</br/>  variable.current+3; <br/>},100)<br/>return {variable.current}</code>. <br/><cite>If we have mutable values that we want to remember at the next or later renders and we don’t want them to trigger a re-render when they change, then we should use useRef</cite><br/>It can be also used for animatons as it prevents infinite loops in useEffect when animation changes the state what will rerender component what is not desirable in case of animations",
+      "source": [
+        {
+          "type": "css-tricks",
+          "description": "Good article about variables in react and using requestAnimationFrame and useRef"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "Redirecting in React",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "router"
+      },
+      "date": "2020-05-14",
+      "content": "Redirecting in react can be done using <b>Link</b> component or <b>history.push</b>. When going to previous page use <b>history.goBack()</b>."
+    },
+    {
+      "id": 16,
+      "title": "Differences between react and html and other frameworks",
+      "date": "2020-05-14",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "attributes"
+      },
+      "content": "In React all DOM attributes and properties should be written using camelcase notation. The exceptions are <b>'aria-'</b> and <b>'data-'</b> attributes. <br/> Differences in attributes: <br/> 1) <b>checked</b> - available for checkbox and radio - can be used for controlled components. For uncontrolled components use <b>defaultChecked</b> regulating checking of component after first mount<br/>2) <b>className</b> for React with WebComponents use class. <br/>3) <b>dangerouslySetInnerHtml</b> - used in React instead of innerHTML as using HTML in code is risky and might make to application prone to cross-site-scripting(XSS) <br/> 4) <b>htmlFor</b> - instead of for in labels <br/>5) <b> onChange </b> <br/> 6) <b>selected</b> - for option <br/>6) <b>style</b> - instead of string in React it required object <code>const divStyle = {<br/> color: 'blue',<br/> backgroundImage: 'url(' + imgUrl + ')', <br/>};</code><br> It makes performance better and prevents leaking for XSS. Prefixes are not added automatically - use all big letters - only example in prefixes from big letters rule applying only for prefixes in ms prefix like 'msTransition'. React add 'px' automatically to some properties so there is no need to use them. <br/>7) <b>suppressContentEditableWarning</b> - turns off the warning appearing when element containing child has property contentEditable <br/> 8) <b>suppressHydrationWarning</b> when set to true React does not fire the warning for differences between client-side and server-side (warning about differences/incommpatibility of attributes and element content. <br/> 9) <b>value</b> - for input and textarea; <code>defaultValue</code> for uncontrolled components",
+      "linkedItemId": [3, 17],
+      "source": [
+        {
+          "type": "react docs",
+          "link": "https://pl.reactjs.org/docs/dom-elements.html"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Making userInteracting custom element using contenteditable",
+      "date": "2020-05-14",
+      "cathegories": {
+        "main": "html",
+        "subcathegory1": "attributes"
+      },
+      "content": "When <b>contenteditable</b> attribute is added to element which normally does not allow user to modify its content - it makes it possible to edit the content of the element - the text displayed by the element. In pure HTML <b>contenteditable='true' </b>or <b>''</b> for positive and <b>'false'</b> for negative. It is not bool attribute. When there is only conteneditable it gives it value of empty string. In <b>React</b> should be <b><code>contentEditable=''</code></b> or <b><code>contentEditable='true'</code></b> for positive and <b><code>contentEditable='false'</code></b> for no action. In React contentEditable should be used instead of contenteditable.",
+      "source": [
+        {
+          "type": "moz doc",
+          "description": "contenteditable in moz developer documentation",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/contenteditable"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Format time from 24 h range to 12 am and pm",
+      "date": "2020-05-15",
+      "cathegories": {
+        "main": "javaScript"
+      },
+      "content": "In order to calculate hour from 24-range format to 12-range format use % by 12."
+    },
+    {
+      "id": 19,
+      "title": "Loop of an object in React",
+      "date": "2020-05-08",
+      "cahegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "object"
+      },
+      "content": "In order to iterate throuh keys of object do <b><code>Object.keys(data).map(key => <span>key {key} value {data[key]})</code></b>.",
+      "source": [
+        {
+          "type": "stackoverflow",
+          "link": "https://stackoverflow.com/questions/39965579/how-to-loop-an-object-in-react"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Dynamic props",
+      "date": "2020-05-28",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react"
+      },
+      "content": "In order to include dynamic props in React first make a const and then use it as a props <code> let props = condition ? {tabIndex: 1} : {}; </code>. In order to use it use spread operator <code>{...props} </code>. It is very usefull for adding props to childen components based on props given to parent component.",
+      "source": [
+        {
+          "type": "stackoverflow",
+          "link": "https://stackoverflow.com/questions/36523225/dynamic-tabindex-attribute-in-jsx-react"
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "title": "Custom range input",
+      "cathegories": {
+        "main": "html",
+        "subcathegory1": "range",
+        "subcathegory2": "cross-browser"
+      },
+      "content": "Before styling custm <b>range input </b> check the canIUse for availability. There are pseudoselectors for <b>thumb</b> and <b>track</b> in each browser. Apart from Chrome there are also selectors for the part before and after thumb (the taken part). In  Mozilla the border has to be styled/height has to be set as it will give white background. In Chrome there are no selectors for two parts of track. The before and after selectors does not work as they do not work for inputs. However, the parts of input range are visible in Chrome as div elements. I was not able to get to that using sass. The ways to style parts of track in Chrome is <b>linear gradient</b> or using <b>background shadow</b> for one direction on thumb and setting overflow hidden on input in order to shadow to be visible only on track. However styling using boxshadow  does not allow using different values on this property as it will not be visible. Using linear gradient in javascript also required working in original component thus does not allow another styling eg of thumb."
+    },
+    {
+      "id": 23,
+      "title": "Elements out of view on cypress",
+      "cathegories": {
+        "main": "testing",
+        "subcathegory1": "cypress"
+      },
+      "content": "When testing elements in cypress use for click and for typing in inputs <b><code> {force: true}</code></b>. In this way the typing/click is forced even when element is not visible on the screen. Use in combination with <code>.scrollIntoView()</code>. In this way the elements can be accessed."
+    },
+    {
+      "id": 24,
+      "title": "Cypress problems - Loading data during cypress tests",
+      "cathegories": {
+        "main": "testing",
+        "subcathegory1": "cypress"
+      },
+      "content": "When there is a problem with typing/accesing elements make sure that there is <code>.wait()</code> for data loaded. It is especially important when in cypress tests the url is being changed during the test and there is a redirection to another page which downloads different data. Then after redirection (eg. by click) there has to be <code><b>.wait()</b></code> added for data to be loaded or the test will malfunction."
+    },
+    {
+      "id": 25,
+      "title": "Triangle in html",
+      "cathegories": {
+        "main": "html",
+        "subcathegory1": "elements",
+        "subcathegory2": "styling"
+      },
+      "content": "In order to make a triangle in html a div can be styled with after. This will work in a way that border on the left and on the right of the triange will be always in the same place regardles of the window resizing. When using <code> transform:rotate </code> the position of smaller border or both of them will change on resizing depending how the size of triangle is set."
+    },
+    {
+      "id": 26,
+      "title": "Tetriary sentence in useState",
+      "source": "work - Gosia Wiola",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react"
+      },
+      "content": "Tertiary sentence can be used inside useState()."
+    },
+    {
+      "id": 27,
+      "title": "ELements for formik",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "content": "When creating custom elements for <b>Formik<b> using another components, like react-select remember to custom onChange to use <b>form.setFormField</b>. The element has to have <b>field:{ name, value}</b> and <b>form<b> props. Spread field prop in the child component. The form prop have <b>setFormField</b> function which can be used to set the value. Change of the value has to be communicated to Formik as it will read automatically only normal elements."
+    },
+    {
+      "id": 28,
+      "title": "Passing paramenets in Formik render method",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "content": "In render method <code> setErrors, handleSubmit, submitCount </code> and <code> isSubmitting </code> can be passed down. Then they can be accessed by functions such as <code> onSubmit={handleSubmit} </code> as they can have in definition these additional parameters passed as a object as a second argument after values <br/><code>const handleSubmit = (values, {setErrors, isSubmitting}) => {}</code>."
+    },
+    {
+      "id": 29,
+      "title": "Checkbox value",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "elements"
+      },
+      "content": "When handling checkbox remember to verify <b>.hasOwnProperty()<b> as normal && cannot be used because one of checkbox values is false. Another option is cheking for undefined. Checkbox is not regulated by value but by checked in React. However when submitting it will be false as it is not checked. It is important for conditionall rendering when checking the presence of data or conditional props for components."
+    },
+    {
+      "id": 30,
+      "title": "Setting table size",
+      "cathegories": {
+        "main": "html",
+        "subcathegory1": "elements"
+      },
+      "content": "In order to force the <b>table th</b> and <b>td</b>  to have exactly set width use <code> <b> table-layout: fixed </b> </code> css prop. In this way the cell will have width exactly as set one. Without it it will adjust to the content and then if it will have place left it will be adjusted to set width values."
+    },
+    {
+      "id": 14,
+      "title": "React refs in functional and class components",
+      "content": "<b>useRef</b> does not change value between rerenders of the component and in the same time stores its value between rerenders and can be modified what is still visible between renders - it is not reinitialized. Therefore is good to bind to components as it will keep the binding between rerenders. <br/><br/>There is <b>React.createRef()</b> method that works for both functional and class components.<br/>In <b>class components</b> use<code> myInput=React.createRef() </code>between class and constructor and add <code>inputRef={this.myInput}</code> to textfield. For custom component use <code>ref={this.myInput}</code>. In order to trigger a method on available component use <b>.current</b> inside ComponentDidMount <code><br/>componentDidMount() {</br>  this.myInput.current && this.myInput.current.focus()<br/>}<br/></code>For <b>functional components</b> use <code>const myInput = useRef();</br>useEffect(() => myInput.current && myInput.current.focus())<br/><textareafield inputRef={myInput}></code>",
+      "linkedItemId": [13],
+      "date": "2020-06-11",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "features"
+      },
+      "source": [
+        {
+          "type": "medium.com",
+          "description": "",
+          "link": "https://medium.com/javascript-in-plain-english/react-refs-both-class-and-functional-components-76b7bce487b8"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "date": "2020-05-12",
+      "type": "work",
+      "title": "Combining React Portal and react-transition-group for styling a component",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "react portal",
+        "subcathegory3": "react-transition-group"
+      }
+    },
+    {
+      "id": 20,
+      "title": "Handling submission of redux-form",
+      "date": "2020-05-17",
+      "cathegories": {
+        "main": "react"
+      }
+    }, 
+    {
+      "id": 31,
+      "title": "Problem with react select in Cypress",
+      "date": "2020-06-17",
+      "cathrgories": {
+        "main": "testing",
+        "subcathegory1": "cypress",
+        "subcathegory2": "react"
+      },
+      "content": "Sometimes it is necessary to wait when data which are downloaded with async await to react-select - after clicking option in sselect just force click on another element to close the select"
+    },
+    {
+      "id": 32,
+      "title": "Lodash",
+      "date": "2020-06-19",
+      "cathegory": {
+        "main": "packages",
+        "subcathegory1": "lodash"
+      },
+      "content": "There are some nice functions in lodash. isEmpy returns bool when there is nothing inside but also returns false when the alue is a number. It is nice for distinguisihing wheterr the value we are interested in is a not-empty array. Another nice function is compact. It converts evything to array so then length can always be used as well as array functions.Then also map can be used or filter as it will have array. //tocheck what will happen when using map or filter on empty array. There is also find method in lodash. Method head gives first item."
+    },
+    {
+      "id": 33,
+      "title": "Common components",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "forms"
+      },
+      "date": "2020-06-21",
+      "content": "When creating common components for Formik they will be passed inside <Field> and they will receive props field with props name and value and form props with touched and error props for all fields inside Formik. Then proper error and proper touched have to be taken from this prop. In case of redux-form you there is also <Field> and it gives props input with name, value, checked (for bool), onBlur, onChange as well as meta props with error and touched. There is another prop value with is present only for radio and it will be compared with inner value"
+    },
+    {
+      "id": 34,
+      "title": "CurrentTarget vs target",
+      "cathegories": {
+        "main": "js"
+      },
+      "date": "2020-06-23",
+      "content": "There are 2 possible items via which we can get into element on which event was triggered event.target and event.currentTarget. Event.target will give the exact element on which the event was triggered eg. the exact element which was clicked. Event.currentTarget will give the element on which the event is bound eg with onClick or onChange props. Thanks to the propagation if we click element inside also the parent is clicked unless we add event.stopPropagaton. event.target and event.currentTarget are usufull when accessing elements or directly cliced or with bound method. <br/> There is .focus() which can be done on event.currenTarget or event.target as well as .nextSiblingElement as well as .previosSiblingElement."
+    },
+    {
+      "id": 35,
+      "title": "HTML atributtes in React",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "attributes"
+      },
+      "date": "2020-06-23",
+      "content": "Custom attribues can be added to html but they are only rendered ONCE and they are not updated as attributes are not updated. They should be written all in lowercase. <br/>React does not recognize the `isChecked` prop on a DOM element. If you intentionally want it to appear in the DOM as a custom attribute, spell it as lowercase `ischecked` instead."
+    }, {
+      "id": 36,
+      "title": "Presence of items in array",
+      "cathegories": {
+        "main": "js"
+      },
+      "date": "2020-06-23",
+      "content": "In JS in order to check the presence of element in Array use array.includes(element) and it will return boolean value. This method is case-sensitive. Similar method is for string => includes. Thus they can be used together for item which can be array or string!"
+    },
+    {
+      "id": 37,
+      "title": "Verification if element is an array",
+      "cathegories": {
+        "main": "js"
+      },
+      "date": "2020-06-23",
+      "content": "In order to verify if item is an array Array.isArray(item) can be used."
+    },
+    {
+      "id": 38,
+      "title": "Accessing Formik props",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "date": "2020-07-05",
+      "content": "When using Formik there are several props accessible in render={(formikProps) => ()} or inside <Formik>{(formikProps) => ()}</Formik>. These incluce handleSubmit, submitCount and isSubmitting. If wanted onFormik props onChange can be used but there isSubmitting is not available. Solution is the usage of Form tag from formik which can also get onChange method but it is inside Formik render and thus isSubmitting is available."
+    },
+    {
+      "id": 39,
+      "title": "Asking whether leave page before form submition",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "react-router"
+      },
+      "date": "2020-07-05",
+      "content": "In order to ask user whether he wants to leave page before saving changes Prompt component from react-router can be used. This component can have two props message which will be shown to the user. Message props can be string or function. Function takes two argumets - location, being the next location the user wants to navigate to, and action, like 'POP' - go back action. Message function should return true if navigation is allowed or text when not. In this way inside this function some pages can be blocked for moving and the message shown when asking about navigation to different pages may differ. <br/> Second prop for Prompt is when, being the boolean which regulates the display of the Prompt when navigation is attemptend. Is is obligatory. From location props in order to get url use location.pathname. In when the counter or props showing whether form was submited can be used to regulate the presence of Prompt. <br/> Inside message JSON.stringify() can be used to customize Prompt with titleText, messageText, confirmText and CancelText. <br/><code><Prompt when={when} message={JSON.stringify(`{\"confirmText\": \"Continue\", \"messageText\": \"Ares you sure? \"}`)}</Prompt></code>",
+      "source": [{
+        "type":"medium.com",
+        "link":"https://medium.com/javascript-in-plain-english/creating-a-custom-userconfirmation-modal-with-the-react-router-prompt-dc1faa5a65a0"
+      }]
+    },
+    {
+      "id": 40,
+      "title": "Binding label to input",
+      "date": "2020-07-02",
+      "cathegories": {
+        "main": "html",
+        "subcathegory": "form"
+      },
+      "content": "When using label for attribute or htmlFor in React is used for binding label to input. This atribute has to be bound to id of input without #. In this way even when input is invisible height: 0, width: 0 and opacity: 0 it can be accessed normaly thanks to label. In this way all methods, like onChange or onClick, can be bound to input eventhough it is not visible. Also response to tab and space works normally."
+    },
+    {
+      "id": 41,
+      "title": "Formik validation",
+      "date": "2020-07-24",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "content": "In order to trigger validation in Forkmik function from formikProps can be used - valiadateForm. <br><code> onClick={async (e) => {<br/>e.preventDefault();<br/>const result = await validateForm();<br/>if (!isEmpty(result)) {<br> setTouched(result);<br/>} else onSubmit(values);<br/>}}</code><br/>For this apply on Formik <code><b>validationSchema</code></b> or <code><b>validate</code></b> props."
+    },
+    {
+      "id": 42,
+      "title": "Distinguish between production and test/devalopment",
+      "date": "2020-07-24",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "env"
+      },
+      "content": "In order to distinquish between <code><b>test></b></code> and <code><b>production</b></code> envirotment <code><b>process.env.NODE_ENV<b></code> can be used. Values are 'production' and 'test' and 'development'. For app;ication created with Create-React-App <code><b>process.env.REACT_APP_NODE_ENV</b></code> has to be used as it is necesssary to add REACT_APP to environment variables - they are in .env file.<br/> <br/>From Create-React-App documentation: <br/>There is also a built-in environment variable called NODE_ENV. You can read it from process.env.NODE_ENV. When you run npm start, it is always equal to 'development', when you run npm test it is always equal to 'test', and when you run npm run build to make a production bundle, it is always equal to 'production'. You cannot override NODE_ENV manually. This prevents developers from accidentally deploying a slow development build to production.<br/>These environment variables can be useful for displaying information conditionally based on where the project is deployed or consuming sensitive data that lives outside of version control. <br/> In order to access these variables in HTML usse <br/> <code><title>%REACT_APP_WEBSITE_NAME%</title></code><br/>.env can be used to setting variables specific for prod/dev/test or setting up environmental variables specific for local machine.",
+      "source": [
+        {
+          "type": "documentation",
+          "link": "https://create-react-app.dev/docs/adding-custom-environment-variables/"
+        },
+        {
+          "type":"stackoverflow",
+          "link": "https://stackoverflow.com/questions/55690143/what-is-the-difference-between-env-local-and-env-development-local"
+        },
+        {
+          "type": "stack"
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "title": "How to display part of SVG as ReactComponent",
+      "date": "2020-07-22",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "svg"
+      },
+      "content": "In order to change the part of svg displayed using <code>import {ReactComponent as Icon}</code> use <code><b><Icon viewBox=\"-100 -100 100 100\"> </b></code>",
+      "source": [{
+        "type": "stackoverflow",
+        "link": "https://stackoverflow.com/questions/37588405/how-to-crop-svg-file-within-html-css"
+      }]
+    },
+    {
+      "id": 44,
+      "title": "Detecting browser lasnguage",
+      "date": "2020-07-22",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "language"
+      },
+      "content": "In order to detect browser language use <code><b>navigator.languauge</b></code>. Now navigator.language works for IE. For IE <= 10 use navigator.userLanguage",
+      "source": [{
+        "type": "stackoverflow",
+        "link": "https://stackoverflow.com/questions/1043339/javascript-for-detecting-browser-language-preference"
+      }] 
+    },
+    {
+      "id": 45,
+      "title": "Compressing SVG",
+      "date": "2020-07-22",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "svg"
+      },
+      "content": "Compress svg icons and images using https://jakearchibald.github.io/svgomg/"
+    },
+    {
+      "id": 46,
+      "title": "Mocking navigator.language in Cypress",
+      "date": "2020-07-22",
+      "cathegories": {
+        "main": "tests",
+        "subcathegory1": "cypress",
+        "subcathegory2": "navigator"
+      },
+      "content": "In order to mock navigator.language in cypress use <code><br/>.visit('http://localhost:4040/login', {<br/> onBeforeLoad(win) {<br/>Object.defineProperty(win.navigator, 'language', {<br/>value: 'us-gb',<br/>});<br/>},<br/>})<br/>.get('.login-header')</code>"
+    },
+    {
+      "id": 47,
+      "title": "Upgrading packages",
+      "date": "2020-07-23",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "packages"
+      },
+      "content": "Upgrading packages can be done using <b>npm</b> with <code>npm install --save react@latest</code> or <code>npm install --save react@16.0.0</code>. Latest version while still respecting the semver in your package.json: npm update <package-name>.<br/>With NPM run npm outdated to see what packages will be affected. Then npm update<br/>If you want to update all packages to the latest version use <code>npm audit fix --force</code><br/><br/> Using <b>yarn</b> to upgrade to latest version <code>yarn upgrade react@latest</code> or <code>yarn upgrade react</code>. Full command <code>yarn upgrade [package | package@tag | package@version | @scope/]... [--ignore-engines] [--pattern]</code>. Personally with yarn I prefer <code><b>yarn upgrade-interactive --latest</b></code> as it allows to choose interactively the versions available.",
+      "source": [
+        {
+          "type": "stackoverflow",
+          "link": "https://stackoverflow.com/questions/49828493/upgrading-react-version-and-its-dependencies-by-reading-package-json"
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "title": "Using history in React",
+      "date": "2020-007-22",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcatrthegory2": "router"
+      },
+      "content": "In order to use history in the React project wrap the component with <code><b>withRouter</b></code> or with react-router v5 use <code><b>import {useHistory} from 'react-router-dom'</b></code> <br/>Firstly, create history.js file which contains <code>import { createBrowserHistory } from 'history';<br/>export default createBrowserHistory();</br></code> and then use <br/><code>import { Router, Route, Link } from 'react-router-dom';<br/>import history from './history';<br/> <br/> ReactDOM.render(<br/>  <Provider store={store}><br/>  <Router history={history}></code><br/><br/>History can be also passed to store as argument in createStore and used as argument in routerMiddleware(history) and then in app <code>const store = configureStore(history.createBrowserHistory());</code>",
+      "source": [
+        {
+        "type": "stackoverflow",
+        "link": "https://stackoverflow.com/questions/42701129/how-to-push-to-history-in-react-router-v4?rq=1"
+        }
+      ]
+    },
+    {
+      "id": 49,
+      "title": "Navigation between pages",
+      "date": "2020-07-22",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "navigation"
+      },
+      "content": "Going to another pages can be done using simple <b><code><a href='https://wp.pl'></code></b> tag. In this way the absolute path can be done. <br/>In React using <code>Link to='/path'</code> tag goes to relative path."
+    },
+    {
+      "id": 50,
+      "title": "Mapping list",
+      "date": "2020-07-26",
+      "cahegories": {
+        "main": "general",
+        "subcathegory1": "lodash"
+      },
+      "content": "When maping through array and returning html use <b>compact(resource.names)</b> as it will always return array and there will be no problem with e.g. mapping string or null. Use compact with map!!! there will be no problems with types. <b>isEmpty>: <code>isEmpty(3)</code> gives true. In order to combine sttrings and arrays use <code><b>isEmpty(compact(resurce.names))</code></b>. In this way firsty eveerything will be converted to array and then it will be checked whether is empty or not. However check what happens after conversion of empty string"
+    },
+    {
+      "id": 51,
+      "title": "Form submitting",
+      "date": "2020-07-09",
+      "cathegories": {
+        "main": "javascript",
+        "subcathegory1": "form"
+      },
+      "content": "When submittin form remember that sometimes clicking a button triggers page reloading. When onSubmit in Form React remember that form submit can be triggered by enter. When submition handled by onClick on button remember to check whether it is necessary to add preventDefault. Always check whether form submitions triggers page reloading."
+    },
+    {
+      "id": 52,
+      "title": "Moving to errors visible on page",
+      "date": "2020-07-07",
+      "cathegories": {
+        "main": "javascript"
+      },
+      "content": "To scroll into element showing errors firstly get elements by querySelector and then scroll to them using <br/><code>errorMessages &&errorMessages.parentElement.scrollIntoView({ block: 'center', behavior: 'smooth' });</code>"
+    },
+    {
+      "id": 53,
+      "title": "Validation on space present inside content",
+      "date": "2020-07-07",
+      "cathegories": {
+        "main": "javascript",
+        "subcathegory1": "validation"
+      },
+      "content": "When validating for the presence of space inside text use <br/> <code>validName = (name) => name.length > 4 && name.split(' ').length > 1;</code>"
+    },
+    {
+      "id": 54,
+      "title": "Handling multiple line warning in lint in Vue",
+      "date": "2020-07-31",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "Vue"
+      },
+      "content": "When us using lint in Vue it gives warning about necessity of putting atributes in separate lines and lint autoformates it to be in one line. In order to remove this warning in file <code>.eslintrc.js</code> where lint settings are in the section <code>rules</code> use <br><code>\"vue/max-attributes-per-line\": [\"error\", {<br/> \"singleline\": 1,<br/>  \"multiline\": {<br/> \"max\": 1, <br/> \"allowFirstLine\": false<br/> }<br/> }]<br/></code> <br/>Put it in position: <br/> module.exports = {<br/> extends: ['eslint:recommended', 'plugin:vue/recommended', 'prettier'], <br/>  rules: {<br/>'vue/singleline-html-element-content-newline': 0,<br/>  quotes: ['error', 'single'],<br/>},}</code><br/>. The attribute <b>singleline</b> sets the numer of maximum attributes in single line when an opening tag is in a single line. Default is 1. <br/> Attribute <b> multiline.max</b> sets the max number of attributes per line when the opening tag is in multiple lines. Default is 1.<br>Attribute <b>multiline.allowFirstLine</b> - if true it allows attributes on the same line as that tag name. Default is false. <br/> To overcome it change singleline. When changing multiline it affects other lines than single line.  Allow first line in multiline false as it will move all attributes outside the line with tag.",
+      "source": [
+        {
+          "type": "documentation",
+          "link": "https://eslint.vuejs.org/rules/max-attributes-per-line.html"
+        },
+        {
+          "type": "github",
+          "link": "https://github.com/prettier/eslint-plugin-prettier/issues/94"
+        },
+        {
+          "type": "github",
+          "link": "https://github.com/prettier/eslint-plugin-prettier/issues/289"
+        }
+      ]
+    },
+    {
+      "id": 55,
+      "title": "Javascript function to trigger browser to save data to file as if it was downloaded",
+      "date": "2020-08-02",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "packages"
+      },
+      "content": "This package allows saving data as pdf file. For example in this way you can save data from response from server inside .then. <br/><code>import FileDownload from 'js-file-download';<br/>FileDownload(response, 'nameOfTheFileInWhichDataWillBeSaved)<br/></code>.",
+      "source": {
+        "type": "documentation",
+        "link": "https://www.npmjs.com/package/js-file-download"
+      }
+    },
+    {
+      "id": 56,
+      "title": "isEmpty from lodash",
+      "date": "2020-07-07",
+      "cathegories": {
+        "main": "packages",
+        "subcathegory1": "lodash"
+      },
+      "content": "Using isEpmty from lodash gives true from NaN, undefined, false, true, 5, '', and null. From the documentation <i><br/>Checks if value is an empty object, collection, map, or set.<br/> Objects are considered empty if they have no own enumerable string keyed properties.< br/ Array-like values such as arguments objects, arrays, buffers, strings, or jQuery-like collections are considered empty if they have a length of 0. Similarly, maps and sets are considered empty if they have a size of 0.<br/></i><br/> If the second argument is true, the function will ignore whitespace in the string. _.isEmpty(' ', true); // returns true<br/>_.isEmpty('abc');  // returns false",
+      "source": [
+        {
+          "type": "medium",
+          "link": "https://medium.com/@trmaphi/lodash-isempty-value-you-might-be-using-it-the-wrong-way-d83210d7decf"
+        },
+        {
+          "type": "documentation",
+          "link": "http://minifiedjs.com/api/isempty.html"
+        }
+      ]
+    },
+    {
+      "id": 57,
+      "title": "Convert rgba to hex",
+      "date": "2020-08-04",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "colors"
+      },
+      "content": "In order to convert rgba to hex use <a><b>https://cssgenerator.org/rgba-and-hex-color-generator.html</b></a>. I prefer to use hex as rgba can be problematic with rgba having included opacity parameter and it might affect colors on hover etc."
+    },
+    {
+      "id": 58,
+      "title": "Using context in React",
+      "date": "2020-08-05",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "To use context inside class component use <code>static contextType=contextName</code> and then inside code use <code>this.context</code>. First you bind whats the context type value you have. Application might have more context types. So you are saying that I need to bind this context(Note that it's static so it bound before the instance is created for class) and you access the value after instantiated , inside the class.  You can use only one context type to its binding. Moveover, it can be used like this <code>MyClass.contextType = MyContext;</code><br/>Another option is to use ContextConsumer <br/> <code><MyContext.Consumer><br/>{value => <Foo bar={value} /><br/>}<br/></MyContext.Consumer></br></code> For function components use <code><b>const user = useContext(userContext)</b></code>. In this way the values can be obtained from different contexts.",
+      "source": [{
+        "type": "stackoverflow",
+        "link": "https://stackoverflow.com/questions/58387249/i-just-used-react-context-why-does-static-context-not-work-if-i-console-on-othe"
+      }]
+    },
+    {
+      "id": 59,
+      "title": "Adding modal opening/state changing based on parameters from url",
+      "date": "2020-08-05",
+      "cathegories": {
+        "main": "packages",
+        "subcathegory1": "url-search-params-polyfill",
+        "subcathegory2": "url"
+      },
+      "content": "There is a possibility to e.g open modal when added in url <code>?feedback=true</code>. In the code it is <br/><code>import 'url-search-params-polyfill'</br>const query = new URLSearchParams(this.props.location.search)<br/>const feedbackQueryString = query.get('feedback')==='true'</code> <br/>Then based on condition you can eg open a modal. The feedback value is string not boolean as it is from url. I am not sure whether it is necessary."
+    },
+    {
+      "id": 60,
+      "title": "Triggering action after modal opening",
+      "date": "2020-08-05",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "sequence of events"
+      },
+      "content": "When opening a modal you can trigger functions in <code>this.setState({modalOpen: true}, () => {code to do when modal is open})</code><br/>It can also be done inside modal. When triggering inside parent component which is a class remember that when use the code below the todoFn will still get property before change. Thus it is better to change the state-imitating properties like setModal at the end of block of code.<code>setModalOpen(!modalOpen)<br/>modalOpen && toDoFn</code><br/>. In case of setState it can be modified in several places inside the block of code but it will be combined into one and done at the end of the block of code action. You can trigger setState two times inside the same code block when using <code>async () => { try {await} catch(e) {} }</code>."
+    },
+    {
+      "id": 61,
+      "title": "Simple confirmation modal from WebApi",
+      "date": "2020-08-08",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "WebApi"
+      },
+      "content": "The <b>window.confirm()</b> method displays a modal dialog with an optional message and two buttons: OK and Cancel.<br/><code>const result = window.confirm(message)</code><br/> results is a boolean indicating whether OK (true) or Cancel (false) was selected. If a browser is ignoring in-page dialogs, then result is always false.",
+      "source": [
+        {
+          "type": "documentation",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm"
+        }
+      ]
+    },
+    {
+      "id": 62,
+      "title": "Interesting formik props",
+      "date": "2020-07-06",
+      "cathegories": {
+        "main": "frameworks",
+        "subcatahegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "content": "Among Formik props an interesting ones are <b><code>isValid, isSubmitting, setFieldValue, touched, values, submitCount, handleChange, setSubmitting, handleSubmit</b></code><br/><b>handleChange</b> have to be used when we need to add additional action to onChange method of formik field."
+    },
+    {
+      "id": 63,
+      "title": "Adding additional function during Field changing in Formik",
+      "date": "2020-07-04",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "content": "When adding additional function in <code>Field</code> from Formik component use handleChange formiiProps<br/><code><Field><br/>component={Input} <br/>onChange={(evt) => {<br/>getEmail(evt.target.value<br/>formikProps.handleChange(evt)>br/>}<br/>}<br/><code>Without it it will not change field value",
+      "source": [
+        {
+          "type": "stackoverflow",
+          "link": "https://stackoverflow.com/questions/51159477/withformik-how-to-use-handlechange"
+        }
+      ]
+    },
+    {
+      "id": 64,
+      "title": "How to set full screen on mobile of React-datepicker",
+      "date": "2020-07-03",
+      "cathegories": {
+        "main": "packages",
+        "subcathegory1": "react",
+        "subcathegory2": "react-datepicker"
+      },
+      "content": "React-datepicer has a property withPortal which gives portal and full screen on mobile.",
+      "source": [{
+        "type": "github questions",
+        "link": "https://github.com/Hacker0x01/react-datepicker/issues/1813"
+      }]
+    },
+    {
+      "id": 65,
+      "title": "Formik submit",
+      "date": "2020-07-04",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "content": "In order to submit Formik the values from formikProps can be taken inside renderer or inside Formik or onSubmit can be used as <code><Formik onSubmit={onSubmit}</code> but in the latter case inside Formik there has to be <code><form></code> or <code><Form></code> from Formik."
+    },
+    {
+      "id": 66,
+      "title": "Vertical align of inline elements",
+      "date": "2020-07-01",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "styles"
+      },
+      "content": "Align inline elements can be achieved using vertical-align css property which can have values middle, text-bottom and text-top"
+    },
+    {
+      "id": 67,
+      "title": "Testing wrapped componetns in enzyme",
+      "date": "2020-08-04",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "testing"
+      },
+      "content": "In order to test component without necessity of providing store use standard porps and component before wrapping in connect. For mocking useContext use Provider. <MockProvider mocks=[mocks] from apollo. For problems with Portal inside component use enn.NODE_ENV==='test' and then return component without portal.ś"
+    },
+    {
+      "id": 68,
+      "title": "Changing attribute of the object based on attribute name from constant",
+      "date": "2020-08-12",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "javascript",
+        "subcathegory2": "object"
+      },
+      "content": "When assigning the attribute of the object based on attribute name from variable use <code>setFilter({...filters, [name]: value})</code>"
+    },
+    {
+      "id": 69,
+      "title": "Changing form field value using redux-form",
+      "date": "2020-07-04",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "redux-form"
+      },
+      "content": "Component which is connected to <b>redux-form</b> has several default props for form handling, including <code><b>changeFieldValue</code></b>."
+    },
+    {
+      "id": 70,
+      "title": "Blocking submit button using react and Formik",
+      "date": "2020-07-06",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "formik"
+      },
+      "content": "When blocking submit button using <b>Formik</b> prop <code><b>isSubmitting</b></code> sometimes it is necessary to change isSubmitting when submission fails."
+    },
+    {
+      "id": 71,
+      "title": "Positioning of react-tooltip",
+      "date": "2020-07-01",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "react-tooltip"
+      },
+      "content": "In order to prevent tooltio from going outside view it only requires setting tooltip width and can also be manipulated with custom=left. There is also a function overridePosition which is given as props to tooltip.<br/><code>overridePosition={( {top, left}, currentEvent, currentTarget, node ) => {<br/>    const d = document.documentElement<br/>    left = Math.min(d.clientWidth - node.clientWidth, left)<br/>    top = Math.min(d.clientHeight - node.clientHeight, top)<br/>    left = Math.max(0, left)<br/>    top = Math.max(0, top) <br/>    return { top, left }<br/>}}</code>"
+    },
+    {
+      "id": 72,
+      "title": "How to hide components in React",
+      "date": "2020-08-13",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "showing components"
+      },
+      "content": "On order to hide components you can use <code><b>{isVisible && (<div>)}</code></b> or<b> classNames</b> package and extra class which will be regulated by <code><b>display: none</code></b>. <br/>When using isVisible the component is recreated and it will give again values from <code>const initalValues=useState(initialValues)</code>. It this way these values will reset every time when the component is mounted into DOM. When using extra class the component will be mounted and then simply hidden and it will keep these values. <br/>This might be especially usefull when setting initial values to modals. <br/><b>classnames</b> package has to be used as it will rerender component and it adds extra class dynamically not only when component is mounted as it has place with giving class as a string. Using classNames the class attribute will be updated whenever const from useState will be changed."
+    },
+    {
+      "id": 73,
+      "title": "Input number without arrows at the side",
+      "date": "2020-06-24",
+      "cathegories": {
+        "main": "styles",
+        "subcathegory1": "css"
+      },
+      "content": "For input type number in order for it not to display the arrows at the side use <br/><code>-moz-appearance: textfield<br/>-webkit-appearance: none</code>"
+    },
+    {
+      "id": 74,
+      "title": "Resetting set css value",
+      "date": "2020-06-29",
+      "cathegories": {
+        "main": "styles",
+        "subcathegory1": "css"
+      },
+      "content": "When using media first it is necessary to reset css properties. <ul><li>It can be checked which value was previously and then applied manually, like <code>display: table-cell</code> </li><li>It can be set to default value. </li><li>Additionally <code>min-height: <b>none</b></code> can be used.</li><<li>There is also <code>min-height: <b>unset</b></code> but it does not work in IE</li>/ul>"
+    },
+    {
+      "id": 75,
+      "title": "GetDerivedStateToProps in React",
+      "date": "2020-06-22",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "methods"
+      },
+      "content": "When using getGetDerivedStateFromProps you have to add static between the method name and there is no this inside. In retrun the changes in state should be gived. When there are no changes in state return null"
+    },
+    {
+      "id": 76,
+      "title": "Lifecycle methods in React",
+      "date": "2020-06-22",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "lifecycle methods"
+      },
+      "content": "Lifecycle methods: <br/> <b> 1. render</b> <br/> A render method has to be pure and without side-effects. You cannot setState inside render method.<br/><b>componentDidMount</b><br/>It is a good place for API calls. It allows using setState. With this method another rendering is done but it is done before browser updates UI thus there will be no double rendering. Use setState here for special cases like modal and tooltips when you need to meassure dom node before rendering something that depends on its postion.<br/><b>3. componentDidUpdate</b><br/>Use to update DOM in response to prop or state changes. It takes as a argument prevProps<br/><b> 4. componentWillUnmount</b><br/>You cannot modify state here. Place for cleanup actions cleaning times, cleaning cache in storage, cleaning eventListeners, canceling api calls.<br/><b>5. shouldComponentUpdate</b><br/>Use when you don't want react to render component on state or props change. It takes two argumets - nextProps and nextState. It returns bool.<br/><b>6. static getDerivedStateFromProps</b><br/>It is called just before render. It does not have access to this. It returns object to update state in response to props change. If there is no change in state it returns null. It is for cases where state depends on props. It has two arguments props and state. It is fired on <b>every</b>render. <br/><b>7. getSnapshotBeforeupdate</b>. <br/>It has two arguments prevProps and prevState. It is called right before the DOM is updated. The value returned from this method is passed to componentDidUpdate. Used for resizing window during async rendering.",
+      "source": [
+        {
+          "type": "blog",
+          "link": "https://programmingwithmosh.com/javascript/react-lifecycle-methods/"
+        }
+      ]
+    },
+    {
+      "id": 77,
+      "title": "Storyobook - different stories inside one folder",
+      "date": "2020-06-22",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "packages",
+        "subcathegory2": "storybook"
+      },
+      "content": "In storybook when you want to put different stories inside the same folder use <br/><code>export default { <br/> title: 'Form' <br/> decorators: 'withKnobs' <br/> Inputs.story = { <br/> name: 'Input' <br/> } <br/> </code>When putting the same title inside different files they will be parts of the same folder."
+    },
+    {
+      "id": 78,
+      "title": "Yup null field",
+      "date": "2020-06-18",
+      "cathegries": {
+        "main": "general",
+        "subcathegory1": "yup"
+      },
+      "content": "In order to get field in yup which can be null use <code>company: Yup.object().nullable()</code>"
+    },
+    {
+      "id": 79,
+      "title": "Props destructuring in React",
+      "date": "2020-06-19",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react"
+      },
+      "content": "When using React function components use props or state destructurization. There are also <b>restProps</b> and props can be grouped as inputProps. In this way you can pass group of props and destructure then eg on onput. <br/>There are also conditional props <code> const conditionalProps = isError? {}: {onChange: onChange, added: true}<br/><input {...conditionalProps} /></code>. <br/>In function argument use <code> const Br = ({component: Component, render, addProps, ...props}) => {}</code>"
+    },
+    {
+      "id": 80,
+      "title": "Input styling",
+      "date": "2020-06-10",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "styles"
+      },
+      "content": "When styling inputs use <code>outline: none</code>. Can use <code>caret-color: red</code> to change color of cursor. Can also change border color on <code>&:active, &:focus</code>. <br/>In order to change boder nicely use <code>transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s</code>."
+    },
+    {
+      "id": 81,
+      "title": "Setting height of react-select",
+      "date": "2020-06-20",
+      "catheogries": {
+        "main": "packages",
+        "subcathegory1": "react",
+        "subcathegory2": "react-select"
+      },
+      "content": "To change the height of react-select use<br/> <code>.Select-menu-outer {<br/>  max-height: 1000px<br/> }.Select-menu { <br/>  max-height: 998px <br/> }</code>",
+      "source": [{
+        "type": "github",
+        "link": "https://github.com/JedWatson/react-select/issues/704"
+      }]
+    },
+    {
+      "id": 82,
+      "title": "React-hooks custom usePrevious",
+      "date": "2020-08-23",
+      "cahegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "when you want to compare props to previous props use <code>const prevUsers = usePrevious(users)<br/>useEffect(() => {</br/> !isEqual(users, prevUser) && refetch <br/>},[users])<br/></code>. In this way you can force the reload. Generaly normal const could also be used but it will have to be changed always inside useEffect above.<br/>Code for hook: <br/><code>function usePrevious(value) { <br/>        const ref = useRef();<br/>useEffect(() => {<br/>    ref.current = value;<br/>        });<br/>   return ref.current;<br/>}</code>.<br/>",
+      "source": [{
+        "type": "tutorial",
+        "link": "https://usehooks.com/usePrevious/"
+      },{
+        "type": "documentation",
+        "link": "https://reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state"
+      }]
+    },
+    {
+      "id": 83,
+      "title": "React-select choosing lables and value",
+      "date": "2020-06-10",
+      "cathegories": {
+        "main": "packages",
+        "subcathegory1": "react",
+        "subcathegory2": "react-select"
+      },
+      "content": "When you want to choose label and value for react-select use props <code>valueKey='id' getOptionLabel={({label}) => label} getOptionValue={({value}) => value}</code>",
+      "source": [
+        {"type": "documentation",
+        "link": "https://react-select.com/props"}
+      ]
+    },
+    {
+      "id": 84,
+      "title": "Yup outside Formik",
+      "date": "2020-06-09",
+      "cathegories": {
+        "main": "packages",
+        "subcathegory1": "yup"
+      },
+      "content": "In order to use validation outside formik use <br/><code>validationSchema.validate({email: newEmail}).catch((error) => setError(error.message))"
+    },
+    {
+      "id": 85,
+      "title": "Keeping state values in React",
+      "date": "2020-06-19",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react"
+      },
+      "content": "When using state in React in order to keep its value between rendering set <code>this.state={} </code> without giving the value and it will keep its value between rendering. It is of importance eg. in modals."
+    },
+    {
+      "id": 86,
+      "title": "Setting min-height disrpts align-items: cemter in IE11",
+      "date": "2020-06-30",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "styles",
+        "subcathegory2": "ie11"
+      },
+      "content": "When setting min-height it disrupts align-items center in IE11. Solution: set height to the value less than min-height. Another solution is setting after with min-height. Another option is making conttainer a flex element itself.",
+      "source": [{
+        "type": "github-bug",
+        "link": "https://github.com/philipwalton/flexbugs/issues/231"
+      }]
+    },
+    {
+      "id": 87,
+      "title": "React router 5.1 hooks",
+      "date": ["2020-08-23", "2020-08-22"],
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcatheogry2": "react-router"
+      },
+      "content": "When using react-router 5.1 there are new hooks. New hooks are from react-router-dom.<br/><b>1. useParams</b><br/>Previously in parent component <code><Route path='' component={NewPage}</code> - in this version no custom props were given to NewPage. <br/><code><Route path='' render={({match}) => <NewPage match={match}>} </code> - in this version you can give custom props but you have to add all other props, like match, manually. This 2 methods allow the access to match only in NewPage but not in its childern. <br/><b>useParams allows access to params in component in which it is used and in all its children as it is based on context. Additionaly, you use <code><Route path=''><NewPage/></Route></code> - as children.<code> let {id} = useParams()</code><br/><b>2. useLocation</b><br/> let location = useLocation()<br/><b>3. useHistory</b><br/><b>4. useRouteMatch</b><br/>usefull when using <Route> to get access to match - when rendering Route outside Switch. <br/><code>let match = useRouteMatch({<br/>path: '/blog', <br/>strict: true, <br/> sensitive: true<br/>})</code><br/> and then simly use match for conditional rendering. If omited path inside hook it will return match from the closest matching <Route> in the tree.",
+      "source": [{
+        "type": "documentation-training",
+        "link": "https://reacttraining.com/blog/react-router-v5-1/"
+      }]
+    },
+    {
+      "id": 88,
+      "title": "Problems with unit tests and providers",
+      "date": "2020-08-10",
+      "cathegories": {
+        "main": "test",
+        "subcathegory1": "react",
+        "subcatehgory2": "unit testing"
+      },
+      "content": "In unit tests there are problems with Providers when there is a context or a store based on provider. In this situation use <br/><code>import { MockedProvider } from '@apollo/react-testing'<br/>const mocks = []<br/>const wrapper = shallow(<br/>  <MockedProvider mocks={mocks}/> <br/>    <FeedbackModal {...props} /> <br/>  </MockedProvider>, <br/>)</code>"
+    },
+    {
+      "id": 89,
+      "title": "useMemo - for changing props in React",
+      "date": "2020-07-26",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "When we have functions or const based on props/state they are recreated with every render. Sometimes it is not necessary - when they are given as props to the components - even when they do not change with every render the reference is different and component with this function as props will rerender event when it is not necessary. In this sitution use <b>useCallback</b> for functions and <b>useMemo</b> for data. <br/><code> const hadleClick = useCallback(() => {<br/>  console.log('Clicked', props1, props2)<br/>}, [props1, props2])</code><br/>In this way the function is memoized - till props1 or props2 do not change, handleClick will be the same function.<br/><b>useMemo</><br/><code>const options = useMemo(() => ({<br/>  data1: props1, <br/>  data2: props2</br>}), [props1, props2])<br/><br/>Use callback can be written like this: <br/><code>const myCall = (fn, dependencies) => useMemo(() => fn, dependencies)</code>",
+      "source": [
+        {
+          "type": "",
+          "link": "https://typeofweb.com/usememo-usecallback-czyli-rozwiazanie-problemow-ze-zmieniajacymi-sie-propsami/"
+        }
+      ]
+    },
+    {
+      "id": 90,
+      "title": "IsEmpty from lodash",
+      "date": "2020-07-07",
+      "cathegories": {
+        "main": "packages",
+        "subcathegory1": "lodash"
+      },
+      "content": "When using isEmpty from lodash is gives true for objects which length === 0, such as arrays, objects and strings. isEpmty(1) => true, isEmpty(null) => true, isEpmty(undefined) => true, isEmpty(NaN) => true, isEpmty(true) => true",
+      "source": [
+        {"type": "medium", "link": "https://medium.com/@trmaphi/lodash-isempty-value-you-might-be-using-it-the-wrong-way-d83210d7decf"}
+      ]
+    },
+    {
+      "id": 91,
+      "title": "Moment",
+      "date": "2020-06-30",
+      "cathegories": {
+        "main": "packages",
+        "subcathegory1": "moment"
+      },
+      "content": "To format date use <code> const value = moment(field.value).format(`dddd, ${format || 'YYYY-MM-DD'}`)</code><br/>In this way when format is not defined value will have a format YYYY-MM-DD."
+    },
+    {
+      "id": 92,
+      "title": "Programs to svg",
+      "date": "2020-07-10",
+      "cathegories": {
+        "main": "styles",
+        "subcathegories": "svg"
+      },
+      "content": "When changing svg use programs from list <i>https://www.justinmind.com/blog/11-great-free-paid-svg-editors-for-ux-designers/</i> or <b>inkscape</b> <i>https://inkscape.org/</i>"
+    },
+    {
+      "id": 93,
+      "title": "DOM elements in useEffect",
+      "date": "2020-08-24",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "In useEffect array can document.getElementById(id) or setValue can be used. Then useEffect will be triggered whenever component is rerendered. In this way for example inside useEffect modal or breadcrumbs can be attached."
+    },
+    {
+      "id": 94,
+      "title": "Canceling promise in useEffect",
+      "date": "2020-06-26",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegoryr1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "If in use effect there is fetch and data from fetch are set using set from useState this action will happen state will be set even when component is unmounted. In order to prevent this inside useEffect add <code>let isSubscribed=true</code> and then inside fetch <code>isSubscribed && setBananas(data)</code> and in return of useEffect <code>return () => isSubscribed=false</code> In this way when component will unmount it will not setBananas. When there is this kind of problem React throws a warning <code>Warning: Can't perform a React state update on an unmounted component.</code>. It is necessary for asyns functions which returns Promise. In this link there is a custom hook for fetching data. Custom hooks can contain normal hooks like use effect and they are used as normal hooks. If custom hook returns values and has useEffect dependent on hooks arguments it will upate retured values. There are usefull links inside.",
+      "source": [{
+        "type": "blog",
+        "link": "https://juliangaramendy.dev/use-promise-subscription/  "
+      }]
+    },
+    {
+      "id": 95,
+      "title": "Strange format of request in cypress test with %D5",
+      "date": "2020-08-24",
+      "cathegories": {
+        "main": "tests",
+        "subcathegory1": "cypress"
+      },
+      "content": "In cypress test when getting request body it can be in strange format with %5D etc. It is encoded for URL/URI. In order to ddecode it use JS built-in function <b>decodeURIComponent</b> There is also opposite <b>encodeURIComponent</b>",
+      "source": [{
+        "type": "stack",
+        "link": "https://stackoverflow.com/questions/39727412/what-format-is-this-in"
+      }]
+    },
+    {
+      "id": 96,
+      "title": "events in React - keys",
+      "date": "2020-06-19",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "events"
+      },
+      "content": "When adding event on labels in React use <b>event.charcode === 32 </b> -> it is for space. Event on html element is <b>onKeyPress</b>."
+    },
+    {
+      "id": 97,
+      "title": "Use react-redux-i18n with variables inside text",
+      "date": "2020-06-29",
+      "cathegories": {
+        "main": "framework",
+        "subcathegory1": "react",
+        "subcathegory2": "react-redux-i18n"
+      },
+      "content": "When using <b>react-redux-i18n</b> for translations in order to put variables inside text use <br/><code>text: 'I am %{studentName} student' </code> <br/> and then inside JS <code>label={I18n.t('data.text, {studentName})}</code><br/>I this way several variables can be added inside. They can be added as arguments but then the order is important.<br/>   {I18n.t(`timeReporting.${booking.timelogStatus}`)}"
+    },
+    {
+      "id": 98,
+      "title": "Cypress - get element with text",
+      "date": "2020-08-26",
+      "cathegories": {
+        "main": "tests",
+        "subcathegory1": "cypress"
+      },
+      "content": "To find element which contains text use <code>.get(.class).contains(text).click({force: true)</code>."
+    },
+    {
+      "id": 99,
+      "title": "Dynamic props in React - atribute spread operator",
+      "date": "2020-05-28",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "props"
+      },
+      "content": "In React dynamic props can be used <br/><code>let props = condition ? {isSelected: true} : {} </code>",
+      "source": [{
+        "type": "stackoverflow",
+        "link": "https://stackoverflow.com/questions/36523225/dynamic-tabindex-attribute-in-jsx-react"
+      }]
+    },
+    {
+      "id": 100,
+      "title": "Funtional vs class components in React",
+      "date": "2020-08-28",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react"
+      },
+      "content": "'Methods with which to handle component state and trigger effects at points during component's lifecycle now need to be imported if they are required. These works entirely based on the order in which they are called by each component which uses them, as they do not know which component has called them. That's why you can only call hooks at the top level of the component and they can't be called conditionally.<br/>JavaScript is not a class-based language. It is prototype-based. Classes are added in ES6.<br/>Newer setState on this.state, take out the value first.<br/>For class component remember that insie the constructor the binding for functions is added.<br/><code>this.handleClick = this.handleClick.bind(this)</code><br/>In the case of class component React creates the instance of the class using <b>new</b>keyword.<br/><code>const instance = new Component(props)</code></br/>In case of functional components starting with function they are also created with <b>new</b> keyword. When a function is called with <b>new</b> it is treated as a constructor function; a new object is created, the <b>this</b> variable is pointed to it and the function is executed with the new object being used whenever <b>this</b> is mentioned'.<br/><b>this</b> inside class component points to instance of this component.<br/>'JavaScript allows inheritance of properties and methods between objects through <b/>prototype chain</b>Unlike in other languages with classes, where properties are copied from a class to its instances, JavaScript objects have an internal prototype link which points to another object. When calling a method or attempting to access a property, JavaScript first checks for it in object itself, if it cannot find it, it checks the object's prototype, then prototype's prototype and so on. Generally all objects in JavaScript have <b>Object</b> at the top of their prototype chain. In this way methods such as <b>toString</b> or <b>hasOwnProperty</b> can be accessed. The chain ends when an object is reached with <b>null</b> as its prototype, this is normally at <b>Object</b>.<br/><b>__proto__</b> is an accessor property to the internal prototype of the object - it containes all properties of parent object used in <code>const child = Object.create(parent, {name: {value: 'child'}})</code>.Every object has __proto__ containing contents of <b>Object</b>.__proto__ is only a reference to a linked object. <br/>If you use a new keyword to call a constructor function then this linking happens automatically to the constructor function's prototype property.<br/>Since React calls our function with the <b>new </b> keyword, to make the methods available in our's component prototype chain we just need to add them to the prototype property of the constructor function, like <code>Countrer.prototype.render = function () {}<br/>Counter.prototype.handleClick = functon () {} <br/></code><b>Static method</b><br/>In class, just need to prefix method with <b>static</b> keyword.<br/>In function <code>function Example () {<br/>Example.staticMethod = function () {}}<br/><code>For both cases it is called Example.staticMethod().<br/><b>Extending React.Component</b><br/>React needs to know if our function is a regular function or contructor function / whether it was created with new keyword.React looks for a property on the component called <b>isReactComponent</b>, which value is an empty object. <br/>We need to link the properties from React.Component.prototype to Counter.prototype.__proto__. This can be done with' <code>Object.setPrototypeOf(Counter.prototype, React.Component.prototype)</code><br/>",
+      "source": [{
+        "type": "freecodecamp",
+        "link": "https://www.freecodecamp.org/news/have-you-used-react-object-components/"
+      }]
+    },
+    {
+      "id": 101,
+      "title": "'State management within React functional components using hooks",
+      "date": "2020-08-28",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "In functional components it is not possible to persist state in local variables as these are initialized every time the function is evalluated. To maintain state inside the function React provides hooks.<br/><b>useState</b><br/>The only way to mutate the state is via function set as second. using standard const you can modify object propeerties but this will not force React to recompute/re-render.<br/><b>useReducer<br /></b><b>useRef</b><br/>use to keep a mutable value inside functional component - but it does not trigger refresh when mutating the ref's current value. Normally used for hooking on the DOM tree.<br/><b>useContext</b>Expose your state and dispatch to the component via useContext. Redux operates by creating a single global state tree.<br/><b>props</b><br/>props passed in as function arguments from the component owner are also part of component state. A functional component will refresh any time it receives new props  - its old and new props fail referential equality.<br/>Optimizing local variables for performance<br/>Function internal variables will get initialized during each execution. Constly computations should be cached. use memoization.<br/><b>useMemo</b><br/>useMemo returns a memoized value from the provided input function.<br/>const compute = useMemo(() => comuteExpensive(a, b), [a, b])</code><br/>If there is no change in arguments it returns cached value.<br/><b>useCallback</b>Sometimes you have to pass callback function into child components. If the parent functional component uses regular functions to do this it sends different reference each time. This props the child  to re-render more than it needs to.useCallback makes sure that the function passed down to child component only changes if its dependency changes.<br/><br/><b>Redux pros</b><br/>1. a read-only state only mutated via reduxers<br/>2. a single store that can be serialized and restored via hydration<br/>3. a good amount of tooling available around the framework<br/>4. support for middleware that can intercept action dispatches and do things with it<br/><b>Redux cons</b><br/>The state of your application is stored in an object tree within a single global state <br/> 1. big amount of helper functions<br/>2. actions are dispatches to all the reducers within combineReducers - bad for performance<br/>",
+      "source": [{
+        "type": "medium",
+        "link": "https://medium.com/@rajeshnaroth/component-state-management-in-react-functional-components-with-hooks-e7c412c05e71"
+      }
+      ]      
+    },
+    {
+      "id": 102,
+      "title": "useEffect vs useLayoutEffect",
+      "date": "2020-08-24",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "'The React <b>useLayoutEffect</b> is written the same way as useEffect and almost behaves the same way. One of the key differences is that it gets executed right after React component render lifecycle and before useEffect gets triggered.<br/>These two methods are executed only after component did mount!. Co firstly normal console.log or anything inside functional component, like assigment to const (its like the <b>render</b>, then useLayout and then useEffect.<br/><b>useLayoutEffect</b> gets triggered synchronously after all DOM mutation. Use this hook only when wanting to do any DOM changes directly. This hook is optimized that it allows the engineer to do make changes to a DOM node directly before the browser has the chance to paint.<br/><b>useRef</b><br/>In React do not use querySelector or getElementById but instead use useRef or createRef for class component. querySelector and getElementById are not allowed because of rendering the elements with the same id. useRef also help with data flow in single direction (passing reference from parent to child). <code>const inputRef = useRef()<br/><input ref={inputRef} /></code><br/>In <code>inptRef</code> React gives object with property current, current being an object that represents DOM node.<br/>When to use useRef: <br/>1. managing focus, text selection or media playback<br/>2. trigerring imperative animations<br/>3. Integrating a third-party DOM libraries.<br/><b>Use useLayoutEffect whenever you need to use useRef.</b>'",
+      "source": [{
+        "type": "linguinecode",
+        "link": "https://linguinecode.com/post/when-to-use-useref-and-uselayouteffect"
+      }]
+    },
+    {
+      "id": 103,
+      "date": "2020-08-31",
+      "title": "Using prevState in setState in React",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcathegory2": "class-component"
+      },
+      "content": "In setState you have to only pass value which needs to be modified. You can use prevState like this, <br/><code>this.setState((prevState) => {return {name: '', names: [...prevState.names, prevState.name]}})</code><br/>But in only applies at first level - with objects nested withon state use Array.assign or spread operator. <br/>The function above gets executed after the action has been executed and it is up-to-date. Standard setState creates asynchronous actions and everything will be combined at the end of the function with mutiple setState together. Giving function inside setState allows to trigger it after the action/function it is located within.",
+      "source": [{
+        "type": "linguinecode",
+        "link": "https://linguinecode.com/post/master-react-state-and-props"
+      }]
+    },
+    {
+      "id": 104,
+      "date": "2020-09-01",
+      "title": "Window reload and window.confirmation",
+      "cathegories": {
+        "main": "general",
+        "subcathegory1": "javaScript",
+        "subcathegory2": "window"
+      },
+      "content": "To reload window use <code>window.location.reload()</code>. <br/>To display confirmation modal use <code>const confirmation = window.confirmation(`text`,)</code>. It gives true/false as a value for confirmation depending on what has been chosen."
+    },
+    {
+      "id": 105,
+      "date": "2020-09-01",
+      "title": "Passing down route props to children components",
+      "cathegories": {
+        "main": "frameworks",
+        "subcathegory1": "react",
+        "subcatheogry2": "router"
+      },
+      "content": "When using Route tag you can pass down router props, like location and history via render. In this way there is no need to use withRouter on child component. It is not a issue in newer version of React as useHistory and useLocation can be used. Be carefull with names<br/><code><Route <br/>  exact<br/>  path=\"book\"<br/>  render={(routerProps) => <BookingForm {...routerProps} /><br/>}</code>"
+    },
+    {
+      "id": 106,
+      "title": "Mocking functions in jest",
+      "date": "2020-08-29",
+      "cathegories": {
+        "main": "testing",
+        "subcathegory1": "jest"
+      },
+      "content": "When mocking functions in jest for functions with Promise you can use <code>jest.fn().mockImplementation(() => Promise.resolve(value)<br/></code>. There is syntactic sugar for this: mockResolvedValue(value) or mockResouvedValueOnce(value). <br/>By adding ones in functions names, like mockResolvedValueOnce, you can mock functions called sequentionally one be one - mocking in chain.",
+      "source": [{
+        "type": "documentation",
+        "link": "https://jestjs.io/docs/en/mock-function-api#mockfnmockimplementationfn"
+      }]
+    },
+    {
+      "id": 107,
+      "title": "React hooks",
+      "date": "2020-08-25",
+      "cathegories": {
+        "main": "framework",
+        "subcthegory1": "react",
+        "subcathegory2": "hooks"
+      },
+      "content": "<b>Reach hooks</b><br/><b>1. useState </b><br/>When using useState you can pass a previous state value <br/><code>setCount((prevCountt) => prevCount + 1)</code><br/>If update function returns the exact same values as current state the subsequent rerender is skipped completely. Unlike setState useState does not automatically merge update objects. To get this do <br/><code>setState(prevState => {return {...prevState, ...updatedValues}}</code>Object.assign would also work. Another option is useReducer - more suited for managing state objects.<br/>Lazy initial render - inside function can be passed - then it will be executed only on initial render. it value is calculated outside it will be recalculated every time.<br/><b>2. useEffect </b><br/>The function passed to useEffect will run after the render is commited to the screen. The clean-up functions runs before the component is removed from the UI to prevent memory leaks. Additionally if component is rendered many times the previos effect is cleaned before executing the next effect.Difference with <b>componentDidMount</b> and <b>componentDidUpdate</b> the function passed to useEffect fires AFTER layout and paint, during the deffered event => suitable for common side effect, like setting up subscriptions and event handler, because most types of work should not block the browser from  updating the screen. For DOM mutations (must fire synchronously) use useLayoutEffect. In useEffect array props.data cana be passed. Make sure that the array inlcudes all values from the component scope (such as props and state) that change over time and that are used by effect."
+    },
+    {
+     "id": 108,
+     "title": "Accesibility",
+     "date": "2020-09-06",
+     "cathegories": {
+       "main": "general",
+       "subcathegory1": "accesiility"
+     },
+     "content": "Screen readers for links will use text inside. When link contains text and image it will combine img alt and text inside link. For form elements it uses text from label link with form item id via for attribute (in React htmlFor). For button it is text inside. It can be written with aria-label or aria-labelled-by attribute. In React for this two attributes no camelCase syntax is used. aria-label takes string as value. With the same values person using speach reacogition would have to specify which one to use. aria-labbeled-by takes id ref as its value. <br/>If there are two links on the page redirecting to the same page they should have the same accesible name.<br/> For the checkboxes the element to group them is <code><b>fieldset</code></b><br/> with <code>legend</code> html element as title of whole fieldset. Screen readers might repeat the label for each form control, so it should be bried and descriptive.<br/>Radio have the same name and different id and the label links to id.<br/>Select options can be grouped with <code><optgroup></code> tag, but this item is sometimes ignored by screen readers.Optgroup has only label.<br/>Avoid using multi-select. Not all browsers provide intuitive navigation and some people does not know how to access them.<br/>Input type image with src has to have alt. It gives Submit button.<br/>With select navigation it is good to have additional button to submit not to go the another webpage just by choosing option in select.<br/><b>autocimplete</b><code><input id=\"name2\" autocomplete=\"name\" type=\"text\" /></code><br/>reguired - aria-required or required attributes.<br/>aria-invalid during form validation.<br/>In the last link there is a very good description of accessibility for forms. Attribute <code><b>aria-polite</b></code>" ,
+     "source": [
+       {
+         "type": "documentation-blog",
+         "link": "https://developer.paciellogroup.com/blog/2017/04/what-is-an-accessible-name/"
+       },
+       {
+         "type": "documntation-react",
+         "link": "https://reactjs.org/docs/accessibility.html"
+       },
+       {
+         "type": "documentationś",
+         "link": "https://webaim.org/techniques/forms/controls"
+       }
+     ]
+    },
+    {
+      "id": 109,
+      "title": "Redux-form submition",
+      "date": "2021-02-19",
+      "cathegories": {
+        "main": "react",
+        "subcathegory1": "forms",
+        "subcathegory2": "redux-forms"
+      },
+      "content": "When saving redux form onSubmit is required in Form from redux-form, so button type submit must be present inside <Form> to trigger save action. If button submit with onClick is used outside form use <form> instead of <Form>."
+    }
+
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "/books": "/books",
+  "/articles": "/articles",
+  "/movies": "/movies",
+  "/movies/:id": "/movies/:id",
+  "/anime": "/anime"
+}

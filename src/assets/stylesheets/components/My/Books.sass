@@ -1,0 +1,172 @@
+.books
+  &-form
+    background-color: #f6f6f6
+    width: 80vw
+    margin: 20px auto
+    border: 33px solid white
+    padding: 10px    
+    border-image-source: url('../../../images/borders/book.png')
+    border-image-slice: 18%
+    // border-image-width: 30px
+    // border-image-outset: 25%
+    border-image-repeat: round
+
+    &__title
+      font-family: KaushanScript, Roboto, sans-serif
+      text-align: center
+      padding:
+        bottom: $m-base
+
+    &-field
+      display: flex
+      justify-content: center
+      margin-top: 10px
+      
+      &__label
+        width: 30%
+        text-align: right
+        padding-right: 20px
+      &-data
+        width: 30%  
+      
+        &__input:not([type="checkbox"])
+          width: 100%
+          padding-left: 8px
+          
+        &__input[type="checkbox"]
+          text-align: left  
+        &__input-rating
+          display: none!important
+
+    .rating
+      display: flex
+      flex-direction: row
+      label
+        //background-color: green
+        color: green
+        font-size: 24px
+      label + input[checked]
+        color: gold
+    &__sub-nav
+      background-color: #eafc9c
+      border: 3px dotted #d4d37b
+      border-radius: 10px
+      margin: 10px auto
+      padding: 15px
+      width: fit-content
+    &-submit
+      padding: 8px
+      border: 1px solid #523a23
+      border-radius: 8px
+      background-image: linear-gradient(to bottom right, #d49c64, #f5dd72)   
+      cursor: pointer
+      &:hover
+        background-image: linear-gradient(to bottom right, #b87634, #fdd834)  
+    &-reset
+      color: black
+      margin-left: 20px
+      padding: 8px
+      border: 1px solid #8f6d4d
+      border-radius: 8px
+      background-image: linear-gradient(to bottom left, #918b85, #f3e5a8)      
+      cursor: pointer
+      &:hover
+        background-image: linear-gradient(to bottom left, #6d6a67, #d1c48a)
+    
+    &__main-nav
+      margin: 7px auto
+      width: fit-content
+
+      &-item:disabled
+        cursor: not-allowed
+    
+    &__header-nav
+      margin: 7px 60px
+
+// input.active + label[for="start1"],
+// input.active + label[for="start5"] 
+//   //background-color: red
+//   color: red
+//   &:hover
+//     //background-color: red   
+//   &:active    
+//     background-color: pink
+.books-form .rating
+  input.active + label 
+    color: #ffc700
+
+  input + label
+    cursor: pointer
+
+    &:hover
+      color: red   
+
+
+
+
+.books
+  background:
+    blend-mode: lighten
+    color: rgba(250, 250, 250, 0.8)
+    image: url('../../../images/books/books5.jpg')
+  min-height: 100vh  
+
+  .grid-container
+    display: grid
+    // grid-template-columns: calc((100% - 100px)/3) calc((100% - 100px)/3) calc((100% - 100px)/3)
+    grid-template-columns: calc((100% - 50px)/2) calc((100% - 50px)/2)
+    grid-column-gap: 50px
+    padding: 50px
+  
+  &__header
+    color: #bc5a45
+    margin-top: 0
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black
+    text-align: center
+
+  &-item
+    background-color:#fffaf6
+    background-image: linear-gradient(to bottom, #fffaf6, #c5bbb9, #999999)
+    box-shadow: 0 0 0 1px #f4e1d2, 0 0 0 2px #f18973, 0 0 0 3px #bc5a45, 0 0 0 4px #000
+    cursor: pointer
+    border-radius: 10px
+    text-align: center
+    text-decoration: none
+    color: black
+    &:hover
+      transform: scale(1.01)
+
+    &__header
+      text-shadow: 0 0 3px #f18973, 0 0 5px #f4e1d2
+
+
+    &__image
+      border: 1px solid #bc5a45
+      outline: 1px solid #f18973
+
+
+
+
+
+            
+input[name="rating"][checked] + label 
+  color: #f00
+
+input
+  outline-color: orange
+  outline-offset: 15px
+//https://css-tricks.com/almanac/selectors/p/placeholder/  
+input:-webkit-input-placeholder
+  color: red
+
+input::-webkit-input-placeholder // /* Chrome/Opera/Safari */
+  color: brown
+
+::-moz-placeholder  ///* Firefox 19+ */
+  color: brown
+
+input:-ms-input-placeholder  ///* IE 10+ */
+  color: brown
+
+input:-moz-placeholder ///* Firefox 18- */
+  color: brown

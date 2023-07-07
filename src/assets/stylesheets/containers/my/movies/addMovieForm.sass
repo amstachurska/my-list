@@ -1,0 +1,102 @@
+.add-movie
+    background-color: #d8baf3
+    border: 5px solid black
+    border-radius: 50px
+    margin: 20px 60px
+    padding: 50px
+
+    &__title
+        padding: 10px
+        text-align: center
+
+        &::first-letter
+            color: #4e1740
+            font-family: Arial, sans-serif
+            font-size: 50px
+
+    &__menu
+        position: relative
+        z-index: 10
+
+        &-item
+            background-color: #786489
+            border: 2px solid black
+            border-bottom-color: #786489
+            color: #381a1f
+            font-size: 16px
+            padding: 20px
+
+            &:first-of-type
+                border-top-left-radius: 10px
+                border-top-right-radius: 10px
+                border-right-width: 1px
+            
+            &:last-of-type
+                border-left-width: 1px
+                border-top-left-radius: 10px
+                border-top-right-radius: 
+                
+            &:not(.selected)
+                background-color: grey
+                border-bottom-color: black
+
+    &__form
+        background-color: #786489
+        border: 2px solid black
+        border-bottom-left-radius: 10px
+        border-bottom-right-radius: 10px
+        border-top-right-radius: 10px
+        padding: 10px
+        position: relative
+        top: -2px
+
+    .input
+        margin-bottom: 15px
+
+        &__label
+            display: block
+            margin-bottom: 5px
+
+            &::first-letter
+                color: #410b0f
+                font-size: 25px
+
+        &__field
+            background-color: #d8bec0
+            border: 0
+            border-radius: 5px
+            outline: none
+            padding: 5px
+
+    &__nav
+        display: flex
+        margin: 10px auto
+
+        &-item
+            background-color: #2c1d3d
+            border: 1px solid black
+            border-radius: 5px
+            display: block
+            color: white
+            cursor: pointer
+            margin: 10px
+            padding: 10px
+
+    &__button-list
+        background-color: #845678
+        border: 0
+        border-radius: 5px
+        outline: none
+        padding: 10px
+
+    .input__field[name="remarks"],
+    .input__field[name="title"],
+    .input__field[name="titlePl"]
+        width: 60%;
+
+    .select .select__label, .checkbox .checkbox__text
+        &::first-letter
+            color: #410b0f
+            font-size: 25px
+
+

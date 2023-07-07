@@ -1,0 +1,79 @@
+.learnt-item
+    cursor: pointer
+    list-style-type: none
+    padding: 8px
+    width: 80%
+    margin: 0 auto
+    
+    &:nth-child(2n+1)
+        background-color: #defa8e
+
+    &:nth-child(2n)
+        background-color: #a9bbee
+
+    &-details
+
+        &[open]
+            > .learnt-item-details-summary::before
+                content: '\265B'
+                display: inline-block
+                width: 25px
+                height: 25px
+                font-size: 20px
+                //color: #567889
+                color: #652377
+
+        &-summary
+
+            &::-webkit-details-marker
+                display: none
+
+            &::before
+                content: '\2655'
+                display: inline-block
+                width: 25px
+                height: 25px
+                font-size: 16px
+
+            &__title
+                display: inline-block
+                color: darkviolet
+                text-transform: capitalize
+                //padding: 16px
+
+    &-list
+        list-style-type: none
+        display: flex
+        padding: 8px 0
+
+        &__item
+            margin: 0 8px
+
+    &__content
+        //background-color: #98fe33
+        background-color: #c7b2f7
+        border: 1.5px groove #783687
+        border-radius: 5px
+
+        padding: 8px
+        line-height: 1.5
+        margin-bottom: 8px
+
+    &-links
+
+        &__button
+            background-color: #ac6789
+            background-color: #cfa1b9
+            border-color: #ac6789
+            border-radius: 5px
+            margin: 8px
+            padding: 8px
+            outline: none
+            font-weight: 600
+
+            &-link
+                text-decoration: none
+                color: #020202
+
+
+           
