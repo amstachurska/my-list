@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router'
 
 import allActions from '../../../store/allActions'
 import MoviesItem from './moviesList/MoviesItem'
@@ -14,6 +15,7 @@ const MyMovies = () => {
   const dispatchAction = useDispatch()
   const [filteredMovies, setFilteredMovies] = useState([])
   const [filters, setFilters] = useState({})
+  const history = useHistory()
 
   useEffect(() => {
     const filterMovies = (filtersValue, list) => {
@@ -66,7 +68,15 @@ const MyMovies = () => {
 
   return (
     <>
-      <h1 style={{ margin: '50px' }}>List on movies I watched</h1>
+      <div className="movies__header">
+        <h1>List on movies I watched</h1>
+        <button
+          className="add-movie__button-list"
+          onClick={() => history.push('/my/movies/add')}
+        >
+          Add new movie
+        </button>
+      </div>
       <MoviesFilter setFilters={setFilters} />
       <table>
         <MoviesHeader

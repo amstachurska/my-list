@@ -41,9 +41,10 @@ const MoviesFilter = ({ setFilters }) => {
   const handleTitleChange = (event) => {
     event.persist()
     setTitle(event.target.value)
+    const field = event.target.name
     setFilters((prevValue) => ({
       ...prevValue,
-      title: event.target.value,
+      [field]: event.target.value,
     }))
   }
 
