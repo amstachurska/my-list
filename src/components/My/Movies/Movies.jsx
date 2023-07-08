@@ -32,10 +32,16 @@ const MyMovies = () => {
             if (filterKey === 'status') {
               if (filtersValue['status'].indexOf('all') !== -1) return true
               return filtersValue['status'].indexOf(movie[filterKey]) >= 0
-            } else {
+            } else if (filterKey === 'cathegory') {
               return filtersValue['cathegory'].every(
                 (cathegory) => movie[filterKey].indexOf(cathegory) >= 0
               )
+            } else if (filterKey === 'title') {
+              return movie[filterKey]
+                .toLowerCase()
+                .includes(filtersValue[filterKey].toLowerCase())
+            } else if (filterKey === 'year') {
+              return movie[filterKey].includes(filtersValue[filterKey])
             }
           })
         })

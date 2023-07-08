@@ -37,6 +37,25 @@ const MoviesFilter = ({ setFilters }) => {
     setStatus(updatedStatus)
     setFilters((prevValue) => ({ ...prevValue, status: updatedStatus }))
   }
+
+  const handleTitleChange = (event) => {
+    event.persist()
+    setTitle(event.target.value)
+    setFilters((prevValue) => ({
+      ...prevValue,
+      title: event.target.value,
+    }))
+  }
+
+  const handleYearChange = (event) => {
+    event.persist()
+    setYear(event.target.value)
+    setFilters((prevValue) => ({
+      ...prevValue,
+      year: event.target.value,
+    }))
+  }
+
   return (
     <form className="movies-list__filter">
       <div>
@@ -44,8 +63,9 @@ const MoviesFilter = ({ setFilters }) => {
         <input
           id="title"
           name="title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
+          type="text"
+          value={title || ''}
+          onChange={handleTitleChange}
         />
       </div>
       <div>
@@ -53,8 +73,9 @@ const MoviesFilter = ({ setFilters }) => {
         <input
           id="year"
           name="year"
-          value={year}
-          onChange={(e) => setYear(e.target.value)}
+          type="text"
+          value={year || ''}
+          onChange={handleYearChange}
         />
       </div>
       <Select
