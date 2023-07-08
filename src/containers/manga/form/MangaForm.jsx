@@ -8,7 +8,7 @@ import styled from 'styled-components'
 import { MANGA_GENRE_OPTIONS, MANGA_STATUS_OPTIONS } from '../const'
 
 const MangaFormStyled = styled.form`
-  background-color: #456783; 
+  background-color: #456783;
   display: flex;
   flex-wrap: wrap;
   .input-item {
@@ -16,22 +16,21 @@ const MangaFormStyled = styled.form`
     margin: 10px;
   }
   .input-item > div {
-    background-color: #234561; 
+    background-color: #234561;
     min-width: 200px;
   }
-  .ania, label {
+  .ania,
+  label {
     color: white !important;
   }
   .select-item {
-    background-color: #234561; 
+    background-color: #234561;
   }
 `
 
 const colourStyles = {
-  control: styles => ({...styles, backgroundColor: 'red'}),
-  option: (styles, {data, isDisabled, isFocused, isSelected}) => {
-    
-  } 
+  control: (styles) => ({ ...styles, backgroundColor: 'red' }),
+  option: (styles, { data, isDisabled, isFocused, isSelected }) => {},
 }
 
 const MangaForm = ({ onSubmit }) => {
@@ -41,7 +40,6 @@ const MangaForm = ({ onSubmit }) => {
   return (
     <MangaFormStyled onSubmit={handleSubmit(onSubmit)}>
       <Controller
-
         name="title"
         control={control}
         defaultValue=""
@@ -54,7 +52,7 @@ const MangaForm = ({ onSubmit }) => {
             value={value}
             InputProps={{
               className: 'ania',
-          }}
+            }}
           />
         )}
       />
@@ -66,7 +64,6 @@ const MangaForm = ({ onSubmit }) => {
 
         render={({ onChange, value }) => (
           <Select
-
             options={MANGA_STATUS_OPTIONS}
             defaulValue={MANGA_STATUS_OPTIONS[1]}
             onChange={onChange}
@@ -84,7 +81,7 @@ const MangaForm = ({ onSubmit }) => {
         variant="outlined"
       />
       <Controller
-      className="select-item"
+        className="select-item"
         name="genre"
         control={control}
         options={MANGA_GENRE_OPTIONS}

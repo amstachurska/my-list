@@ -348,7 +348,7 @@
           "currentEpisode": 7
         }
       ]
-    }, 
+    },
     {
       "id": 24,
       "title": "Boku no hero academia",
@@ -361,7 +361,7 @@
           "date": "2021-08-31",
           "ranking": 4,
           "remarks": ""
-        }, 
+        },
         {
           "season": 2,
           "status": "inProgress",
@@ -383,7 +383,7 @@
           "currrentEpisode": 5,
           "ranking": 0,
           "remarks": ""
-        }, 
+        },
         {
           "season": 2,
           "status": "toWatch"
@@ -435,7 +435,7 @@
           "nrOfEpisodes": 11,
           "status": "completed",
           "date": "2021-12-04"
-        }, 
+        },
         {
           "season": 6,
           "currentEpisode": 8,

@@ -25,7 +25,7 @@ const renderField = ({
   )
 }
 
-const validate = values => {
+const validate = (values) => {
   const errors = {}
 
   if (!values.height) {
@@ -46,7 +46,7 @@ const validate = values => {
   return errors
 }
 
-const IntroductionForm = props => {
+const IntroductionForm = (props) => {
   const { handleSubmit } = props
 
   return (
@@ -79,7 +79,7 @@ const IntroductionForm = props => {
       {/* zrobic tetrisa z pokemonami i
        sprawdzaniem typow i dopiero wtedy zmiakaja!!! */}
 
-{/* https://www.youtube.com/watch?v=SX-8OivnxzM */}
+      {/* https://www.youtube.com/watch?v=SX-8OivnxzM */}
     </>
   )
 }

@@ -2,8 +2,8 @@ import booksActions from './books/actions'
 import moviesActions from './movies/actions'
 
 const allActions = {
-    booksActions,
-    moviesActions,
+  booksActions,
+  moviesActions,
 }
 
 export default allActions

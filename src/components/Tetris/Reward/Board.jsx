@@ -16,14 +16,14 @@ class TetrisRewardBoard extends Component {
   handleJoke = () => {
     this.setState({ ...this.state, isFetching: true })
     fetch('https://api.chucknorris.io/jokes/random')
-      .then(response => response.json())
-      .then(data => {
+      .then((response) => response.json())
+      .then((data) => {
         this.setState({
           joke: data.value,
           isFetching: false,
         })
       })
-      .catch(error => {
+      .catch((error) => {
         this.setState({
           joke: 'No joke for you',
           isFetching: false,

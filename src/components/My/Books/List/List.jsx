@@ -41,7 +41,7 @@ const MyBooksList = () => {
     dateOfBeingRead: undefined,
     isAdaptation: undefined,
     isSaga: undefined,
-    genre: []
+    genre: [],
   })
   // const [isShiftPressed, setIsShiftPressed] = useState(false)
 
@@ -139,7 +139,7 @@ const MyBooksList = () => {
           form[key] === '' ||
           form[key] === [] ||
           (key === 'language' && form['language'] === 'all') ||
-          (key === 'rating' && form['rating'] === 'all') || 
+          (key === 'rating' && form['rating'] === 'all') ||
           (key === 'genre' && form['genre'].indexOf('all') !== -1)
           // (key === 'isSaga' && form['isSaga'] === 'all')
         ) {
@@ -204,10 +204,16 @@ const MyBooksList = () => {
 
   return (
     <>
-      <h1 className="books__title" style={{marginBottom: '10px', marginLeft: '10px'}}> My Books</h1>{' '}
+      <h1
+        className="books__title"
+        style={{ marginBottom: '10px', marginLeft: '10px' }}
+      >
+        {' '}
+        My Books
+      </h1>{' '}
       <Breadcrumb>
         <Breadcrumb.Item>
-        <a href="/my">My</a>
+          <a href="/my">My</a>
         </Breadcrumb.Item>
         <Breadcrumb.Item>
           <a href="/my/books">Books</a>
@@ -232,7 +238,11 @@ const MyBooksList = () => {
 
         <tbody>
           {filteredBooksList.map((book) => (
-            <MyBooksListItem key={`book-${book.id}`} book={book} setShallUpdate={setShallUpdate}/>
+            <MyBooksListItem
+              key={`book-${book.id}`}
+              book={book}
+              setShallUpdate={setShallUpdate}
+            />
           ))}
         </tbody>
         <tfoot></tfoot>

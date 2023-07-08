@@ -3,12 +3,7 @@ import React from 'react'
 // nested routes
 //https://stackoverflow.com/questions/41474134/nested-routes-with-react-router-v4-v5
 
-import {
-  Redirect,
-  Route,
-  Switch,
-  withRouter,
-} from 'react-router-dom'
+import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 
 import MyBooksRoots from './Books/Roots'
 import MyMovies from './Movies/Movies'
@@ -27,14 +22,14 @@ const MyRoots = ({ match }) => (
     <MyBooksRoots />
     <Switch>
       {/* <MybooksRoots /> */}
-      <Route exact path='/my/movies' component={MyMovies} />
-      <Route exact path='/my/movies/add' component={MovieForm} />
-      <Route exact path='/my/movies/:id' component={MovieForm} />
-      <Route exact path='/my/programming' component={TodayILearnt} />
-      <Route exact path='/my/anime' component={AnimeBoard} />
-      <Route exact path='/my/anime/add' component={AnimeForm} />
-      <Route exact path='/my/anime/list' component={AnimeList} />
-      <Route exact path='/my/tvseries/add' component={TVSeriesForm} />
+      <Route exact path="/my/movies" component={MyMovies} />
+      <Route exact path="/my/movies/add" component={MovieForm} />
+      <Route exact path="/my/movies/:id" component={MovieForm} />
+      <Route exact path="/my/programming" component={TodayILearnt} />
+      <Route exact path="/my/anime" component={AnimeBoard} />
+      <Route exact path="/my/anime/add" component={AnimeForm} />
+      <Route exact path="/my/anime/list" component={AnimeList} />
+      <Route exact path="/my/tvseries/add" component={TVSeriesForm} />
       {/* <Redirect from="/" to="/my/movies" />
 
       <Redirect from="/" to="/my/movies" /> */}
@@ -44,7 +39,11 @@ const MyRoots = ({ match }) => (
       <Redirect from="/my/movies" to="/my/movies" />
       <Route exact path="/my/manga" component={MangaBoard} />
       <Route exact path="/my/manga/list" component={MangaList} />
-      <Route exact path={["/my/manga/add", '/my/manga/:id']} component={MangaAddEdit} />
+      <Route
+        exact
+        path={['/my/manga/add', '/my/manga/:id']}
+        component={MangaAddEdit}
+      />
     </Switch>
   </>
 )

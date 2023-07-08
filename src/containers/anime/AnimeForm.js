@@ -63,7 +63,6 @@ const AnimeForm = () => {
     setPageIndex(index)
   }
 
-
   return (
     <Formik
       initialValues={{}}

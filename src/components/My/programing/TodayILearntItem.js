@@ -27,12 +27,18 @@ const TodayILearntItem = ({ cathegories, content, date, source, title }) => {
         <ul className="learnt-item-list">
           {date && (
             <li className="learnt-item-list__item" key={itemId()}>
-              <span className="badge -date" draggable={true}>{date}</span>
+              <span className="badge -date" draggable={true}>
+                {date}
+              </span>
             </li>
           )}
           {cathegories &&
             Object.keys(cathegories).map((key) => (
-              <li className="learnt-item-list__item" key={itemId()} draggable={true}>
+              <li
+                className="learnt-item-list__item"
+                key={itemId()}
+                draggable={true}
+              >
                 {/* <b>{key}</b>:  */}
                 <span className={`badge -${key}`}>{cathegories[key]}</span>
               </li>

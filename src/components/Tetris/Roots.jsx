@@ -13,7 +13,6 @@ const TetrisIntroductionWithTitle = withTitle(
 )
 
 const TetrisRoots = ({ match }) => {
-  
   return (
     <Switch>
       <Route

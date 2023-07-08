@@ -89,8 +89,12 @@ const MyBooksListHeaderFilter = ({ form, handleChange, handleKeyDown }) => {
         ></input>
       </th>
       <th className="books-table__header-element -genre">
-        <select multiple name="genre" id="genre" value={form.genre}
-        onChange={handleChange}
+        <select
+          multiple
+          name="genre"
+          id="genre"
+          value={form.genre}
+          onChange={handleChange}
         >
           <option value="all">All</option>
           <option value="aliens">Aliens</option>

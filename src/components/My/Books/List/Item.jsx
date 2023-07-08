@@ -100,7 +100,7 @@ const MyBooksListItem = ({ book, setShallUpdate }) => {
 
 MyBooksListItem.propTypes = {
   book: PropTypes.object,
-  setShallUpdate: PropTypes.func
+  setShallUpdate: PropTypes.func,
 }
 
 export default MyBooksListItem

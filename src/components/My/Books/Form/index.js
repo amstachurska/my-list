@@ -1,1 +1,1 @@
-export {default as AddEditBook} from './AddEditBook'
+export { default as AddEditBook } from './AddEditBook'

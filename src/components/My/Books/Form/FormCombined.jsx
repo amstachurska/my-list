@@ -14,10 +14,15 @@ const renderField = ({
   meta: { touched, error, warning },
 }) => {
   return (
-    <div className="books-form-field" style={{...style}}>
+    <div className="books-form-field" style={{ ...style }}>
       <label className="books-form-field__label">{label}</label>
       <div className="books-form-field-data">
-        <input className="books-form-field-data__input" {...input} placeholder={label} type={type} />
+        <input
+          className="books-form-field-data__input"
+          {...input}
+          placeholder={label}
+          type={type}
+        />
         {touched &&
           ((error && <span>{error}</span>) ||
             (warning && <span>{warning}</span>))}
@@ -114,7 +119,7 @@ let MyBooksForm = ({
             <span>Rating</span>
             <span>
               <Field
-              className="books-form-field-data__input-rating"
+                className="books-form-field-data__input-rating"
                 name="rating"
                 type="radio"
                 id="start1"
@@ -125,7 +130,7 @@ let MyBooksForm = ({
             </span>
             <span>
               <Field
-              className="books-form-field-data__input-rating"
+                className="books-form-field-data__input-rating"
                 name="rating"
                 type="radio"
                 id="start2"
@@ -136,7 +141,7 @@ let MyBooksForm = ({
             </span>
             <span>
               <Field
-              className="books-form-field-data__input-rating"
+                className="books-form-field-data__input-rating"
                 name="rating"
                 type="radio"
                 id="start3"
@@ -147,7 +152,7 @@ let MyBooksForm = ({
             </span>
             <span>
               <Field
-              className="books-form-field-data__input-rating"
+                className="books-form-field-data__input-rating"
                 name="rating"
                 type="radio"
                 id="start4"
@@ -158,8 +163,10 @@ let MyBooksForm = ({
             </span>
             <span>
               <Field
-              className={`books-form-field-data__input-rating ${rating === 5 ? 'active' : ''}`}
-              checked={rating === 5}
+                className={`books-form-field-data__input-rating ${
+                  rating === 5 ? 'active' : ''
+                }`}
+                checked={rating === 5}
                 name="rating"
                 type="radio"
                 id="start5"
@@ -236,7 +243,7 @@ let MyBooksForm = ({
               Add Book
             </button>
             <button
-            className="books-form-reset"
+              className="books-form-reset"
               type="button"
               disabled={pristine || submitting}
               onClick={reset}

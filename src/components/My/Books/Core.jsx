@@ -1,1 +1,1 @@
-// moge stworzyc komponent ktory obsluguje cala logike books 
+// moge stworzyc komponent ktory obsluguje cala logike books

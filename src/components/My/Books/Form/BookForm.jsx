@@ -274,7 +274,9 @@ let MyBooksForm = ({
                 multiple
               >
                 {BOOK_GENRE.map((genre) => (
-                  <option key={genre.value} value={genre.value}>{genre.label}</option>
+                  <option key={genre.value} value={genre.value}>
+                    {genre.label}
+                  </option>
                 ))}
               </Field>
             </div>

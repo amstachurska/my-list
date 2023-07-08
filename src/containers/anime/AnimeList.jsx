@@ -44,16 +44,16 @@ const AnimeList = () => {
   }, [])
 
   const filterData = (value) => {
-    let updatedList = [];
+    let updatedList = []
     console.log('value', value)
     console.log('data', data)
     // if (!value.length) return data
     if (!genreField.length) {
       updatedList = [...data]
     } else if (value.length > genreField.length) {
-      updatedList = list.filter(genre => genreField.indexOf(genre) !== -1)
+      updatedList = list.filter((genre) => genreField.indexOf(genre) !== -1)
     } else {
-      updatedList = data.filter(genre => genreField.indexOf(genre) !== -1)
+      updatedList = data.filter((genre) => genreField.indexOf(genre) !== -1)
     }
     setList(updatedList)
     setGenreField(value)

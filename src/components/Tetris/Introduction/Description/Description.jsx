@@ -22,7 +22,7 @@ const IntroductionDescription = () => (
   <>
     <h2>Game Instructions</h2>
     <ul className="introduction-description__list">
-      {descriptionElements.map(item => (
+      {descriptionElements.map((item) => (
         <DescriptionItem {...item} key={item.direction} />
       ))}
     </ul>

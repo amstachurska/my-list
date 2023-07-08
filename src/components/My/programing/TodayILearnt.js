@@ -9,7 +9,6 @@ const TodayILearnt = () => {
   const [color, setColor] = useState('blue')
 
   const fetchItems = () => {
-    
     fetch('http://localhost:3001/articles', {
       method: 'GET',
       headers: {
@@ -37,19 +36,22 @@ const TodayILearnt = () => {
           Description Of Properties Which I Have Learnt
         </h1>
         <div>
-          <h4 style={{backgroundColor: `${color}`}}>Filters</h4>
+          <h4 style={{ backgroundColor: `${color}` }}>Filters</h4>
         </div>
       </header>
       <TransitionGroup component={null}>
-      {learntItems && (
-        <CSSTransition in={!!learntItems} timeout={2000} classNames="learnt-list-animated">
-      
-           <ul className="learnt-list">
-            {learntItems.map((item) => (
-              <TodayILearnItem key={`learnt-article-${item.id}`} {...item} />
-            ))}
-          </ul>
-        </CSSTransition>
+        {learntItems && (
+          <CSSTransition
+            in={!!learntItems}
+            timeout={2000}
+            classNames="learnt-list-animated"
+          >
+            <ul className="learnt-list">
+              {learntItems.map((item) => (
+                <TodayILearnItem key={`learnt-article-${item.id}`} {...item} />
+              ))}
+            </ul>
+          </CSSTransition>
         )}
       </TransitionGroup>
       {/* https://www.w3schools.com/tags/tag_optgroup.asp */}

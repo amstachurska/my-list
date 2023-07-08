@@ -22,7 +22,13 @@ const AddEditBook = (props) => {
   // })
 
   const getInitialValues = (book) => {
-    if (!id) return { isSaga: false, isAdaptation: false, status: 'done', language: 'pol' }
+    if (!id)
+      return {
+        isSaga: false,
+        isAdaptation: false,
+        status: 'done',
+        language: 'pol',
+      }
     return {
       ...book,
       adaptation: get(book, 'isAdaptation', null),

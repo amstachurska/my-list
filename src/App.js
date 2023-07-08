@@ -14,7 +14,7 @@ import store from './store/store'
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
-    <Header />
+      <Header />
       <Switch>
         {/* <Route component={MyRoots} path={['/my/books', '/my/movies']} /> */}
         <Route component={MyRoots} path="/my" />

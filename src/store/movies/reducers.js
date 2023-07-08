@@ -58,7 +58,15 @@ export const moviesList = (state = initialState, action) => {
         }
       }
       if (
-        ['title', 'titlePl', 'remarks', 'year', 'date', 'status', 'isWorthWatchingAgain'].indexOf(field) !== -1
+        [
+          'title',
+          'titlePl',
+          'remarks',
+          'year',
+          'date',
+          'status',
+          'isWorthWatchingAgain',
+        ].indexOf(field) !== -1
       ) {
         if (
           action.payload.field !== state.field ||

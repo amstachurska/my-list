@@ -46,7 +46,7 @@ const AnimeGeneralInformation = ({ values }) => {
       <h2 className="anime-info-header">General information about anime</h2>
       <div className="anime-info-item">
         <label htmlFor="title">Title</label>
-        <Field name="title" component="input" label="Title" id="title"/>
+        <Field name="title" component="input" label="Title" id="title" />
       </div>
       <div className="anime-info-item">
         <label for="genres">Genres</label>
