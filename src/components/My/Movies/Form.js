@@ -1,16 +1,17 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { connect } from 'react-redux'
 import { formValueSelector } from 'redux-form'
 import { isEmpty } from 'lodash'
 import PropTypes from 'prop-types'
 import { useDispatch, useSelector } from 'react-redux'
+import { useHistory } from 'react-router-dom'
 
 import allActions from '../../../store/allActions'
 import AddMovieForm from './addMovie/AddMovieForm'
 import { GENRE_OPTIONS, MOVIE_STATUS } from './const'
 
 const MovieForm = (props) => {
-  console.log('jestem w form')
+  const history = useHistory()
   const isPending = useSelector((state) => state.movies.isPending)
   const movieData = useSelector((state) => state.movies.movie)
   const {
@@ -19,12 +20,19 @@ const MovieForm = (props) => {
     },
   } = props
   const dispatchAction = useDispatch()
+  const isSaving = useRef(null)
 
   useEffect(() => {
     if (id) {
       dispatchAction(allActions.moviesActions.getMovie(id))
     }
   }, [dispatchAction, id])
+
+  useEffect(() => {
+    if (isSaving.current && !isPending) {
+      history.push({ pathname: '/my/movies' })
+    }
+  }, [history, isPending])
 
   const goToPrevMovie = () => {
     const { history } = props
@@ -49,6 +57,7 @@ const MovieForm = (props) => {
         .map((cathegory) => cathegory.value)
         .sort((cathegory1, cathegory2) => (cathegory1 > cathegory2 ? 1 : -1)),
     }
+    isSaving.current = true
     if (id) {
       movie.id = id
       dispatchAction(allActions.moviesActions.editMovie(movie))
