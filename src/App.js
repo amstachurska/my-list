@@ -6,6 +6,7 @@ import { Redirect, Route, BrowserRouter, Switch } from 'react-router-dom'
 import Header from './components/Header/Header'
 import MyRoots from './components/My/Roots'
 import TetrisRoots from './components/Tetris/Roots'
+import Alerts from './components/alerts/Alerts'
 
 import store from './store/store'
 
@@ -14,6 +15,7 @@ import store from './store/store'
 const App = () => (
   <Provider store={store}>
     <BrowserRouter>
+      <Alerts />
       <Header />
       <Switch>
         {/* <Route component={MyRoots} path={['/my/books', '/my/movies']} /> */}

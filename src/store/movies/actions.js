@@ -16,6 +16,7 @@ import {
   GET_MOVIE_FAILURE,
 } from './types'
 import { moviesService } from '../../services/movies'
+import { ALERT_ERROR, ALERT_SUCCESS } from '../alerts/types'
 
 export const getMovies = (field) => (dispatch) => {
   const sortBy = field ? field : 'id'
@@ -41,26 +42,42 @@ export const addMovie = (movie) => (dispatch) => {
     (movie) => {
       dispatch({ type: ADD_MOVIE_SUCCESS })
       dispatch(getMovies())
-      //history.push({pathname: `movies/${movie.id}`})
-      //alert
+      dispatch({
+        type: ALERT_SUCCESS,
+        payload: { message: `New movie was successfully added to the list` },
+      })
     },
     (error) => {
       dispatch({ type: ADD_MOVIE_FAILURE, error: error.toString() })
-      //alert
+      dispatch({
+        type: ALERT_ERROR,
+        payload: {
+          message: `ERROR during adding the movie - movie was not added`,
+        },
+      })
     }
   )
 }
 
 export const editMovie = (movie) => (dispatch) => {
-  console.log('movie w actions', movie)
   dispatch({ type: EDIT_MOVIE_REQUEST })
   moviesService.editMovie(movie).then(
     (movie) => {
       dispatch({ type: EDIT_MOVIE_SUCCESS, movie })
       dispatch(getMovies())
+      dispatch({
+        type: ALERT_SUCCESS,
+        payload: { message: `Movie ${movie.id} was successfully edited` },
+      })
     },
     (error) => {
       dispatch({ type: EDIT_MOVIE_FAILURE, error: error.toString() })
+      dispatch({
+        type: ALERT_ERROR,
+        payload: {
+          message: `ERROR during editing - movie ${movie.id} was not edited`,
+        },
+      })
     }
   )
 }
@@ -71,9 +88,19 @@ export const deleteMovie = (movieId) => (dispatch) => {
     (movie) => {
       dispatch({ type: DELETE_MOVIE_SUCCESS, movie })
       dispatch(getMovies())
+      dispatch({
+        type: ALERT_SUCCESS,
+        payload: { message: `Movie ${movieId} was successfully removed` },
+      })
     },
     (error) => {
       dispatch({ type: DELETE_MOVIE_FAILURE })
+      dispatch({
+        type: ALERT_ERROR,
+        payload: {
+          message: `ERROR during movie removing - movie ${movieId} was not removed`,
+        },
+      })
     }
   )
 }

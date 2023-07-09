@@ -10,7 +10,7 @@ import Step3 from './Step3'
 
 // https://redux-form.com/8.3.0/docs/api/form.md/
 const AddMovieForm = (props) => {
-  console.log('props w addMovieForm', props)
+  //console.log('props w addMovieForm', props)
   const { goToNextMovie, goToPrevMovie } = props
   const history = useHistory()
   const [step, setStep] = useState(1)

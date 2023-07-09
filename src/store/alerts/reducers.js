@@ -41,16 +41,18 @@ export const alerts = (store = initialStore, action) => {
 
     case ALERT_SUCCESS: {
       const updatedList = [...store.alertList]
+      const id = store.alertList.length + 1
+
       // const id = updatedList.length ? updatedList[updatedList.length - 1].id + 1 : 1
       updatedList.push({
-        id: action.payload.id,
+        id,
         type: 'alert-success',
         message: action.payload.message,
       })
       return {
         alertList: updatedList,
         alert: {
-          id: action.payload.id,
+          id,
           type: 'alert-success',
           message: action.payload.message,
         },
