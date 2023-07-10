@@ -6,7 +6,11 @@ import Input from '../../../common/form/Input'
 const Directors = ({ fields, meta: { error, submitFailed } }) => (
   <ul className="directors">
     <li key="directors__add">
-      <button onClick={() => fields.push({})} type="button">
+      <button
+        className="directors-button"
+        onClick={() => fields.push({})}
+        type="button"
+      >
         Add director
       </button>
       {error && submitFailed && <span>{error}</span>}
@@ -27,6 +31,7 @@ const Directors = ({ fields, meta: { error, submitFailed } }) => (
           type="text"
         />
         <button
+          className="directors-button"
           onClick={() => fields.remove(index)}
           title="Remove director"
           type="button"

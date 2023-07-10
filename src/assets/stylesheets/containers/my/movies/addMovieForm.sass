@@ -84,10 +84,14 @@
 
     &__button-list
         background-color: #845678
-        border: 0
+        border: 2px solid transparent
         border-radius: 5px
         outline: none
         padding: 10px
+        overflow: visible
+        cursor: pointer
+        &:focus
+            border: 2px solid green
 
     .input__field[name="remarks"],
     .input__field[name="title"],
@@ -98,5 +102,3 @@
         &::first-letter
             color: #410b0f
             font-size: 25px
-
-

@@ -60,25 +60,34 @@ const MoviesFilter = ({ setFilters }) => {
   return (
     <form className="movies-list__filter">
       <div>
-        <label htmlFor="title">Title</label>
+        <label className="movies-list__filter-label" htmlFor="title">
+          Title
+        </label>
         <input
           id="title"
           name="title"
+          className="movies-list__filter-input"
           type="text"
           value={title || ''}
           onChange={handleTitleChange}
         />
       </div>
       <div>
-        <label htmlFor="year">Year</label>
+        <label className="movies-list__filter-label" htmlFor="year">
+          Year
+        </label>
         <input
           id="year"
           name="year"
+          className="movies-list__filter-input"
           type="text"
           value={year || ''}
           onChange={handleYearChange}
         />
       </div>
+      <label className="movies-list__filter-label" htmlFor="cathegory">
+        Cathegory
+      </label>
       <Select
         className="movies-list__cathegory"
         isMulti
@@ -86,6 +95,9 @@ const MoviesFilter = ({ setFilters }) => {
         value={cathegory}
         options={GENRE_OPTIONS}
       />
+      <label className="movies-list__filter-label" htmlFor="status">
+        Status
+      </label>
       <select
         className="movies-list__status"
         multiple

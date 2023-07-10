@@ -9,7 +9,6 @@ export const Alerts = () => {
   const [alertsList, setAlertsList] = useState([])
 
   useEffect(() => {
-    console.log('alert', alert)
     if (alert?.id) {
       setAlertsList((prevAlertsList) => {
         let updatedList = [...prevAlertsList]
