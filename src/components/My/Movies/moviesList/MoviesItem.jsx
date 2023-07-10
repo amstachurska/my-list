@@ -1,7 +1,8 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
-import Badge from '../../../common/Bagde'
 import { get } from 'lodash'
+import { useHistory } from 'react-router-dom'
+
+import Badge from '../../../common/Bagde'
 
 const MoviesItem = ({ movie }) => {
   const history = useHistory()

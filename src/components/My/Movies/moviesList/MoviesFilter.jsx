@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Select from 'react-select'
+
 import { GENRE_OPTIONS, MOVIE_STATUS } from '../const'
 
 const MoviesFilter = ({ setFilters }) => {
@@ -94,6 +95,12 @@ const MoviesFilter = ({ setFilters }) => {
         onChange={handleCathegoryChange}
         value={cathegory}
         options={GENRE_OPTIONS}
+        styles={{
+          control: (baseStyles, state) => ({
+            ...baseStyles,
+            borderColor: state.isFocused ? 'green' : '#845678',
+          }),
+        }}
       />
       <label className="movies-list__filter-label" htmlFor="status">
         Status

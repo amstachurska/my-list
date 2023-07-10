@@ -3,9 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useHistory } from 'react-router'
 
 import allActions from '../../../store/allActions'
-import MoviesItem from './moviesList/MoviesItem'
-import MoviesFilter from './moviesList/MoviesFilter'
-import MoviesHeader from './moviesList/MoviesHeader'
+import { MoviesFilter, MoviesHeader, MoviesItem } from './moviesList'
 
 const MyMovies = () => {
   const movies = useSelector((state) => state.movies.movies)
@@ -79,11 +77,7 @@ const MyMovies = () => {
       </div>
       <MoviesFilter setFilters={setFilters} />
       <table>
-        <MoviesHeader
-          sortMovies={sortMovies}
-          orderBy={orderBy}
-          orderWay={orderWay}
-        />
+        <MoviesHeader sortMovies={sortMovies} />
         <tbody>
           {filteredMovies && isPending === false
             ? filteredMovies.map((movie, index) => (

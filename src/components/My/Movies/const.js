@@ -178,3 +178,17 @@ export const MOVIE_STATUS = [
     value: 'watched',
   },
 ]
+
+export const movieHeaderFields = [
+  { value: 'id', label: 'Index' },
+  { value: 'title', label: 'Title' },
+  { value: 'titlePl', label: 'Title in Polish' },
+  { value: 'year', label: 'Year' },
+  { value: 'cathegory', label: 'Cathegory' },
+  { value: 'status', label: 'Status' },
+  { value: 'date', label: 'When watched' },
+  { value: 'ranking', label: 'Rating' },
+  { value: 'shallWatchAgain', label: 'Watch again?' },
+  { value: 'nrOfTimesWatched', label: 'Nr of times watched' },
+  { value: 'remarks', label: 'Remarks' },
+]
