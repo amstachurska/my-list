@@ -4,6 +4,7 @@ import { Breadcrumb } from 'antd'
 import MyBooksListHeaderFilter from './HeaderFilter'
 import MyBooksListHeaderNames from './HeaderNames'
 import MyBooksListItem from './Item'
+import { PaginationWrapper } from '../../../Pagination/PaginationWrapper'
 
 const MyBooksList = () => {
   const [sortSetting, setSortSetting] = useState({
@@ -44,6 +45,8 @@ const MyBooksList = () => {
     genre: [],
   })
   // const [isShiftPressed, setIsShiftPressed] = useState(false)
+
+  const [paginatedBookList, setPaginatedBookList] = useState([])
 
   const fetchBooks = () => {
     fetch('http://localhost:3001/books', {
@@ -237,7 +240,7 @@ const MyBooksList = () => {
         </thead>
 
         <tbody>
-          {filteredBooksList.map((book) => (
+          {paginatedBookList.map((book) => (
             <MyBooksListItem
               key={`book-${book.id}`}
               book={book}
@@ -247,7 +250,10 @@ const MyBooksList = () => {
         </tbody>
         <tfoot></tfoot>
       </table>
-      <div>TutajBedzie paginacja</div>
+      <PaginationWrapper
+        list={[...filteredBooksList]}
+        setPaginatedBookList={setPaginatedBookList}
+      />
     </>
   )
 }
