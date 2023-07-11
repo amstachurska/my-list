@@ -1,55 +1,63 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Pagination.css'
 
-export class Pagination extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      page: 1,
-      pagesNumber: this.props.pagesNumber,
-      offset: 3,
-      paginationMaxSize: 1,
-      paginationActualSize: this.props.pagesNumber,
-      paginationInitialNumber: 1,
+export const Pagination = ({ list, setPaginatedBookList }) => {
+  const [itemsPerPage, setItemsPerPage] = useState(10)
+  const [offset, setOffset] = useState(3)
+  const [page, setPage] = useState(1)
+  const [pagesNumber, setPagesNumber] = useState(1)
+
+  const handleListUpdate = (page) => {
+    const start = itemsPerPage * (page - 1)
+    const end = start + itemsPerPage
+    const updatedList = list.slice(start, end)
+
+    setPaginatedBookList(updatedList)
+  }
+
+  useEffect(() => {
+    let initialInputs = {
+      page: page,
+      pagesNumber: pagesNumber,
+      offset: offset,
     }
-  }
 
-  componentWillMount() {
-    this.calculatePagerSizes()
-  }
+    let partialSizes = createPaginationExactSizes(initialInputs)
 
-  componentDidMount() {
     let paginationParams = {
-      page: this.state.page,
-      paginationActualSize: this.state.paginationActualSize,
-      paginationInitialNumber: this.state.paginationInitialNumber,
+      page: page,
+      paginationActualSize: partialSizes.paginationActualSize,
+      paginationInitialNumber: partialSizes.paginationInitialNumber,
     }
 
-    this.createPagination(paginationParams)
-    this.props.handleListUpdate(this.state.page)
-  }
+    createPagination(paginationParams)
+    handleListUpdate(page)
+  }, [])
 
-  // zmienic - to ma byc do listy
-  static getDerivedStateFromProps(props, state) {
-    if (props.pageNumber !== state.pageNumber) {
-      return { ...state, pageNumber: props.pageNumber }
-    } else {
-      return null
+  useEffect(() => {
+    setPagesNumber(Math.ceil(list.length / itemsPerPage))
+  }, [itemsPerPage, list])
+
+  useEffect(() => {
+    let initialInputs = {
+      page: page,
+      pagesNumber: pagesNumber,
+      offset: offset,
     }
-  }
 
-  componentDidUpdate() {
+    let partialSizes = createPaginationExactSizes(initialInputs)
+
     let paginationParams = {
-      page: this.state.page,
-      paginationActualSize: this.state.pagesNumber,
-      paginationInitialNumber: this.state.paginationInitialNumber,
+      page: page,
+      paginationActualSize: partialSizes.paginationActualSize,
+      paginationInitialNumber: partialSizes.paginationInitialNumber,
     }
 
-    this.createPagination(paginationParams)
-    //this.props.handleListUpdate(this.state.page)
-  }
+    createPagination(paginationParams)
+    handleListUpdate(page)
+  }, [pagesNumber])
 
-  createPaginationExactSizes(inputSizes) {
+  const createPaginationExactSizes = (inputSizes) => {
     let paginationMaxSize = 2 * Number(inputSizes.offset) + 1
     let paginationActualSize =
       paginationMaxSize > Number(inputSizes.pagesNumber)
@@ -83,64 +91,32 @@ export class Pagination extends React.Component {
     return partialSizes
   }
 
-  calculatePagerSizes() {
-    let initialInputs = {
-      page: this.state.page,
-      pagesNumber: this.state.pagesNumber,
-      offset: this.state.offset,
-    }
-
-    let partialSizes = this.createPaginationExactSizes(initialInputs)
-
-    this.setState({
-      page: initialInputs.page,
-      pagesNumber: initialInputs.pagesNumber,
-      offset: initialInputs.offset,
-      paginationMaxSize: partialSizes.paginationMaxSize,
-      paginationActualSize: partialSizes.paginationActualSize,
-      paginationInitialNumber: partialSizes.paginationInitialNumber,
-    })
-  }
-
-  changePagination(e) {
+  const changePagination = (e) => {
     let newPage = Number(e.target.innerText)
+    setPage(newPage)
 
     let startingParameters = {
       page: newPage,
-      pagesNumber: this.state.pagesNumber,
-      offset: this.state.offset,
+      pagesNumber: pagesNumber,
+      offset: offset,
     }
-    let partialSizes = this.createPaginationExactSizes(startingParameters)
+    let partialSizes = createPaginationExactSizes(startingParameters)
+    let divs = document.querySelectorAll('.pagination__page')
+    divs.forEach((element) => (element.className = 'pagination__page'))
 
-    this.setState(
-      {
-        page: newPage,
-        pagesNumber: this.state.pagesNumber,
-        offset: this.state.offset,
-        paginationMaxSize: partialSizes.paginationMaxSize,
-        paginationActualSize: partialSizes.paginationActualSize,
-        paginationInitialNumber: partialSizes.paginationInitialNumber,
-      },
-      function () {
-        let divs = document.querySelectorAll('.pagination__page')
-        divs.forEach((element) => (element.className = 'pagination__page'))
-
-        let paginationParams = {
-          page: newPage,
-          paginationActualSize: partialSizes.paginationActualSize,
-          paginationInitialNumber: partialSizes.paginationInitialNumber,
-        }
-        this.createPagination(paginationParams)
-        this.props.handleListUpdate(newPage)
-      }
-    )
-    // this.props.setCurrentPage(newPage)
+    let paginationParams = {
+      page: newPage,
+      paginationActualSize: partialSizes.paginationActualSize,
+      paginationInitialNumber: partialSizes.paginationInitialNumber,
+    }
+    createPagination(paginationParams)
+    handleListUpdate(newPage)
   }
 
-  createPagination(paginationParams) {
+  const createPagination = (paginationParams) => {
     let container = document.querySelector('.pagination__paginator-container')
     container.innerHTML = ''
-    let self = this
+
     for (let i = 0; i < paginationParams.paginationActualSize; i++) {
       let pagerItem = document.createElement('button')
       container.append(pagerItem)
@@ -151,29 +127,19 @@ export class Pagination extends React.Component {
           : 'pagination__page'
       pagerItem.id = 'pager-' + (i + paginationParams.paginationInitialNumber)
       pagerItem.addEventListener('click', function (e) {
-        self.changePagination(e)
+        changePagination(e)
       })
     }
   }
 
-  handlePageInput(event) {
+  const handlePageInput = (event) => {
     let pagesStartingParams = {}
     pagesStartingParams.page =
-      event.target.name === 'page'
-        ? Number(event.target.value)
-        : this.state.page
-    pagesStartingParams.pagesNumber =
-      event.target.name === 'pagesNumber'
-        ? Number(event.target.value)
-        : this.state.pagesNumber
+      event.target.name === 'page' ? Number(event.target.value) : page
+    pagesStartingParams.pagesNumber = pagesNumber
     pagesStartingParams.offset =
-      event.target.name === 'offset'
-        ? Number(event.target.value)
-        : this.state.offset
+      event.target.name === 'offset' ? Number(event.target.value) : offset
 
-    // code below prevents user from typing to hight values of page and offset when compared to pagesNumber
-    // without the code no page is displayed (no div) and also there is no error in the console
-    // usage of this code depends on expectations of component behaviour
     if (pagesStartingParams.page > pagesStartingParams.pagesNumber) {
       pagesStartingParams.page = pagesStartingParams.pagesNumber
     }
@@ -186,81 +152,62 @@ export class Pagination extends React.Component {
       )
     }
 
-    let isPageNumberChanged = event.target.name === 'pagesNumber'
-    let partialSizes = this.createPaginationExactSizes(pagesStartingParams)
+    if (event.target.name === 'offset') setOffset(event.target.value)
+    if (event.target.name === 'page') setPage(event.target.value)
 
-    this.setState(
-      {
-        page: pagesStartingParams.page,
-        pagesNumber: pagesStartingParams.pagesNumber,
-        offset: pagesStartingParams.offset,
-        paginationMaxSize: partialSizes.paginationMaxSize,
-        paginationActualSize: partialSizes.paginationActualSize,
-        paginationInitialNumber: partialSizes.paginationInitialNumber,
-      },
-      function () {
-        let pagesInitialParams = {
-          page: pagesStartingParams.page,
-          pagesNumber: pagesStartingParams.pagesNumber,
-        }
-        if (isPageNumberChanged) {
-          //this.createPages(pagesInitialParams)
-        }
-        let divs = document.querySelectorAll('.pagination__page')
-        divs.forEach((element) => (element.className = 'pagination__page'))
-        let paginationParams = {
-          page: pagesStartingParams.page,
-          paginationActualSize: partialSizes.paginationActualSize,
-          paginationInitialNumber: partialSizes.paginationInitialNumber,
-        }
-        this.createPagination(paginationParams)
-        this.props.handleListUpdate(pagesStartingParams.page)
-      }
-    )
+    let partialSizes = createPaginationExactSizes(pagesStartingParams)
+
+    let divs = document.querySelectorAll('.pagination__page')
+    divs.forEach((element) => (element.className = 'pagination__page'))
+    let paginationParams = {
+      page: pagesStartingParams.page,
+      paginationActualSize: partialSizes.paginationActualSize,
+      paginationInitialNumber: partialSizes.paginationInitialNumber,
+    }
+    createPagination(paginationParams)
+    handleListUpdate(pagesStartingParams.page)
   }
 
-  render() {
-    return (
-      <div>
-        <div className="pagination__paginator-container"></div>
-        <form className="pagination__inputs">
-          <label>
-            Strona
-            <input
-              name="page"
-              type="number"
-              placeholder="Wybierz stronę"
-              value={this.state.page}
-              onChange={this.handlePageInput.bind(this)}
-              min="1"
-              max={this.state.pagesNumber}
-            />
-          </label>
-          <span>z</span>
-          <label aria-label="liczba stron">
-            <input
-              name="pagesNumber"
-              type="number"
-              placeholder="Liczba stron"
-              value={this.state.pagesNumber}
-              onChange={this.handlePageInput.bind(this)}
-              min="1"
-            />
-          </label>
-          <label>
-            Offset
-            <input
-              name="offset"
-              type="number"
-              placeholder="Offset:"
-              value={this.state.offset}
-              onChange={this.handlePageInput.bind(this)}
-              min="0"
-              max={Math.floor(this.state.pagesNumber / 2)}
-            />
-          </label>
-        </form>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <div className="pagination__paginator-container"></div>
+      <form className="pagination__inputs">
+        <label>
+          Strona
+          <input
+            name="page"
+            type="number"
+            placeholder="Wybierz stronę"
+            value={page}
+            onChange={handlePageInput}
+            min="1"
+            max={pagesNumber}
+          />
+        </label>
+        <span>z</span>
+        <label aria-label="liczba stron">
+          <input
+            name="pagesNumber"
+            type="number"
+            placeholder="Liczba stron"
+            value={pagesNumber}
+            min="1"
+            disabled
+          />
+        </label>
+        <label>
+          Offset
+          <input
+            name="offset"
+            type="number"
+            placeholder="Offset:"
+            value={offset}
+            onChange={handlePageInput}
+            min="0"
+            max={Math.floor(pagesNumber / 2)}
+          />
+        </label>
+      </form>
+    </div>
+  )
 }

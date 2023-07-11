@@ -4,7 +4,7 @@ import { Breadcrumb } from 'antd'
 import MyBooksListHeaderFilter from './HeaderFilter'
 import MyBooksListHeaderNames from './HeaderNames'
 import MyBooksListItem from './Item'
-import { PaginationWrapper } from '../../../Pagination/PaginationWrapper'
+import { Pagination } from '../../../Pagination/Pagination'
 
 const MyBooksList = () => {
   const [sortSetting, setSortSetting] = useState({
@@ -250,10 +250,14 @@ const MyBooksList = () => {
         </tbody>
         <tfoot></tfoot>
       </table>
-      <PaginationWrapper
-        list={[...filteredBooksList]}
-        setPaginatedBookList={setPaginatedBookList}
-      />
+      {!filteredBooksList.length ? (
+        <div>Loading...</div>
+      ) : (
+        <Pagination
+          list={[...filteredBooksList]}
+          setPaginatedBookList={setPaginatedBookList}
+        />
+      )}
     </>
   )
 }
