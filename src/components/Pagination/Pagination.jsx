@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './Pagination.css'
 
 export const Pagination = ({ list, setPaginatedBookList }) => {
+  const page = useRef(null)
+  const offset = useRef(null)
+
   const [itemsPerPage, setItemsPerPage] = useState(10)
-  const [offset, setOffset] = useState(3)
-  const [page, setPage] = useState(1)
   const [pagesNumber, setPagesNumber] = useState(1)
 
   const handleListUpdate = (page) => {
@@ -16,22 +17,25 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
   }
 
   useEffect(() => {
+    page.current.value = 1
+    offset.current.value = 3
+
     let initialInputs = {
-      page: page,
+      page: page.current.value,
       pagesNumber: pagesNumber,
-      offset: offset,
+      offset: offset.current.value,
     }
 
     let partialSizes = createPaginationExactSizes(initialInputs)
 
     let paginationParams = {
-      page: page,
+      page: page.current.value,
       paginationActualSize: partialSizes.paginationActualSize,
       paginationInitialNumber: partialSizes.paginationInitialNumber,
     }
 
     createPagination(paginationParams)
-    handleListUpdate(page)
+    handleListUpdate(page.current.value)
   }, [])
 
   useEffect(() => {
@@ -40,21 +44,21 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
 
   useEffect(() => {
     let initialInputs = {
-      page: page,
+      page: page.current.value,
       pagesNumber: pagesNumber,
-      offset: offset,
+      offset: offset.current.value,
     }
 
     let partialSizes = createPaginationExactSizes(initialInputs)
 
     let paginationParams = {
-      page: page,
+      page: page.current.value,
       paginationActualSize: partialSizes.paginationActualSize,
       paginationInitialNumber: partialSizes.paginationInitialNumber,
     }
 
     createPagination(paginationParams)
-    handleListUpdate(page)
+    handleListUpdate(page.current.value)
   }, [pagesNumber])
 
   const createPaginationExactSizes = (inputSizes) => {
@@ -93,7 +97,7 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
 
   const changePagination = (e) => {
     let newPage = Number(e.target.innerText)
-    setPage(newPage)
+    page.current.value = newPage
 
     let startingParameters = {
       page: newPage,
@@ -135,10 +139,14 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
   const handlePageInput = (event) => {
     let pagesStartingParams = {}
     pagesStartingParams.page =
-      event.target.name === 'page' ? Number(event.target.value) : page
+      event.target.name === 'page'
+        ? Number(event.target.value)
+        : page.current.value
     pagesStartingParams.pagesNumber = pagesNumber
     pagesStartingParams.offset =
-      event.target.name === 'offset' ? Number(event.target.value) : offset
+      event.target.name === 'offset'
+        ? Number(event.target.value)
+        : offset.current.value
 
     if (pagesStartingParams.page > pagesStartingParams.pagesNumber) {
       pagesStartingParams.page = pagesStartingParams.pagesNumber
@@ -152,8 +160,12 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
       )
     }
 
-    if (event.target.name === 'offset') setOffset(event.target.value)
-    if (event.target.name === 'page') setPage(event.target.value)
+    if (event.target.name === 'offset') {
+      offset.current.value = event.target.value
+    }
+    if (event.target.name === 'page') {
+      page.current.value = event.target.value
+    }
 
     let partialSizes = createPaginationExactSizes(pagesStartingParams)
 
@@ -175,10 +187,10 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
         <label>
           Strona
           <input
+            ref={page}
             name="page"
             type="number"
             placeholder="Wybierz stronę"
-            value={page}
             onChange={handlePageInput}
             min="1"
             max={pagesNumber}
@@ -191,17 +203,16 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
             type="number"
             placeholder="Liczba stron"
             value={pagesNumber}
-            min="1"
             disabled
           />
         </label>
         <label>
           Offset
           <input
+            ref={offset}
             name="offset"
             type="number"
             placeholder="Offset:"
-            value={offset}
             onChange={handlePageInput}
             min="0"
             max={Math.floor(pagesNumber / 2)}
