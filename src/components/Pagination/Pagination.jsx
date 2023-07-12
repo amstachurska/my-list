@@ -7,6 +7,8 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
 
   const [itemsPerPage, setItemsPerPage] = useState(10)
   const [pagesNumber, setPagesNumber] = useState(1)
+  const [paginationActualSize, setPaginationActualSize] = useState(1)
+  const [paginationInitialNumber, setPaginationInitialNumber] = useState(1)
 
   const handleListUpdate = (page) => {
     const start = itemsPerPage * (page - 1)
@@ -19,7 +21,6 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
   useEffect(() => {
     page.current.value = 1
     offset.current.value = 3
-
     let initialInputs = {
       page: page.current.value,
       pagesNumber: pagesNumber,
@@ -27,14 +28,8 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
     }
 
     let partialSizes = createPaginationExactSizes(initialInputs)
-
-    let paginationParams = {
-      page: page.current.value,
-      paginationActualSize: partialSizes.paginationActualSize,
-      paginationInitialNumber: partialSizes.paginationInitialNumber,
-    }
-
-    createPagination(paginationParams)
+    setPaginationActualSize(partialSizes.paginationActualSize)
+    setPaginationInitialNumber(partialSizes.paginationInitialNumber)
     handleListUpdate(page.current.value)
   }, [])
 
@@ -50,14 +45,8 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
     }
 
     let partialSizes = createPaginationExactSizes(initialInputs)
-
-    let paginationParams = {
-      page: page.current.value,
-      paginationActualSize: partialSizes.paginationActualSize,
-      paginationInitialNumber: partialSizes.paginationInitialNumber,
-    }
-
-    createPagination(paginationParams)
+    setPaginationActualSize(partialSizes.paginationActualSize)
+    setPaginationInitialNumber(partialSizes.paginationInitialNumber)
     handleListUpdate(page.current.value)
   }, [pagesNumber])
 
@@ -91,7 +80,8 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
       paginationActualSize: paginationActualSize,
       paginationInitialNumber: paginationInitialNumber,
     }
-
+    setPaginationActualSize(partialSizes.paginationActualSize)
+    setPaginationInitialNumber(partialSizes.paginationInitialNumber)
     return partialSizes
   }
 
@@ -102,38 +92,12 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
     let startingParameters = {
       page: newPage,
       pagesNumber: pagesNumber,
-      offset: offset,
+      offset: offset.current.value,
     }
     let partialSizes = createPaginationExactSizes(startingParameters)
-    let divs = document.querySelectorAll('.pagination__page')
-    divs.forEach((element) => (element.className = 'pagination__page'))
-
-    let paginationParams = {
-      page: newPage,
-      paginationActualSize: partialSizes.paginationActualSize,
-      paginationInitialNumber: partialSizes.paginationInitialNumber,
-    }
-    createPagination(paginationParams)
+    setPaginationActualSize(partialSizes.paginationActualSize)
+    setPaginationInitialNumber(partialSizes.paginationInitialNumber)
     handleListUpdate(newPage)
-  }
-
-  const createPagination = (paginationParams) => {
-    let container = document.querySelector('.pagination__paginator-container')
-    container.innerHTML = ''
-
-    for (let i = 0; i < paginationParams.paginationActualSize; i++) {
-      let pagerItem = document.createElement('button')
-      container.append(pagerItem)
-      pagerItem.innerText = i + paginationParams.paginationInitialNumber
-      pagerItem.className =
-        i + paginationParams.paginationInitialNumber === paginationParams.page
-          ? 'pagination__page pagination__page--active'
-          : 'pagination__page'
-      pagerItem.id = 'pager-' + (i + paginationParams.paginationInitialNumber)
-      pagerItem.addEventListener('click', function (e) {
-        changePagination(e)
-      })
-    }
   }
 
   const handlePageInput = (event) => {
@@ -169,20 +133,34 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
 
     let partialSizes = createPaginationExactSizes(pagesStartingParams)
 
-    let divs = document.querySelectorAll('.pagination__page')
-    divs.forEach((element) => (element.className = 'pagination__page'))
-    let paginationParams = {
-      page: pagesStartingParams.page,
-      paginationActualSize: partialSizes.paginationActualSize,
-      paginationInitialNumber: partialSizes.paginationInitialNumber,
-    }
-    createPagination(paginationParams)
+    setPaginationActualSize(partialSizes.paginationActualSize)
+    setPaginationInitialNumber(partialSizes.paginationInitialNumber)
     handleListUpdate(pagesStartingParams.page)
   }
 
   return (
     <div>
-      <div className="pagination__paginator-container"></div>
+      <div className="pagination__paginator-container">
+        {Array.from({ length: paginationActualSize + 1 }, (_, index) => {
+          return (
+            <button
+              key={index}
+              className={
+                'pagination__page ' +
+                `${
+                  index + paginationInitialNumber ===
+                  Number(page.current?.value)
+                    ? 'pagination__page--active'
+                    : ''
+                }`
+              }
+              onClick={changePagination}
+            >
+              {index + paginationInitialNumber}
+            </button>
+          )
+        })}
+      </div>
       <form className="pagination__inputs">
         <label>
           Strona
