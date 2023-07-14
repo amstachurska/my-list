@@ -1,5 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import { Breadcrumb } from 'antd'
+import { useHistory } from 'react-router'
 
 import MyBooksListHeaderFilter from './HeaderFilter'
 import MyBooksListHeaderNames from './HeaderNames'
@@ -7,6 +8,8 @@ import MyBooksListItem from './Item'
 import { Pagination } from '../../../Pagination/Pagination'
 
 const MyBooksList = () => {
+  const history = useHistory()
+
   const [sortSetting, setSortSetting] = useState({
     key: 'id',
     order: 'des',
@@ -16,7 +19,6 @@ const MyBooksList = () => {
   useEffect(() => {
     if (shallUpdate) {
       fetchBooks()
-      setShallUpdate(false)
     }
   }, [shallUpdate])
 
@@ -58,11 +60,13 @@ const MyBooksList = () => {
     })
       .then((response) => response.json())
       .then((booksData) => {
-        setFilteredBooksList(booksData)
-        setBooksList(booksData)
+        setFilteredBooksList([...booksData])
+        setBooksList([...booksData])
       })
       .catch((error) => console.log('error', error))
-      .finally((data) => {})
+      .finally((data) => {
+        setShallUpdate(false)
+      })
   }
 
   useEffect(() => {
@@ -204,6 +208,7 @@ const MyBooksList = () => {
     if (e.key === 'Shift') {
     }
   }
+  if (shallUpdate) return <div>Loading...</div>
 
   return (
     <>
@@ -213,7 +218,13 @@ const MyBooksList = () => {
       >
         {' '}
         My Books
-      </h1>{' '}
+      </h1>
+      <button
+        className="add-book"
+        onClick={() => history.push('/my/books/add')}
+      >
+        Add new book
+      </button>
       <Breadcrumb>
         <Breadcrumb.Item>
           <a href="/my">My</a>

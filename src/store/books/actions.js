@@ -83,13 +83,18 @@ export const addBook = (book) => (dispatch) => {
       dispatch({ type: ADD_BOOK_SUCCESS, book })
       dispatch({
         type: ALERT_SUCCESS,
-        payload: { id, message: 'New book was added' },
+        payload: {
+          id,
+          message:
+            'New book was added to the book list, previous elements of list were not changed.',
+        },
       })
       dispatch(getBooks(dispatch, true))
+
       const timeoutId = setTimeout(() => {
         dispatch({ type: ALERT_REMOVE, payload: { id } })
         clearTimeout(timeoutId)
-      }, 3000)
+      }, 10000)
     },
     (error) => {
       const id = uuidv4()
@@ -105,7 +110,7 @@ export const addBook = (book) => (dispatch) => {
       const timeoutId = setTimeout(() => {
         dispatch({ type: ALERT_REMOVE, payload: { id } })
         clearTimeout(timeoutId)
-      }, 3000)
+      }, 10000)
     }
   )
 }
@@ -118,7 +123,10 @@ export const editBook = (book) => (dispatch) => {
       dispatch({ type: EDIT_BOOK_SUCCESS, book })
       dispatch({
         type: ALERT_SUCCESS,
-        payload: { message: `Book ${book.id} has been edited`, id },
+        payload: {
+          message: `Book list was changed. Book ${book.id} has been edited`,
+          id,
+        },
       })
       dispatch(getBooks(dispatch, true))
       const timeoutId = setTimeout(() => {
@@ -141,10 +149,20 @@ export const deleteBook = (bookId) => (dispatch) => {
   dispatch({ type: DELETE_BOOK_REQUEST })
   booksService.deleteBook(bookId).then(
     () => {
-      console.log('roie delete')
+      const id = uuidv4()
       dispatch({ type: DELETE_BOOK_SUCCESS })
       dispatch(getBooks(dispatch, true))
-      //alert
+      dispatch({
+        type: ALERT_SUCCESS,
+        payload: {
+          message: `Book list was changed. Book ${bookId} has been removed`,
+          id,
+        },
+      })
+      const timeoutId = setTimeout(() => {
+        dispatch({ type: ALERT_REMOVE, payload: { id } })
+        clearTimeout(timeoutId)
+      }, 10000)
     },
     (error) => {
       dispatch({ type: DELETE_BOOK_FAILURE, error: error.toString() })

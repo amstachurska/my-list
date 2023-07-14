@@ -54,7 +54,6 @@ let MyBooksForm = ({
   isEdit,
   isSaga,
 }) => {
-  console.log('initialValues', status, initialValues)
   const [isDecorationVisible, setIsDecorationVisible] = useState(false)
   const dispatchAction = useDispatch()
 
@@ -338,7 +337,7 @@ let MyBooksForm = ({
               disabled={submitting}
               type="submit"
             >
-              {isEdit ? 'Edit book' : 'Add Book'}
+              {isEdit ? 'Close, save, change the book list' : 'Add Book'}
             </button>
             <button
               className="books-form-reset"

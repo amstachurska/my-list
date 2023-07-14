@@ -91,8 +91,8 @@ const MyBooksListItem = ({ book, setShallUpdate }) => {
         )}
       </td>
       <td className="books-table__item -edit">
-        <Link to={`/my/books/${book.id}`}>Edit</Link>
-        <button onClick={deleteBook}>Delete</button>
+        <Link to={`/my/books/${book.id}`}>Change list - edit book</Link>
+        <button onClick={deleteBook}>Change list - delete book</button>
       </td>
     </tr>
   )

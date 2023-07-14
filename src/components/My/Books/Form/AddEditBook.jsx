@@ -79,7 +79,10 @@ const AddEditBook = (props) => {
           Go to books list
         </button>
       </nav>
-      <Form initialValues={getInitialValues(book)} isEdit={id ? true : false} />
+      <Form
+        initialValues={getInitialValues(book)}
+        isEdit={id !== 'add' ? true : false}
+      />
     </>
   )
 }
