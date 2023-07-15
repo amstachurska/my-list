@@ -13,70 +13,39 @@ export const Simulation = ({
   const [isNameTouched, setIsNameTouched] = useState(false)
 
   useEffect(() => {
-    if (step === 3) {
+    if (step === 3 && simulationCounter === 0) {
       const timeoutId = setTimeout(() => {
         increaseSimulationCounter()
         goBackToApp()
         return clearTimeout(timeoutId)
       }, 5000)
     }
-  }, [step, increaseSimulationCounter, goBackToApp])
+  }, [step, increaseSimulationCounter, goBackToApp, simulationCounter])
+
+  const handleClick = () => {
+    increaseSimulationCounter()
+    goBackToApp()
+  }
+
   return (
-    <div
-      style={{
-        backgroundColor: 'grey',
-        padding: '20px',
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        width: '100vw',
-        height: '100vh',
-        opacity: 1,
-        zIndex: '10000',
-      }}
-    >
-      <div
-        style={{
-          backgroundColor: 'purple',
-          display: 'flex',
-          position: 'relative',
-          zIndex: '1000',
-          width: '80vw',
-          height: '80vh',
-          alignItems: 'center',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          left: '10vw',
-          top: '10vh',
-        }}
-      >
+    <div className="simulation">
+      <div className="simulation-container">
         {step === 1 && (
-          <div
-            style={{
-              margin: '20px',
-              color: 'orange',
-              fontSize: '20px',
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: 'center',
-            }}
-          >
+          <div className="simulation__step-1">
             This is a simulation of system reinstalation.
             {simulationCounter > 0 ? (
               <span>
                 Your system was previously reinstalled... You are reinstalling
-                if for {simulationCounter} time. Watch the next screan layout
+                if for {simulationCounter + 1} time. Read the next screan
                 carrefully
               </span>
             ) : (
               <span> You have not run this simulation before.</span>
             )}
             <Button
+              className="simulation__step-1-reinstall"
               type="primary"
               onClick={() => setStep(2)}
-              style={{ margin: '50px', maxWidth: '150px' }}
             >
               Reinstall
             </Button>
@@ -84,15 +53,16 @@ export const Simulation = ({
         )}
         {step === 2 && (
           <>
-            <div style={{ margin: '20px', display: 'flex' }}>
+            <div className="simulation__step-2-form-item">
               <label
+                className="simulation__step-2-form-item-label"
                 htmlFor="name"
-                style={{ color: 'orange', margin: '0 10px', fontSize: '20px' }}
               >
                 E-mail login
               </label>
               <div>
                 <input
+                  className="simulation__step-2-form-item-input"
                   name="name"
                   type="text"
                   value={name}
@@ -100,29 +70,26 @@ export const Simulation = ({
                     !isNameTouched && setIsNameTouched(true)
                     setName(e.target.value)
                   }}
-                  style={{ display: 'block' }}
                 ></input>
                 <div
-                  style={{
-                    visibility: `${
-                      isNameTouched && !name?.length ? 'visible' : 'hidden'
-                    }`,
-                    color: '#f5274d',
-                  }}
+                  className={`simulation__step-2-form-item-error ${
+                    isNameTouched && !name?.length ? '' : 'hidden'
+                  }`}
                 >
-                  <b>field is required</b>
+                  <b>Field is required</b>
                 </div>
               </div>
             </div>
-            <div style={{ margin: '20px', display: 'flex' }}>
+            <div className="simulation__step-2-form-item">
               <label
                 htmlFor="password"
-                style={{ color: 'orange', margin: '0 10px', fontSize: '20px' }}
+                className="simulation__step-2-form-item-label"
               >
                 E-mail password
               </label>
               <div>
                 <input
+                  className="simulation__step-2-form-item-input"
                   name="password"
                   type="password"
                   value={password}
@@ -130,44 +97,29 @@ export const Simulation = ({
                     !isPasswordTouched && setIsPasswordTouched(true)
                     setPassword(e.target.value)
                   }}
-                  style={{ display: 'block' }}
                 ></input>
                 <div
-                  style={{
-                    visibility: `${
-                      isPasswordTouched && !password?.length
-                        ? 'visible'
-                        : 'hidden'
-                    }`,
-                    color: '#f5274d',
-                  }}
+                  className={`simulation__step-2-form-item-error ${
+                    isPasswordTouched && !password?.length ? '' : 'hidden'
+                  }`}
                 >
-                  <b>field is required</b>
+                  <b>Field is required</b>
                 </div>
               </div>
             </div>
-            <p style={{ margin: '20px', color: 'orange', fontSize: '20px' }}>
+            <p className="simulation__step-2-info">
               <i> &lt; It is a simulation so just type down anything &gt;</i>
             </p>
-            <div
-              style={{
-                margin: '20px',
-                display: 'flex',
-                justifyContent: 'space-evenly',
-                width: '80%',
-                flexDirection: 'column',
-                alignItems: 'center',
-              }}
-            >
-              <div style={{ display: 'flex' }}>
+            <div className="simulation__step-2-nav">
+              <div className="simulation__step-2-nav-container">
                 {simulationCounter > 0 && (
-                  <div style={{ margin: '20px' }}>
+                  <div className="simulation__step-2-nav-container-item">
                     <Button type="primary" onClick={() => setStep(3)}>
                       Skip
                     </Button>
                   </div>
                 )}
-                <div style={{ margin: '20px' }}>
+                <div className="simulation__step-2-nav-container-item">
                   <Button
                     type="primary"
                     danger
@@ -178,7 +130,7 @@ export const Simulation = ({
                   </Button>
                 </div>
               </div>
-              <p style={{ margin: '20px', color: 'orange', fontSize: '20px' }}>
+              <p className="simulation__step-2-comment">
                 <i>
                   {simulationCounter > 0
                     ? 'There it is... The skip button. Now you can reinstall system without connecting to your email'
@@ -191,12 +143,13 @@ export const Simulation = ({
 
         {step === 3 && (
           <>
-            {' '}
-            <p style={{ margin: '20px', color: 'orange', fontSize: '20px' }}>
-              Congratulations... The system is reinstalling....
-            </p>
+            {simulationCounter === 0 && (
+              <p className="simulation__step-3">
+                Congratulations... The system is reinstalling....
+              </p>
+            )}
             {simulationCounter > 0 && (
-              <p>
+              <p className="simulation__step-3">
                 Now you can check for strange presence or behavoiur in the
                 system - the application in this case. In your regular system
                 you can check logs and if you see that the logs were cleaned
@@ -264,10 +217,15 @@ export const Simulation = ({
                 installed at that time because I was busy and did not have time
                 for anything else. I had learnt to copy everything to pendrive
                 several times a day, kind of manually created github.
-                <div>
+                <div className="simulation__step-3-container">
                   <div>Producent</div>
                   <div>Processor producer</div>
                   <div>Seller</div>
+                </div>
+                <div className="simulation__step-3-container">
+                  <Button type="primary" onClick={handleClick}>
+                    Go to main page
+                  </Button>
                 </div>
               </p>
             )}

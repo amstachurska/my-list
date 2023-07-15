@@ -1,0 +1,96 @@
+.simulation
+    background-color: grey
+    padding: 20px
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100vw
+    height: 100vh
+    opacity: 1
+    z-index: 10000
+
+    &-container
+        background-color: purple
+        border-radius: 3px
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        width: 80vw
+        height: 80vh
+        position: relative
+        left: 10vw
+        top: 10vh
+        z-index: 1000
+
+    &__step-1
+        margin: 20px
+        color: orange
+        font-size: 24px
+        display: flex
+        flex-direction: column
+        align-items: center
+        text-align: center
+
+        &-reinstall
+            font-size: 24px
+            margin: 50px
+            max-width: 150px
+            height: auto
+
+    &__step-2-form-item
+        margin: 20px
+        display: flex
+
+        &-label
+            color: orange
+            margin: 0 10px
+            font-size: 20px
+
+        &-input
+            display: block
+
+        &-error
+            color: #f5274d
+            visibility: visible
+            &.hidden
+                visibility: hidden
+
+    &__step-2
+        &-info
+            margin: 20px
+            color: orange
+            font-size: 20px
+
+        &-nav
+            margin: 20px
+            display: flex
+            justify-content: space-evenly
+            width: 80%
+            flex-direction: column
+            align-items: center
+
+            &-container
+                display: flex
+
+                &-item
+                    margin: 20px
+
+        &-comment
+            margin: 20px
+            color: orange
+            font-size: 20px
+    &__step-3
+        margin: 20px
+        color: orange
+        font-size: 16px
+        overflow-y: scroll
+
+        &-container
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            margin: 20px

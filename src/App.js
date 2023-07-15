@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { Provider } from 'react-redux'
 import { Redirect, Route, BrowserRouter, Switch } from 'react-router-dom'
+import { Button } from 'antd'
 
 import Header from './components/Header/Header'
 import MyRoots from './components/My/Roots'
@@ -16,9 +17,6 @@ import { Simulation } from './components/Simulation/Simulation'
 const App = () => {
   const [simulationCounter, setSimulationCounter] = useState(0)
   const [isSimulation, setIsSimulation] = useState(false)
-  const handleSimulation = () => {
-    setSimulationCounter((prevValue) => prevValue + 1)
-  }
 
   return (
     <Provider store={store}>
@@ -35,9 +33,13 @@ const App = () => {
             />
           )}
           <Header>
-            <button onClick={() => setIsSimulation(true)} type="button">
+            <Button
+              className="header__reinstallation"
+              type="primary"
+              onClick={() => setIsSimulation(true)}
+            >
               Turn on reinstallment simulation
-            </button>
+            </Button>
           </Header>
         </div>
         <Switch>
