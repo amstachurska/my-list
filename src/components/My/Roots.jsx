@@ -15,7 +15,6 @@ import AnimeBoard from '../../containers/anime/Board'
 import MangaList from '../../containers/manga/list/MangaList'
 import MangaBoard from '../../containers/manga/Board'
 import MangaAddEdit from '../../containers/manga/form/MangaAddEdit'
-import TVSeriesForm from './TVSeries/Form'
 
 const MyRoots = ({ match }) => (
   <>
@@ -29,7 +28,6 @@ const MyRoots = ({ match }) => (
       <Route exact path="/my/anime" component={AnimeBoard} />
       <Route exact path="/my/anime/add" component={AnimeForm} />
       <Route exact path="/my/anime/list" component={AnimeList} />
-      <Route exact path="/my/tvseries/add" component={TVSeriesForm} />
       {/* <Redirect from="/" to="/my/movies" />
 
       <Redirect from="/" to="/my/movies" /> */}

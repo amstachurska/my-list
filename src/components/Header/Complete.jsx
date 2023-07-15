@@ -10,7 +10,6 @@ import anime from '../../assets/images/anime/fate1.jpg'
 
 const manga = require('../../assets/images/manga/manga1.jpg')
 const movie = require('../../assets/images/movies/movies1.jpg')
-const series = require('../../assets/images/series/series2.jpg')
 
 const HeaderComplete = () => {
   return (
@@ -59,17 +58,6 @@ const HeaderComplete = () => {
                 className="header-group-nav__item-img"
                 height="75"
                 src={movie}
-                width="75"
-              />
-            </Link>
-          </li>
-          <li className="header-group-nav__item">
-            <Link to="#">
-              <img
-                alt="link to my movie list"
-                className="header-group-nav__item-img"
-                height="75"
-                src={series}
                 width="75"
               />
             </Link>
