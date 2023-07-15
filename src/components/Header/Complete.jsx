@@ -64,6 +64,22 @@ const HeaderComplete = () => {
           </li>
         </ul>
       </nav>
+      <nav className="header-group">
+        <h2 className="header-group__title">Programming</h2>
+        <ul className="header-group-nav">
+          <li className="header-group-nav__item">
+            <Link to="/my/programming">
+              <img
+                alt="link programming list"
+                className="header-group-nav__item-img"
+                height="75"
+                src={require('../../assets/images/space/space11.jpg')}
+                width="75"
+              />
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   )
 }

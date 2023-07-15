@@ -35,9 +35,6 @@ const TodayILearnt = () => {
         <h1 className="learnt__title">
           Description Of Properties Which I Have Learnt
         </h1>
-        <div>
-          <h4 style={{ backgroundColor: `${color}` }}>Filters</h4>
-        </div>
       </header>
       <TransitionGroup component={null}>
         {learntItems && (
