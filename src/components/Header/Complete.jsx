@@ -11,7 +11,6 @@ import anime from '../../assets/images/anime/fate1.jpg'
 const manga = require('../../assets/images/manga/manga1.jpg')
 const movie = require('../../assets/images/movies/movies1.jpg')
 const series = require('../../assets/images/series/series2.jpg')
-const tetris = require('../../assets/images/pockemons/pokemon1.jpg')
 
 const HeaderComplete = () => {
   return (
@@ -71,22 +70,6 @@ const HeaderComplete = () => {
                 className="header-group-nav__item-img"
                 height="75"
                 src={series}
-                width="75"
-              />
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <nav className="header-group">
-        <h2 className="header-group__title">Games</h2>
-        <ul className="header-group-nav">
-          <li className="header-group-nav__item">
-            <Link to="/tetris">
-              <img
-                alt="link to my tetris game"
-                className="header-group-nav__item-img"
-                height="75"
-                src={tetris}
                 width="75"
               />
             </Link>

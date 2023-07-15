@@ -6,7 +6,6 @@ import { Button } from 'antd'
 
 import Header from './components/Header/Header'
 import MyRoots from './components/My/Roots'
-import TetrisRoots from './components/Tetris/Roots'
 import Alerts from './components/alerts/Alerts'
 
 import store from './store/store'
@@ -45,7 +44,6 @@ const App = () => {
         <Switch>
           {/* <Route component={MyRoots} path={['/my/books', '/my/movies']} /> */}
           <Route component={MyRoots} path="/my" />
-          <Route component={TetrisRoots} path="/tetris" />
           <Redirect from="*" to="my" />
         </Switch>
       </BrowserRouter>
