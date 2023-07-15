@@ -12,9 +12,6 @@ const manga = require('../../assets/images/manga/manga1.jpg')
 const movie = require('../../assets/images/movies/movies1.jpg')
 const series = require('../../assets/images/series/series2.jpg')
 const tetris = require('../../assets/images/pockemons/pokemon1.jpg')
-const documents = require('../../assets/images/documents/cezanne.jpg') //TOBE CHANGED
-const art = require('../../assets/images/documents/riffian.jpg')
-const cosmetics = require('../../assets/images/cosmetics/honey.jpg')
 
 const HeaderComplete = () => {
   return (
@@ -74,39 +71,6 @@ const HeaderComplete = () => {
                 className="header-group-nav__item-img"
                 height="75"
                 src={series}
-                width="75"
-              />
-            </Link>
-          </li>
-          <li className="header-group-nav__item">
-            <Link to="#">
-              <img
-                alt="link to my documents"
-                className="header-group-nav__item-img"
-                height="75"
-                src={documents}
-                width="75"
-              />
-            </Link>
-          </li>
-          <li className="header-group-nav__item">
-            <Link to="#">
-              <img
-                alt="link to my art galery"
-                className="header-group-nav__item-img"
-                height="75"
-                src={art}
-                width="75"
-              />
-            </Link>
-          </li>
-          <li className="header-group-nav__item">
-            <Link to="#">
-              <img
-                alt="link to my cosmetics"
-                className="header-group-nav__item-img"
-                height="75"
-                src={cosmetics}
                 width="75"
               />
             </Link>
