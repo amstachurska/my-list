@@ -12,9 +12,6 @@ import AnimeForm from '../../containers/anime/AnimeForm'
 import MovieForm from './Movies/Form'
 import AnimeList from '../../containers/anime/AnimeList'
 import AnimeBoard from '../../containers/anime/Board'
-import MangaList from '../../containers/manga/list/MangaList'
-import MangaBoard from '../../containers/manga/Board'
-import MangaAddEdit from '../../containers/manga/form/MangaAddEdit'
 
 const MyRoots = ({ match }) => (
   <>
@@ -35,13 +32,6 @@ const MyRoots = ({ match }) => (
     <Route exact path={`${match.path}/books/list`} component={MyBooksList} />
     <Route exact path={`${match.path}/books/addBook`} component={MyBooksForm} /> */}
       <Redirect from="/my/movies" to="/my/movies" />
-      <Route exact path="/my/manga" component={MangaBoard} />
-      <Route exact path="/my/manga/list" component={MangaList} />
-      <Route
-        exact
-        path={['/my/manga/add', '/my/manga/:id']}
-        component={MangaAddEdit}
-      />
     </Switch>
   </>
 )

@@ -8,7 +8,6 @@ import anime from '../../assets/images/anime/fate1.jpg'
 // wstawianie img
 //https://stackoverflow.com/questions/39999367/how-do-i-reference-a-local-image-in-react
 
-const manga = require('../../assets/images/manga/manga1.jpg')
 const movie = require('../../assets/images/movies/movies1.jpg')
 
 const HeaderComplete = () => {
@@ -35,17 +34,6 @@ const HeaderComplete = () => {
                 className="header-group-nav__item-img"
                 height="75"
                 src={anime}
-                width="75"
-              />
-            </Link>
-          </li>
-          <li className="header-group-nav__item">
-            <Link to="/my/manga">
-              <img
-                alt="link to my manga list"
-                className="header-group-nav__item-img"
-                height="75"
-                src={manga}
                 width="75"
               />
             </Link>
