@@ -8,6 +8,7 @@ const MoviesHeader = ({ sortMovies }) => (
     <tr>
       {movieHeaderFields.map((field) => (
         <MoviesHeaderItem
+          key={field.value}
           sortMovies={sortMovies}
           label={field.label}
           value={field.value}

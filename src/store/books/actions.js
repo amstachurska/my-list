@@ -20,11 +20,9 @@ import { ALERT_ERROR, ALERT_REMOVE, ALERT_SUCCESS } from '../alerts/types'
 import { booksService } from '../../services/books'
 
 export const getBooks = () => (dispatch, shallAddNotification) => {
-  console.log('wejescie get books')
   dispatch({ type: GET_BOOKS_REQUEST })
   booksService.getBooks().then(
     (books) => {
-      console.log('pobieram')
       dispatch({ type: GET_BOOKS_SUCCESS, books })
       if (shallAddNotification === true) {
         const id = uuidv4()
@@ -57,7 +55,6 @@ export const getBook = (bookId) => (dispatch) => {
   dispatch({ type: GET_BOOK_REQUEST })
   booksService.getBook(bookId).then(
     (book) => {
-      console.log('robie ger books')
       dispatch({ type: GET_BOOK_SUCCESS, book: book })
     },
     (error) => {
@@ -179,6 +176,7 @@ export const deleteBook = (bookId) => (dispatch) => {
   )
 }
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default {
   getBooks,
   addBook,

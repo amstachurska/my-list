@@ -47,7 +47,6 @@ const MovieForm = (props) => {
   }
 
   const saveMovie = (event) => {
-    //console.log('save', props)
     event.preventDefault()
     const { myValues } = props
     const movie = {
