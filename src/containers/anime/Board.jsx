@@ -58,7 +58,7 @@ const Board = () => {
             <img alt="Anime list link decoration" width="350" src={chidori} />
           </Link>
         </li>
-        <li className="anime-board__item">
+        {/* <li className="anime-board__item">
           <Link className="anime-board__link" to="/my/anime/add">
             <h2 className="anime-board__link-header">Add new anime</h2>
             <p className="anime-board__link-text">
@@ -66,7 +66,7 @@ const Board = () => {
             </p>
             <img alt="Add anime link decoration" width="250" src={anbu} />
           </Link>
-        </li>
+        </li> */}
       </ul>
     </AnimeBoardStyled>
   )

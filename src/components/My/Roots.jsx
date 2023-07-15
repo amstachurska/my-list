@@ -23,7 +23,7 @@ const MyRoots = ({ match }) => (
       <Route exact path="/my/movies/:id" component={MovieForm} />
       <Route exact path="/my/programming" component={TodayILearnt} />
       <Route exact path="/my/anime" component={AnimeBoard} />
-      <Route exact path="/my/anime/add" component={AnimeForm} />
+      {/* <Route exact path="/my/anime/add" component={AnimeForm} /> */}
       <Route exact path="/my/anime/list" component={AnimeList} />
       {/* <Redirect from="/" to="/my/movies" />
 
