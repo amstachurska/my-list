@@ -233,24 +233,37 @@ export const Simulation = ({
                 they differ between each other with time of working using batery
                 and then one of them breaks on its own - I mean stops working.
                 You can check inside - the changes on processors done by
-                computers in company and with humans differ. But still, this is
-                my personal impression nevertheless worth to know. And of course
-                it was pure accident without bad intent. Greetings to Fisher
-                Price, although the quaility of these toys are really good -
-                they survive almost every treatment. With other problems. With
+                computers in company and by humans by hands probably differ. But
+                still, this is my personal impression nevertheless worth to
+                know. And of course it was pure accident without bad intent. The
+                quaility of Fisher Price's toys is really good - they survive
+                almost every treatment. With other problems. With
                 problem-generating computer you can get password to email
                 account changed on its own (then you bought not recomennded
-                VPN). You can also have passwod to account on the computer
-                changed. In that case you can get access on your own, there are
-                instructions in the net. I strongly recommend that. When you
-                will do this, you go to system files folder where you see among
-                others the time them files were changed. Then you can localize
-                that change in respective file connected with described problems
-                were done when you were for 3 months in another town and
-                moreover noone was home. Spooky...With changing password I
+                VPN). Still, it helped, although I bought and installed in
+                autumn 2022. My problems with computer started during master
+                studies. You can also have passwod to account on the computer
+                changed (autumn 2021,among others, but one in autumn 2021 was
+                crucial, only officially approved programs were installed on the
+                computer). You can reset password on your commupter - meaning
+                you can get access on your own, there are instructions in the
+                ineternet. I strongly recommend that. When you will do this, you
+                go to system files folder where you see among others the time
+                them files were changed. Then you can localize that change in
+                respective file connected with described problems were done when
+                you were for 3 months in another town and moreover noone was
+                home. Spooky...Still, somehow it was done, the higher chance
+                that personally rather than remotely. With changing password I
                 prefer previous possibility with going through accessibility to
                 nice blue screens instread of using, coping and manipulating
-                files in running system itself.
+                files in running system itself. The passwords changes are not
+                the worst. Much more worse are crushes of system when writing
+                something important (article, grant application), or after just
+                sending it. For me ir was usually when I was at finishing stage
+                or just after finishing it. And no, no new aps were being
+                installed at that time because I was busy and did not have time
+                for anything else. I had learnt to copy everything to pendrive
+                several times a day, kind of manually created github.
                 <div>
                   <div>Producent</div>
                   <div>Processor producer</div>
