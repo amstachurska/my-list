@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 
 const hamburger = require('../../assets/images/space/space13.jpg')
 
-const HeaderSmall = ({ onClick }) => {
+const HeaderSmall = ({ onClick, children }) => {
   return (
     <header className="header-small">
       <img
@@ -16,6 +16,7 @@ const HeaderSmall = ({ onClick }) => {
         tabIndex="0"
         onKeyDown={onClick}
       />
+      {children}
     </header>
   )
 }

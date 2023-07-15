@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import HeaderComplete from './Complete'
 import HeaderSmall from './Small'
 
-const Header = () => {
+const Header = ({ children }) => {
   const [isCompleteHeaderVisible, setIsCompleteHeaderVisible] = useState(false)
 
   const changeCompleteHeaderVisibility = () => {
@@ -12,7 +12,9 @@ const Header = () => {
   return (
     <>
       {isCompleteHeaderVisible && <HeaderComplete />}
-      <HeaderSmall onClick={changeCompleteHeaderVisibility} />
+      <HeaderSmall onClick={changeCompleteHeaderVisibility}>
+        {children}
+      </HeaderSmall>
     </>
   )
 }
