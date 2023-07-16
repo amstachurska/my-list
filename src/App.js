@@ -70,10 +70,27 @@ const App = () => {
         }
       }, [100])
 
+      const intervalIdTitleMovie = setInterval(() => {
+        const movieTitleInput = document.querySelector(
+          '.movies-list__filter-input#title'
+        )
+        if (movieTitleInput) {
+          if (movieTitleInput.value.toLowerCase() === 'hunt') {
+            const movieYearInput = document.querySelector(
+              '.movies-list__filter-input#year'
+            )
+            if (movieYearInput) {
+              movieYearInput.focus()
+            }
+          }
+        }
+      }, [100])
+
       return () => {
         clearInterval(intervalId)
         clearTimeout(timeoutId)
         clearTimeout(timeoutIdBtn)
+        clearInterval(intervalIdTitleMovie)
       }
     }
   }, [simulationCounter])
