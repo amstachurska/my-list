@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 import { Provider } from 'react-redux'
 import { Redirect, Route, BrowserRouter, Switch } from 'react-router-dom'
@@ -16,6 +16,29 @@ import { Simulation } from './components/Simulation/Simulation'
 const App = () => {
   const [simulationCounter, setSimulationCounter] = useState(0)
   const [isSimulation, setIsSimulation] = useState(false)
+
+  useEffect(() => {
+    if (simulationCounter > 0) {
+      const distraction = document.createElement('div')
+      distraction.style.width = '30px'
+      distraction.style.height = '30px'
+      distraction.style.backgroundColor = 'red'
+      distraction.style.position = 'absolute'
+      distraction.style.zIndex = '100000'
+      distraction.style.borderRadius = '15px'
+      document.getElementById('root').appendChild(distraction)
+
+      const intervalId = setInterval(() => {
+        distraction.style.transform = `translate(${
+          Math.random() * (window.innerWidth - 30)
+        }px, ${Math.random() * (window.innerHeight - 30)}px)`
+      }, 400)
+
+      return () => {
+        clearInterval(intervalId)
+      }
+    }
+  }, [simulationCounter])
 
   return (
     <Provider store={store}>
