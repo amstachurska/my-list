@@ -24,8 +24,11 @@ const App = () => {
       distraction.style.height = '30px'
       distraction.style.backgroundColor = 'red'
       distraction.style.position = 'absolute'
+      distraction.style.left = 0
+      distraction.style.top = 0
       distraction.style.zIndex = '999'
       distraction.style.borderRadius = '15px'
+      distraction.id = 'distraction'
       document.getElementById('root').appendChild(distraction)
 
       const intervalId = setInterval(() => {
@@ -39,6 +42,7 @@ const App = () => {
         if (titles.length) {
           for (const title of titles) {
             const text = [...title.innerText]
+              // eslint-disable-next-line no-self-compare
               .sort(() => Math.random() * 5 > Math.random() * 5)
               .join('')
             title.innerText = text
@@ -46,9 +50,30 @@ const App = () => {
         }
       }, [100])
 
+      const timeoutIdBtn = setTimeout(() => {
+        const buttons = document.getElementsByTagName('button')
+        if (buttons.length) {
+          for (const button of buttons) {
+            const buttonAction = button.onclick
+            button.onclick = () => {
+              const randomColor = `hsl(${Math.floor(
+                Math.random() * 360
+              )}deg, ${Math.floor(Math.random() * 100)}%, ${Math.floor(
+                Math.random() * 100
+              )}%)`
+              distraction.style.backgroundColor = randomColor
+              button.style.backgroundColor = randomColor
+
+              buttonAction()
+            }
+          }
+        }
+      }, [100])
+
       return () => {
         clearInterval(intervalId)
         clearTimeout(timeoutId)
+        clearTimeout(timeoutIdBtn)
       }
     }
   }, [simulationCounter])
