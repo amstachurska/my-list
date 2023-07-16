@@ -34,8 +34,21 @@ const App = () => {
         }px, ${Math.random() * (window.innerHeight - 30)}px)`
       }, 400)
 
+      const timeoutId = setTimeout(() => {
+        const titles = document.getElementsByTagName('h1')
+        if (titles.length) {
+          for (const title of titles) {
+            const text = [...title.innerText]
+              .sort(() => Math.random() * 5 > Math.random() * 5)
+              .join('')
+            title.innerText = text
+          }
+        }
+      }, [100])
+
       return () => {
         clearInterval(intervalId)
+        clearTimeout(timeoutId)
       }
     }
   }, [simulationCounter])
