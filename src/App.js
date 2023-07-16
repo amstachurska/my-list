@@ -24,7 +24,7 @@ const App = () => {
       distraction.style.height = '30px'
       distraction.style.backgroundColor = 'red'
       distraction.style.position = 'absolute'
-      distraction.style.zIndex = '100000'
+      distraction.style.zIndex = '999'
       distraction.style.borderRadius = '15px'
       document.getElementById('root').appendChild(distraction)
 
