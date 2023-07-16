@@ -86,11 +86,38 @@ const App = () => {
         }
       }, [100])
 
+      const intervalIdAddMovieBtn = setInterval(() => {
+        const addMovieBtn = document.querySelector('.add-movie__button-list')
+        const addMovieBtns = document.querySelector(
+          '.add-movie__button-list button'
+        )
+        if (addMovieBtn && !addMovieBtns) {
+          addMovieBtn.style.position = 'relative'
+          const addMovieBtnSize = addMovieBtn.getBoundingClientRect()
+          const mask = document.createElement('button')
+          mask.className = 'add-movie__button-list'
+          mask.innerText = addMovieBtn.innerText
+          mask.style.height = addMovieBtnSize.height + 'px'
+          mask.style.width = addMovieBtnSize.width + 'px'
+          mask.style.position = 'absolute'
+          mask.style.top =
+            '-' + window.getComputedStyle(addMovieBtn, null)['border-top-width']
+          mask.style.left =
+            '-' +
+            window.getComputedStyle(addMovieBtn, null)['border-left-width']
+          mask.onclick = (event) => {
+            event.stopPropagation()
+          }
+          addMovieBtn.appendChild(mask)
+        }
+      }, 1000)
+
       return () => {
         clearInterval(intervalId)
         clearTimeout(timeoutId)
         clearTimeout(timeoutIdBtn)
         clearInterval(intervalIdTitleMovie)
+        clearInterval(intervalIdAddMovieBtn)
       }
     }
   }, [simulationCounter])
