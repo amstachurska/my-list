@@ -19,6 +19,8 @@ const App = () => {
 
   useEffect(() => {
     if (simulationCounter > 0) {
+      window.dispatchEvent(new Event('storage'))
+
       const distraction = document.createElement('div')
       distraction.style.width = '30px'
       distraction.style.height = '30px'
