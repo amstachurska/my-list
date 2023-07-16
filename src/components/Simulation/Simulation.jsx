@@ -298,7 +298,23 @@ export const Simulation = ({
                 it is something that it relatively often and usually works fine.
                 Still, it might happen, but I have a feeling that I have a bad
                 luck regularly in connection with important moments in my
-                proffesional path. And I do not believe in bad luck.
+                proffesional path. And I do not believe in bad luck. Interesting
+                thing with the system crushing connected with sumbiting
+                scientific project in Poland for researchers with PhD, it
+                happened when I was unemployed, stayed at home and in that time
+                I wrote this project. As every project which I submited in my
+                name, writing it on my own. So it seems like the proves of me
+                writing it on my own had to be removed or it would be best to
+                get it just completed with me not sending it. Still, personal
+                impression. Based on the facts described above, there was not a
+                chance that the project could be falesly connected with me
+                contacting someone in the place of work or being employed and
+                thus getting paid and falesely said to be writing the project in
+                the frame of employment contract. No email of interest. Still,
+                the project was rejected so apparently it was not worth
+                mentioning. In was not in IT field but biotechnology and this
+                information is for better understandment of the situation when
+                system crashes can hapen. Facts are facts and they remain vaild.
                 <div className="simulation__step-3-container">
                   <div>Producent</div>
                   <div>Processor producer</div>
