@@ -38,7 +38,7 @@
     "start-movies": "start react-scripts start && start json-server --watch db.json --port 3001 -r routes.json",
     "start-anime": "start react-scripts start && start json-server --watch anime.json --port 3001 -r routes.json",
     "start-articles": "start react-scripts start && start json-server --watch articles.json --port 3001 -r routes.json",
-    "predeploy": "npm run build",
+    "predeploy": "set NODE_ENV=production && npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
