@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 const chidori = require('../../assets/images/anime/kakashi_knife.jpg')
-const anbu = require('../../assets/images/anime/kakashi__anbu.png')
+// const anbu = require('../../assets/images/anime/kakashi__anbu.png')
 // const book = require('../../assets/images/anime/kakashi__book.png')
 
 const AnimeBoardStyled = styled.section`
