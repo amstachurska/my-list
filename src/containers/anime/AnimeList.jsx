@@ -21,11 +21,10 @@ const AnimeList = () => {
         </Option>
       )),
     []
-  )
-
+  )`${process.env.REACT_APP_API_URL}`
   useEffect(() => {
     setLoading(true)
-    const data = fetch('http://localhost:3001/anime', {
+    const data = fetch(`${process.env.REACT_APP_API_URL}/anime`, {
       method: 'GET',
       headers: {
         accept: 'application/json',

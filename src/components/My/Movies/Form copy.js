@@ -18,7 +18,7 @@ const MovieForm = (props) => {
 
   useEffect(() => {
     if (id) {
-      fetch(`http://localhost:3001/movies/${id}`, {
+      fetch(`${process.env.REACT_APP_API_URL}/movies/${id}`, {
         method: 'GET',
         headers: {
           accept: 'application/json',
@@ -56,7 +56,7 @@ const MovieForm = (props) => {
       cathegory: myValues.cathegory.map((cathegory) => cathegory.value),
     }
 
-    fetch(`http://localhost:3001/movies/${id}`, {
+    fetch(`${process.env.REACT_APP_API_URL}/movies/${id}`, {
       method: 'PUT',
       headers: {
         accept: 'application/json',

@@ -51,7 +51,7 @@ const MyBooksList = () => {
   const [paginatedBookList, setPaginatedBookList] = useState([])
 
   const fetchBooks = () => {
-    fetch('http://localhost:3001/books', {
+    fetch(`${process.env.REACT_APP_API_URL}/books`, {
       method: 'GET',
       headers: {
         Accept: 'application/json',

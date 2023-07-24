@@ -9,7 +9,7 @@ const TodayILearnt = () => {
   const [color, setColor] = useState('blue')
 
   const fetchItems = () => {
-    fetch('http://localhost:3001/articles', {
+    fetch(`${process.env.REACT_APP_API_URL}/articles`, {
       method: 'GET',
       headers: {
         accept: 'Application/json',
