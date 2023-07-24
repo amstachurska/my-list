@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import { TransitionGroup, CSSTransition } from 'react-transition-group'
 import TodayILearnItem from './TodayILearntItem'
 
+let articles = require('./articles.json')
+
 // dodac storybooka i tam jest addon do accessibility ktory pokazuje czy komponenty sa dobrze napisane
 
 const TodayILearnt = () => {
@@ -9,17 +11,21 @@ const TodayILearnt = () => {
   const [color, setColor] = useState('blue')
 
   const fetchItems = () => {
-    fetch(`${process.env.REACT_APP_API_URL}/articles`, {
-      method: 'GET',
-      headers: {
-        accept: 'Application/json',
-        'Content-type': 'Application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((articles) => {
-        setLearntItems(articles)
+    if (process.env.NODE_ENV === 'production') {
+      setLearntItems(articles.articles)
+    } else {
+      fetch(`${process.env.REACT_APP_API_URL}/articles`, {
+        method: 'GET',
+        headers: {
+          accept: 'Application/json',
+          'Content-type': 'Application/json',
+        },
       })
+        .then((response) => response.json())
+        .then((articles) => {
+          setLearntItems(articles)
+        })
+    }
   }
 
   useEffect(() => {
