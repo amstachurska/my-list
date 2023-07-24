@@ -1,7 +1,7 @@
 {
+  "homepage": "https://amstachurska.github.io/my-list",
   "name": "server-movie-list",
   "version": "0.1.0",
-  "homepage": "https://amstachurska.github.io/my-list",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
