@@ -1,0 +1,614 @@
+{
+  "anime": [
+    {
+      "id": 1,
+      "title": "Gekkan Shōjo Nozaki-kun",
+      "episodes": [
+        { "season": 1, "nrOfEpisodes": 12, "status": "completed" },
+        { "specials": 1, "nrOfEpisodes": 6, "status": "completed" }
+      ],
+      "status": "completed",
+      "isManga": true,
+      "genres": ["school", "romance", "comedy"],
+      "opinion": "Funny good anime. Sountrack seemed proffesional",
+      "ranking": "3",
+      "date": "2020-05-05",
+      "studio": "Doga Kobo",
+      "author": ["Izumi Tsubaki"],
+      "music": ["Yukari Hashimoto"],
+      "director": ["Mitzue Yamazaki", "RyouheiTakeshita"],
+      "project": ["Jun'ichirou Taniguchi"],
+      "linkedItems": []
+    },
+    {
+      "id": 5,
+      "title": "Koutetsujou no Kabaneri",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 12, "status": "completed" }],
+      "status": "completed",
+      "isManga": false,
+      "isMovie": true,
+      "genres": ["action", "zombie", "fantasy", "drama", "horror"],
+      "opinion": "Styled as AOT but way weeker. With a lot of pathos",
+      "ranking": "2",
+      "date": "2020-06-06",
+      "studio": "Wit Studio",
+      "music": ["Hirouki Sawano"],
+      "director": ["Hiroyuki Tanaka", "Tetsurou Araki"],
+      "project": [
+        "Haruhiko Mihimoto",
+        "Ippei Gyoubu",
+        "Shinobu Tsuneki",
+        "Yasuyuki Ebara",
+        "You Moriyama"
+      ],
+      "linkedItems": []
+    },
+    {
+      "id": 8,
+      "title": "91 days",
+      "episodes": [
+        { "season": 1, "nrOfEpisodes": 12, "status": "completed" },
+        { "OVA": 1, "nrOfEpisodes": 1, "status": "completed" },
+        { "recap": 1, "nrOfEpisodes": 1, "status": "completed" }
+      ],
+      "status": "completed",
+      "date": "2020-07-04",
+      "isManga": false,
+      "genres": ["crime", "historical", "drama", "action", "revenge", "mafia"],
+      "opinion": "Great opening song with the band from 'Unravel'. Very nice anime.",
+      "ranking": "4",
+      "studio": "Shuka",
+      "music": ["Shougo Kaida"],
+      "director": ["Hiro Kaburaki"],
+      "project": ["Tomohiro Kishi"],
+      "screenplay": ["Taku Kishimoto"],
+      "linkedItems": []
+    },
+    {
+      "id": 12,
+      "title": "ID:Invaded",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 13, "status": "completed" }],
+      "status": "completed",
+      "date": "2020-07-25",
+      "isManga": false,
+      "genres": ["crime", "sci-fi", "police"],
+      "ranking": "4",
+      "studio": "NAZ",
+      "music": ["U/S"],
+      "director": ["Ei Aoki", "Yuudai Kubota"],
+      "project": ["Atsuhi Ikariya", "Yuuki Kodama"],
+      "screenplay": ["Outarou Maijou"],
+      "linkedItems": []
+    },
+    {
+      "id": 21,
+      "title": "Kokkoku",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 12, "status": "completed" }],
+      "status": "completed",
+      "date": "2020-10-14",
+      "isManga": true,
+      "genres": ["fantasy", "sci-fi"],
+      "ranking": 4,
+      "studio": "Geno",
+      "music": ["Michiru"],
+      "director": ["Yoshimitsu Oohashi"],
+      "project": ["Masaki Hinata", "Yasuomi Umetsu"],
+      "screenplay": ["Noboru Kimura"],
+      "linkedItems": []
+    },
+    {
+      "id": 17,
+      "title": "Pet",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 13, "status": "completed" }],
+      "status": "completed",
+      "ranking": 5,
+      "genres": [],
+      "isManga": null,
+      "opinion": "Interesing one about mind manipulation and dreams as well as peaks and valleys and destroying them. Great opening and ending. Floating into water/dreams like in GITS. Ep. 10."
+    },
+    {
+      "id": 9,
+      "title": "Kurozuka",
+      "date": "2021-03-27",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 12,
+          "status": "completed",
+          "date": "2021-03-27"
+        }
+      ],
+      "status": "completed",
+      "opinion": "Manipulation by voice. Plants + wind. W polowie przexroczysty."
+    },
+    {
+      "id": 7,
+      "title": "Yakusoku no Neverland",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 12,
+          "status": "completed",
+          "dateOfBeingWatched": "2020-08-02"
+        },
+        {
+          "season": 2,
+          "nrOfEpisodes": 11,
+          "dateOfBiengWatched": "2021-04-15",
+          "status": "completed",
+          "opinion": "Dwa światy obok siebie. Pożywienie. Spadające skrzydła. Jeśli nie walczysz nie możesz nikogo chronić."
+        }
+      ],
+      "status": "completed",
+      "isManga": true,
+      "date": "2021-04-15",
+      "genres": [],
+      "opinion": "very nice opening. Interesing one."
+    },
+    {
+      "id": 2,
+      "title": "Kiseijuu: Sei no Kakuritsu",
+      "titleEng": "Parasyte",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 24,
+          "status": "completed",
+          "date": "2020-05-05",
+          "remarks": "Zadręcza się. Tacy właśnie są ludzie. Świetna muzyka. Próbowanie.",
+          "ranking": 5
+        }
+      ],
+      "status": "completed",
+      "isManga": true,
+      "genres": [],
+      "ranking": "5"
+    },
+    {
+      "id": 24,
+      "title": "Akkun to Kanojo",
+      "status": "completed",
+      "date": "2020-07-01",
+      "episodes": {
+        "season": 1,
+        "nrOfEpisodes": 25,
+        "status": "completed",
+        "opinion": ""
+      },
+      "genres": ["comedy", "romance", "school"],
+      "raking": "3",
+      "opinion": "About expressing the feelings."
+    },
+    {
+      "id": 15,
+      "title": "Aldnoah.Zero",
+      "status": "completed",
+      "date": "2021-11-07",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 12,
+          "date": "2021-06-30",
+          "status": "completed",
+          "opinion": "Interesting."
+        },
+        {
+          "season": 2,
+          "nrOfEpisodes": 12,
+          "date": "2021-11-07",
+          "status": "completed",
+          "opinion": ""
+        }
+      ],
+      "isManga": true,
+      "genres": [],
+      "opinion": "",
+      "ranking": 0,
+      "studio": "",
+      "author": [],
+      "music": [],
+      "director": [],
+      "project": [],
+      "linkedItems": []
+    },
+    {
+      "id": 3,
+      "title": "Arslan senki",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 25,
+          "status": "inProgress",
+          "currentEpisode": 13,
+          "opinion": ""
+        }
+      ],
+      "status": "inProgresss",
+      "isManga": null,
+      "genres": ["fantasy", "action", "adventure", "historical"],
+      "opinion": ""
+    },
+    {
+      "id": 4,
+      "title": "Tokyo ravens",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 24,
+          "status": "inProgress",
+          "currentEpisode": 10
+        }
+      ],
+      "status": "inProgresss",
+      "isManga": null,
+      "genres": [],
+      "opinion": ""
+    },
+    {
+      "id": 6,
+      "title": "Akame ga kill!",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 24,
+          "status": "inProgress",
+          "currentEpisode": 9
+        }
+      ],
+      "status": "inProgresss",
+      "isManga": true,
+      "genres": ["fantasy", "action", "adventure"],
+      "opinion": ""
+    },
+    {
+      "id": 10,
+      "title": "Vinland saga",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 24, "currentEpisode": 9 }],
+      "status": "inProgress",
+      "isManga": true,
+      "genres": [],
+      "opinion": ""
+    },
+    {
+      "id": 11,
+      "title": "Banana Fish",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 24, "currentEpisode": 5 }],
+      "status": "inProgress",
+      "isManga": true,
+      "genres": [],
+      "opinion": "Great opening!"
+    },
+    {
+      "id": 13,
+      "title": "Sakura quest",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 25, "currentEpisode": 5 }],
+      "status": "inProgress",
+      "inManga": false,
+      "genres": [],
+      "opinion": ""
+    },
+    {
+      "id": 14,
+      "title": "New game!",
+      "episodes": [
+        { "seasson": 1, "nrOfEpisodes": 12, "currentEpisode": 2 },
+        { "season": 2, "nrOfEpisodes": 12 },
+        {
+          "special": 1,
+          "nrOfEpisodes": 1,
+          "title": "New game!: watashi, shainryokoutte hajimete na no de ... "
+        }
+      ],
+      "status": "inProgress",
+      "isManga": false,
+      "genres": [],
+      "opinion": ""
+    },
+    {
+      "id": 16,
+      "title": "New Hero "
+    },
+    {
+      "id": 18,
+      "title": "Re:creators",
+      "episodes": [{ "season": 1, "nrOfEpisodes": 22, "currentEpisode": 6 }],
+      "status": "inProgress"
+    },
+    {
+      "id": 19,
+      "title": "Dororo",
+      "currentEpisode": 16,
+      "opinion": "It's natural for those with sight to be tricked. Niekompletność - podróż i zdobywanie brakujących częsci. Skóra czucie - Dororo. Brak czucia zabiera współczucie - kradzież. Wspolczucie - uratowal dziecko spadajace. Kręgosłup, zycie/siła/duma/moralnosc? - mnich który widział jego pochodzenie. Brak kręgosłupa zabiera granice posępowania - oszustwo. nie zaatakował postaci z dzwonkiem aby oszukac. Protezy/nauka walki - prawa noga - siła żeby stać chodzic/ zmieniac swoje polozenie i overcome his destiny / wolność / ochrona. Brak nogi /podstawy zabiera możliwość zmiany swojego położenia / zabiera świadomość - tortury, morderstwo, zabieranie przyszłości. Dlatego chciał coś dać - protezy. Walczyl zeby chronic siebie i opiekuna. Brak swiadomosc dawania - nic Ci nie dałem podczas gdy dał mu ochronę i wiedzę jak walczyc. Brak swiadomosci mozliwosci zmiany. He feels no pain therefore he knows no fear. Zero w lovelless - czucie - chroni przed granicami. Why the monsters want that? Maybe it fullfils their souls. Hearing - evil whispers, pleads/prosby, advice; wibracje sluchanie nie tylko sluchem. Brak słuchu - wykonanie złego polecenia ze strachu. Posluszensto zlu. Sluchac kogos = dac komus wladze nad soba vs słuchac = rozumiec/czuc. Brak słuchu - zrozumiał/usłyszał sytuację. Zabranej przyszłości nie da się oddać. Dawał innym przyszłość. Nie wiedział jak spośród niezliczonych dźwięków wybrać ten, którego powinien słuchać. Głos - zdolność wyrażania uczuć, stanu, nadziei, cierpienia. Glos jako wpływ na innych. Usłyszał te same nadzieje - odbiorę co zabrano ale cel prawdziwy złote pola ryżu - szcześliwe życie razem. Nadzieja na osiągnięcie celu. Nadzieja pozwalająca przetrwać cierpienie. Akceptacja. Piękno - walka o zmianę rzeczywistości. Głos wyrażający prawdę vs kłamstwa. Śmiech - eliminacja zła nie przez unicestwienie, ale przez zmianę. Więź. Wybór. Reakcja. Współczucie. Taka sama sytuacja. Współodczucie - głod, życie pająka. Zaufanie."
+    },
+    {
+      "id": 20,
+      "title": "Kaze ga Tsuyoku Fuiteiru"
+    },
+    {
+      "id": 22,
+      "title": "Naruto",
+      "episodes": [
+        {
+          "season": 1,
+          "nr0fEpisodes": 220,
+          "status": "inProgress",
+          "currentEpisode": 142
+        }
+      ],
+      "status": "inProgress"
+    },
+    {
+      "id": 23,
+      "title": "Durarara!!",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 24,
+          "status": "inProgress",
+          "currentEpisode": 7
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "title": "Boku no hero academia",
+      "status": "inProgress",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 13,
+          "status": "completed",
+          "date": "2021-08-31",
+          "ranking": 4,
+          "remarks": ""
+        },
+        {
+          "season": 2,
+          "status": "inProgress",
+          "currentEpisode": 18,
+          "ranking": 0,
+          "remarks": ""
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "title": "Baccano!",
+      "status": "inProgress",
+      "episodes": [
+        {
+          "season": 1,
+          "nrOfEpisodes": 16,
+          "status": "inProgress",
+          "currrentEpisode": 5,
+          "ranking": 0,
+          "remarks": ""
+        },
+        {
+          "season": 2,
+          "status": "toWatch"
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "title": "World trigger",
+      "status": "inProgress",
+      "episodes": [
+        {
+          "season": 1,
+          "status": "completed"
+        },
+        {
+          "season": 2
+        },
+        {
+          "season": 3,
+          "currentEpisode": 11,
+          "status": "inProgress",
+          "ranking": 0,
+          "remarks": ""
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "title": "Natsume Yuujinchou",
+      "status": "inProgress",
+      "episodes": [
+        {
+          "season": 1
+        },
+        {
+          "season": 2
+        },
+        {
+          "season": 3
+        },
+        {
+          "season": 4
+        },
+        {
+          "season": 5,
+          "title": "Natsume Yuujinchou Go",
+          "ranking": 5,
+          "nrOfEpisodes": 11,
+          "status": "completed",
+          "date": "2021-12-04"
+        },
+        {
+          "season": 6,
+          "currentEpisode": 8,
+          "ranking": 4,
+          "nrOfEpisodes": 11,
+          "status": "completed",
+          "date": "2021-12-14"
+        }
+      ]
+    }
+  ],
+  "manga": [
+    {
+      "id": 1,
+      "title": "Kimi ni todoke",
+      "chapters": 123,
+      "status": "completed",
+      "finishDate": "2020-06-19",
+      "genres": ["romance", "comedy", "school"],
+      "link": "https://kimini-to-doke.com/",
+      "isAnime": true,
+      "publisher": "Shueisha",
+      "author": "Karuho Shiina",
+      "linkedItems": [],
+      "opinion": "Good manga",
+      "ranking": "4"
+    },
+    {
+      "id": 12,
+      "title": "Gwi",
+      "chapters": 34,
+      "status": "completed",
+      "finishDate": "2020-07-07",
+      "genres": ["fantasy", "action", "martial arts"],
+      "isAnime": false,
+      "publisher": "Haksan Publishing",
+      "graphics": "Kim Young Oh",
+      "screenplay": "EREBAKGEUM",
+      "linkedItems": [],
+      "opinion": "Nice guy graphics",
+      "ranking": "2"
+    },
+    {
+      "id": 5,
+      "title": "Mirai nikki",
+      "chapters": 59,
+      "status": "completed",
+      "finishDate": "2020-08-10",
+      "genres": ["game", "survival", "action"],
+      "isAnime": true
+    },
+    {
+      "id": 14,
+      "title": "Veritas",
+      "status": "completed",
+      "chapters": 81,
+      "finishDate": "2020-11-05",
+      "remarks": "This is only part 1. It is not known whether it would be continued - it was stated that it will.",
+      "genres": ["martial arts", "school", "action"]
+    },
+    {
+      "id": 6,
+      "title": "Hellsing",
+      "chapters": 95,
+      "status": "completed",
+      "finishDate": "2021-02-22",
+      "genres": ["horror", "vampires", "war"],
+      "isAnime": true,
+      "opinion": "Dogs do not kill monsters. It is humans who kill monsters. 'Fear does not exist within a hunter's heart.' 3. It can easily read its human agressor's mind and react accordingly by precisely calculating and predetermining their movements thereby giving it the ability to easily dodge bullets and aviod all melee attacts. Blood is the currency of the soul and the silver plate of the will. I am everywhere and I am nowhere. Be gone from my sight. Be gone from my mind. This is war. Hell is already here, all around us. From every defeat springs forth victory. When tears dry - monsters."
+    },
+    {
+      "id": 11,
+      "title": "End of ethernity",
+      "status": "completed",
+      "finishDate": "2021-03-14",
+      "chapters": 12.5,
+      "genres": ["action", "adventure", "comedy", "sci-fi"],
+      "isAnime": false,
+      "publisher": [],
+      "graphics": [],
+      "screenplay": [],
+      "linkedItems": [],
+      "opinion": "Zobaczenie wyjścia. Różny poziom. Gotowość. Wsparcie.",
+      "ranking": 2
+    },
+    {
+      "id": 13,
+      "title": "Otogi matsuri",
+      "status": "completed",
+      "finishDate": "2021-06-12",
+      "chapters": 73,
+      "genres": ["action", "supernatural"],
+      "isAnime": false,
+      "publisher": ["Wani Books", "Shinchosha"],
+      "demographic": "seinen",
+      "graphics": ["Junya Inoue"],
+      "screenplay": ["Junya "],
+      "linkedItems": [],
+      "opinion": "",
+      "ranking": 4
+    },
+    {
+      "id": 2,
+      "title": "Death note",
+      "chapters": 112,
+      "status": "completed",
+      "finishDate": "2021-07-29",
+      "genres": ["thriller", "psychological", "shinigami"],
+      "isAnime": true,
+      "opinion": ""
+    },
+    {
+      "id": 3,
+      "title": "Koukou debut",
+      "chapters": 52,
+      "status": "completed",
+      "finishDate": "2021-08-31",
+      "genres": ["romance", "comedy", "school"]
+    },
+    {
+      "id": 9,
+      "title": "Deadman wonderland",
+      "chapters": 58,
+      "status": "completed",
+      "finishDate": "2021-12-10",
+      "genres": ["thriller"],
+      "isAnime": true,
+      "publisher": ["Kadokawa Shoten"],
+      "graphics": ["Kazuma Kondou"],
+      "screenplay": ["Jinsei Kataoka"],
+      "linkedItems": [],
+      "opinion": "",
+      "ranking": 3
+    },
+    {
+      "id": 4,
+      "title": "Fruits basket",
+      "chapters": 136,
+      "status": "inProgress",
+      "currentChapter": 45,
+      "genres": ["romance", "comedy", "school"],
+      "isAnime": true
+    },
+    {
+      "id": 7,
+      "title": "The promised neverland",
+      "chapters": 177,
+      "isCompleted": false,
+      "status": "inProgress",
+      "currentChapter": 2,
+      "genres": [],
+      "isAnime": true
+    },
+    {
+      "id": 8,
+      "title": "Higurashi no naku koro ni",
+      "series": true
+    },
+    {
+      "id": 10,
+      "title": "Absolute boyfriend",
+      "chapters": 33,
+      "finishDate": "",
+      "status": "inProgress",
+      "currentChapter": 7,
+      "genres": ["romance"],
+      "isAnime": false,
+      "publisher": ["Shogakukan"],
+      "graphics": ["Yuu Watase"],
+      "screenplay": ["Yuu Watase"],
+      "linkedItems": [],
+      "opinion": "",
+      "ranking": 0
+    }
+  ]
+}

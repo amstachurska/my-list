@@ -11,7 +11,6 @@ const TodayILearnt = () => {
   const [color, setColor] = useState('blue')
 
   const fetchItems = () => {
-    console.log('process.env.NODE_ENV', process.env.NODE_ENV)
     if (process.env.NODE_ENV === 'production') {
       setLearntItems(articles.articles)
     } else {

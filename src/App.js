@@ -11,6 +11,8 @@ import Alerts from './components/alerts/Alerts'
 import store from './store/store'
 import { Simulation } from './components/Simulation/Simulation'
 
+import 'antd/dist/antd.css'
+
 //json-server --watch db.json --port 3001 -r routes.json
 
 const App = () => {

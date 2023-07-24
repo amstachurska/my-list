@@ -1,58 +1,74 @@
-import React, { Fragment, useEffect, useMemo, useState } from 'react'
-import { List, Descriptions, Collapse, Select, Spin } from 'antd'
+import React, { Fragment, useEffect, useState } from 'react'
+import { List, Descriptions, Collapse, Spin, Divider } from 'antd'
+import Select from 'react-select'
+
 import { genreOptions } from './constans'
-// import { useDispatch } from 'react-redux'
+let animes = require('./anime.json')
 
 const { Panel } = Collapse
 const { Option } = Select
+
+const selectOptions = genreOptions.map((genre) => {
+  return {
+    label: genre,
+    value: genre,
+  }
+})
 
 const AnimeList = () => {
   // const [initLoading, setInitLoading] = useState(true)
   const [loading, setLoading] = useState(true)
   const [data, setData] = useState([])
   const [list, setList] = useState([])
-  const [genreField, setGenreField] = useState([])
+  const [genreField, setGenreField] = useState(null)
   // const dispatchAction = useDispatch()
-  const children = useMemo(
-    () =>
-      genreOptions.map((genre) => (
-        <Option value={genre} key={genre}>
-          {genre}
-        </Option>
-      )),
-    []
-  )`${process.env.REACT_APP_API_URL}`
+
   useEffect(() => {
     setLoading(true)
-    const data = fetch(`${process.env.REACT_APP_API_URL}/anime`, {
-      method: 'GET',
-      headers: {
-        accept: 'application/json',
-        'Content-type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((animes) => {
-        // console.log('animes', animes)
-        animes && setData(animes)
-        setLoading(false)
+    if (process.env.NODE_ENV === 'production') {
+      setData(animes.anime)
+      setList(animes.anime)
+      setLoading(false)
+    } else {
+      const data = fetch(`${process.env.REACT_APP_API_URL}/anime`, {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          'Content-type': 'application/json',
+        },
       })
-      .catch((error) => {
-        setLoading(false)
-      })
+        .then((response) => response.json())
+        .then((animes) => {
+          animes && setData(animes)
+          setList(animes)
+          setLoading(false)
+        })
+        .catch((error) => {
+          setLoading(false)
+        })
+    }
   }, [])
 
   const filterData = (value) => {
     let updatedList = []
-    console.log('value', value)
-    console.log('data', data)
-    // if (!value.length) return data
-    if (!genreField.length) {
+    if (!value) {
       updatedList = [...data]
-    } else if (value.length > genreField.length) {
-      updatedList = list.filter((genre) => genreField.indexOf(genre) !== -1)
+    } else if (genreField && value.length > genreField?.length) {
+      updatedList = list.filter(
+        (listItem) =>
+          listItem?.genres &&
+          value.every(
+            (valueItem) => listItem.genres.indexOf(valueItem.value) !== -1
+          )
+      )
     } else {
-      updatedList = data.filter((genre) => genreField.indexOf(genre) !== -1)
+      updatedList = data.filter(
+        (listItem) =>
+          listItem?.genres &&
+          value.every(
+            (valueItem) => listItem.genres.indexOf(valueItem.value) !== -1
+          )
+      )
     }
     setList(updatedList)
     setGenreField(value)
@@ -61,21 +77,40 @@ const AnimeList = () => {
   if (loading) return <Spin size="large" style={{ margin: '50px 40vw' }} />
   if (!data) return <h1>No data</h1>
   return (
-    <>
+    <div style={{ marginTop: '60px' }}>
       <header style={{ width: '100vw' }}>
-        <Select
-          style={{ width: '100%' }}
-          allowClear
-          mode="multiple"
-          placeholder="Genre"
-          onChange={filterData}
-        >
-          {children}
-        </Select>
+        <div style={{ display: 'flex', alignItems: 'center' }}>
+          <label
+            htmlFor="genre"
+            style={{
+              color: '#2684ff',
+              fontSize: '16px',
+              display: 'inline-block',
+              padding: '10px 20px',
+            }}
+          >
+            Genre
+          </label>
+          <Select
+            name="genre"
+            isMulti
+            onChange={filterData}
+            value={genreField}
+            options={selectOptions}
+            styles={{
+              control: (baseStyles, state) => ({
+                ...baseStyles,
+                borderColor: state.isFocused ? 'green' : '#845678',
+                minWidth: '50vw',
+              }),
+            }}
+          />
+        </div>
       </header>
+      <Divider dashed></Divider>
       <List
         itemLayout="vertical"
-        dataSource={data}
+        dataSource={list}
         size="large"
         pagination={{
           // onChange: page => {},
@@ -217,7 +252,7 @@ const AnimeList = () => {
           </List.Item>
         )}
       ></List>
-    </>
+    </div>
   )
 }
 
