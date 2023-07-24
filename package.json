@@ -1,6 +1,7 @@
 {
   "name": "server-movie-list",
   "version": "0.1.0",
+  "homepage": "https://amstachurska.github.io/my-list",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
@@ -36,7 +37,9 @@
     "eject": "react-scripts eject",
     "start-movies": "start react-scripts start && start json-server --watch db.json --port 3001 -r routes.json",
     "start-anime": "start react-scripts start && start json-server --watch anime.json --port 3001 -r routes.json",
-    "start-articles": "start react-scripts start && start json-server --watch articles.json --port 3001 -r routes.json"
+    "start-articles": "start react-scripts start && start json-server --watch articles.json --port 3001 -r routes.json",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -57,6 +60,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0-alpha.1",
+    "gh-pages": "^5.0.0",
     "prettier": "3.0.0",
     "sass": "^1.63.6"
   }
