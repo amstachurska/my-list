@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/my-list/static/css/main.6d75d139.css",
+    "main.js": "/my-list/static/js/main.07ebf638.js",
+    "static/media/books5.jpg": "/my-list/static/media/books5.867f84e9f9eabd4e71a1.jpg",
+    "static/media/movies1.jpg": "/my-list/static/media/movies1.34ece74057c2ffa84358.jpg",
+    "static/media/KaushanScript-Regular.otf": "/my-list/static/media/KaushanScript-Regular.e7ce459078ad01fab75f.otf",
+    "static/media/space9.jpg": "/my-list/static/media/space9.6baa29227f9d089497e0.jpg",
+    "static/media/closed2.jpg": "/my-list/static/media/closed2.ef7d7bec227264668fd9.jpg",
+    "static/media/fate1.jpg": "/my-list/static/media/fate1.ddf1867699f6ef9b88bb.jpg",
+    "static/media/AlexBrush-Regular.ttf": "/my-list/static/media/AlexBrush-Regular.b50947ef756f43126a52.ttf",
+    "static/media/kakashi_knife.jpg": "/my-list/static/media/kakashi_knife.c7fd172eb8fcdba50c15.jpg",
+    "static/media/books2.jpg": "/my-list/static/media/books2.340c1ab9b23dbf5abad3.jpg",
+    "static/media/space11.jpg": "/my-list/static/media/space11.b0c828b68503cb0c4f83.jpg",
+    "static/media/space13.jpg": "/my-list/static/media/space13.e79eef9961c619351c46.jpg",
+    "static/media/checkbox.svg": "/my-list/static/media/checkbox.c880bd88c5e98ec54f561d69984f8658.svg",
+    "index.html": "/my-list/index.html",
+    "main.6d75d139.css.map": "/my-list/static/css/main.6d75d139.css.map",
+    "main.07ebf638.js.map": "/my-list/static/js/main.07ebf638.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d75d139.css",
+    "static/js/main.07ebf638.js"
+  ]
+}
