@@ -13,12 +13,27 @@ import MovieForm from './Movies/Form'
 import AnimeList from '../../containers/anime/AnimeList'
 import AnimeBoard from '../../containers/anime/Board'
 import Introduction from './Introduction/Introduction'
+import MyBooksBoard from './Books/Board'
+import MyBooksList from './Books/List/List'
+import AddEditBook from './Books/Form/AddEditBook'
 
 const MyRoots = ({ match }) => (
   <>
-    <MyBooksRoots />
     <Switch>
-      {/* <MybooksRoots /> */}
+      <Route exact path={`${match.path}/books`} component={MyBooksBoard} />
+      <Route
+        exact
+        path={`${match.path}/books/board`}
+        component={MyBooksBoard}
+      />
+      <Route exact path={`${match.path}/books/list`} component={MyBooksList} />
+      <Route
+        exact
+        path={`${match.path}/books/addBook`}
+        component={AddEditBook}
+      />
+      {/* <Route exact path="/my/books/addBook" component={MyBooksForm} /> */}
+      <Route exact path={`/my/books/:id`} component={AddEditBook} />
       <Route exact path="/my/introduction" component={Introduction} />
       <Route exact path="/my/movies" component={MyMovies} />
       <Route exact path="/my/movies/add" component={MovieForm} />

@@ -14,6 +14,22 @@ const HeaderComplete = () => {
   return (
     <header className="header" style={{ animation: `fadeIn 2s` }}>
       <nav className="header-group">
+        <h2 className="header-group__title">Introduction</h2>
+        <ul className="header-group-nav">
+          <li className="header-group-nav__item">
+            <Link to="/my/introduction">
+              <img
+                alt="link introduction"
+                className="header-group-nav__item-img"
+                height="75"
+                src={require('../../assets/images/space/space2.jpg')}
+                width="75"
+              />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <nav className="header-group">
         <h2 className="header-group__title">My</h2>
         <ul className="header-group-nav">
           <li className="header-group-nav__item">
