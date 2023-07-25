@@ -32,54 +32,64 @@ const AddMovieForm = (props) => {
       >
         Go to movie list
       </button>
-      <h1 className="add-movie__title">Add Movie</h1>
+      <h1 className="add-movie__title">
+        {process.env.NODE_ENV === 'production'
+          ? 'View Movie details'
+          : props?.isEdit
+          ? 'Edit Movie'
+          : 'Add Movie'}
+      </h1>
       <AddMovieMenu setStep={setStep} step={step} />
-      <Form onSubmit={props.onSubmit}>
-        <div className="add-movie__form">
-          <Step1 currentStep={step} />
-          <Step2 currentStep={step} />
-          <Step3 currentStep={step} />
-          <div className="add-movie__nav">
-            {step !== 1 && (
-              <button
-                className="add-movie__nav-item"
-                onClick={prev}
-                type="button"
-              >
-                Previous
-              </button>
-            )}
-            {step !== 3 && (
-              <button
-                className="add-movie__nav-item"
-                onClick={next}
-                type="button"
-              >
-                Next
+      <fieldset disabled={process.env.NODE_ENV === 'production'}>
+        <Form onSubmit={props.onSubmit}>
+          <div className="add-movie__form">
+            <Step1 currentStep={step} />
+            <Step2 currentStep={step} />
+            <Step3 currentStep={step} />
+            <div className="add-movie__nav">
+              {step !== 1 && (
+                <button
+                  className="add-movie__nav-item"
+                  onClick={prev}
+                  type="button"
+                >
+                  Previous
+                </button>
+              )}
+              {step !== 3 && (
+                <button
+                  className="add-movie__nav-item"
+                  onClick={next}
+                  type="button"
+                >
+                  Next
+                </button>
+              )}
+            </div>
+          </div>
+          <div className="movie-form__menu">
+            <button
+              className="movie-form__menu-item"
+              onClick={goToPrevMovie}
+              type="button"
+            >
+              Go To Prev Movie
+            </button>
+            <button
+              className="movie-form__menu-item"
+              onClick={goToNextMovie}
+              type="button"
+            >
+              Go To Next Movie
+            </button>
+            {process.env.NODE_ENV !== 'production' && (
+              <button className="movie-form__menu-item" type="submit">
+                Save
               </button>
             )}
           </div>
-        </div>
-        <div className="movie-form__menu">
-          <button
-            className="movie-form__menu-item"
-            onClick={goToPrevMovie}
-            type="button"
-          >
-            Go To Prev Movie
-          </button>
-          <button
-            className="movie-form__menu-item"
-            onClick={goToNextMovie}
-            type="button"
-          >
-            Go To Next Movie
-          </button>
-          <button className="movie-form__menu-item" type="submit">
-            Save
-          </button>
-        </div>
-      </Form>
+        </Form>
+      </fieldset>
     </section>
   )
 }

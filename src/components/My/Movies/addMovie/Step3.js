@@ -7,6 +7,7 @@ import Checkbox from '../../../common/form/Checkbox'
 import Input from '../../../common/form/Input'
 import { MOVIE_STATUS } from '../const'
 import Select from '../../../common/form/Select'
+import Textarea from '../../../common/form/Textarea'
 
 const Step3 = (props) => {
   const { currentStep } = props
@@ -62,7 +63,7 @@ const Step3 = (props) => {
         step="1"
         type="number"
       />
-      <Field component={Input} label="Remarks" name="remarks" type="text" />
+      <Field component={Textarea} label="Remarks" name="remarks" />
     </>
   )
 }

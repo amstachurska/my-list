@@ -47,6 +47,8 @@ const MovieForm = (props) => {
   }
 
   const saveMovie = (event) => {
+    if (process.env.NODE_ENV === 'production') return
+
     event.preventDefault()
     const { myValues } = props
     const movie = {
@@ -87,6 +89,7 @@ const MovieForm = (props) => {
           (status) => status.value === movieData.status
         )[0],
       }}
+      isEdit={!!id}
     />
   )
 }
