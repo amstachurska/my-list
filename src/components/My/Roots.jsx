@@ -12,12 +12,14 @@ import AnimeForm from '../../containers/anime/AnimeForm'
 import MovieForm from './Movies/Form'
 import AnimeList from '../../containers/anime/AnimeList'
 import AnimeBoard from '../../containers/anime/Board'
+import Introduction from './Introduction/Introduction'
 
 const MyRoots = ({ match }) => (
   <>
     <MyBooksRoots />
     <Switch>
       {/* <MybooksRoots /> */}
+      <Route exact path="/my" component={Introduction} />
       <Route exact path="/my/movies" component={MyMovies} />
       <Route exact path="/my/movies/add" component={MovieForm} />
       <Route exact path="/my/movies/:id" component={MovieForm} />
@@ -31,7 +33,8 @@ const MyRoots = ({ match }) => (
       {/* <Route exact path={`${match.path}/books`} component={MyBooks} />
     <Route exact path={`${match.path}/books/list`} component={MyBooksList} />
     <Route exact path={`${match.path}/books/addBook`} component={MyBooksForm} /> */}
-      <Redirect from="/my/movies" to="/my/movies" />
+
+      {/* <Redirect from="/my/movies" to="/my/movies" /> */}
     </Switch>
   </>
 )
