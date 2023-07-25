@@ -62,7 +62,7 @@ const AddEditBook = (props) => {
               disabled={!(parseInt(id) > 1)}
               onClick={() => history.push(`/my/books/${parseInt(id) - 1}`)}
             >
-              Go to prevoius book
+              Go to previous book
             </button>
             <button
               className="books-form__main-nav-item"

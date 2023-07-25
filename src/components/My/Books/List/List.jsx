@@ -7,6 +7,8 @@ import MyBooksListHeaderNames from './HeaderNames'
 import MyBooksListItem from './Item'
 import { Pagination } from '../../../Pagination/Pagination'
 
+let books = require('../books.json')
+
 const MyBooksList = () => {
   const history = useHistory()
 
@@ -51,22 +53,28 @@ const MyBooksList = () => {
   const [paginatedBookList, setPaginatedBookList] = useState([])
 
   const fetchBooks = () => {
-    fetch(`${process.env.REACT_APP_API_URL}/books`, {
-      method: 'GET',
-      headers: {
-        Accept: 'application/json',
-        'Content-Type': 'application/json',
-      },
-    })
-      .then((response) => response.json())
-      .then((booksData) => {
-        setFilteredBooksList([...booksData])
-        setBooksList([...booksData])
+    if (process.env.NODE_ENV === 'production') {
+      setBooksList(JSON.parse(JSON.stringify(books.books)))
+      setFilteredBooksList(JSON.parse(JSON.stringify(books.books)))
+      setShallUpdate(false)
+    } else {
+      fetch(`${process.env.REACT_APP_API_URL}/books`, {
+        method: 'GET',
+        headers: {
+          Accept: 'application/json',
+          'Content-Type': 'application/json',
+        },
       })
-      .catch((error) => console.log('error', error))
-      .finally((data) => {
-        setShallUpdate(false)
-      })
+        .then((response) => response.json())
+        .then((booksData) => {
+          setFilteredBooksList([...booksData])
+          setBooksList([...booksData])
+        })
+        .catch((error) => console.log('error', error))
+        .finally((data) => {
+          setShallUpdate(false)
+        })
+    }
   }
 
   useEffect(() => {

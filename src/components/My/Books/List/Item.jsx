@@ -91,8 +91,14 @@ const MyBooksListItem = ({ book, setShallUpdate }) => {
         )}
       </td>
       <td className="books-table__item -edit">
-        <Link to={`/my/books/${book.id}`}>Change list - edit book</Link>
-        <button onClick={deleteBook}>Change list - delete book</button>
+        <Link to={`/my/books/${book.id}`}>
+          {process.env.NODE_ENV === 'production'
+            ? 'View book details'
+            : 'Change list - edit book'}
+        </Link>
+        {process.env.NODE_ENV !== 'production' && (
+          <button onClick={deleteBook}>Change list - delete book</button>
+        )}
       </td>
     </tr>
   )
