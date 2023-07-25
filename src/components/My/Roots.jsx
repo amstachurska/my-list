@@ -19,7 +19,7 @@ const MyRoots = ({ match }) => (
     <MyBooksRoots />
     <Switch>
       {/* <MybooksRoots /> */}
-      <Route exact path="/my" component={Introduction} />
+      <Route exact path="/my/introduction" component={Introduction} />
       <Route exact path="/my/movies" component={MyMovies} />
       <Route exact path="/my/movies/add" component={MovieForm} />
       <Route exact path="/my/movies/:id" component={MovieForm} />
@@ -27,9 +27,9 @@ const MyRoots = ({ match }) => (
       <Route exact path="/my/anime" component={AnimeBoard} />
       {/* <Route exact path="/my/anime/add" component={AnimeForm} /> */}
       <Route exact path="/my/anime/list" component={AnimeList} />
-      {/* <Redirect from="/" to="/my/movies" />
+      <Redirect from="/" to="/my/introduction" />
 
-      <Redirect from="/" to="/my/movies" /> */}
+      {/* <Redirect from="/" to="/my/movies" /> */}
       {/* <Route exact path={`${match.path}/books`} component={MyBooks} />
     <Route exact path={`${match.path}/books/list`} component={MyBooksList} />
     <Route exact path={`${match.path}/books/addBook`} component={MyBooksForm} /> */}
