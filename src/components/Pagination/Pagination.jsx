@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useRef, useState } from 'react'
+import React, { useCallback, useEffect, useRef } from 'react'
 import './Pagination.css'
 
 export const Pagination = ({ list, setPaginatedBookList }) => {
@@ -99,6 +99,9 @@ export const Pagination = ({ list, setPaginatedBookList }) => {
     pagesNumber.current.value = Math.ceil(
       list.length / itemsPerPage.current.value
     )
+    if (Number(page.current.value) === 0 && list.length) {
+      page.current.value = 1
+    }
     setPagination()
   }, [list, setPagination])
 

@@ -11,6 +11,7 @@ let books = require('../books.json')
 
 const MyBooksList = () => {
   const history = useHistory()
+  const [isLoading, setIsLoading] = useState(true)
 
   const [sortSetting, setSortSetting] = useState({
     key: 'id',
@@ -27,15 +28,6 @@ const MyBooksList = () => {
   const [booksList, setBooksList] = useState([])
   const [filteredBooksList, setFilteredBooksList] = useState([])
   const [form, setForm] = useState({
-    // id: 1,
-    // title: 'title',
-    // titlePl: ' titlepl',
-    // author: 'author',
-    // rating: 1,
-    // language: ['pol'],
-    // status: ['all'],
-    // dateOfBeingRead: '2020-04-01',
-    // isMovie: true,
     id: undefined,
     title: '',
     titlePl: '',
@@ -53,10 +45,12 @@ const MyBooksList = () => {
   const [paginatedBookList, setPaginatedBookList] = useState([])
 
   const fetchBooks = () => {
+    setIsLoading(true)
     if (process.env.NODE_ENV === 'production') {
       setBooksList(JSON.parse(JSON.stringify(books.books)))
       setFilteredBooksList(JSON.parse(JSON.stringify(books.books)))
       setShallUpdate(false)
+      setIsLoading(false)
     } else {
       fetch(`${process.env.REACT_APP_API_URL}/books`, {
         method: 'GET',
@@ -73,6 +67,7 @@ const MyBooksList = () => {
         .catch((error) => console.log('error', error))
         .finally((data) => {
           setShallUpdate(false)
+          setIsLoading(false)
         })
     }
   }
@@ -106,13 +101,14 @@ const MyBooksList = () => {
       key: keyType,
       order: order,
     })
+    console.log('ustawiam', filteredBooks)
   }
 
   const handleChange = (e) => {
     let name = e.target.name
     let value = e.target.type !== 'checkbox' ? e.target.value : e.target.checked
     const newForm = { ...form }
-    console.log('newFirn', form)
+    //console.log('newFirn', form)
     // console.log('v', value)
     // console.log('e.tage2', e.target.checked)
     // console.log('n', e.target.type)
@@ -142,12 +138,10 @@ const MyBooksList = () => {
 
   const filterBookList = useCallback(
     (form) => {
-      // console.log('form', form)
       let filteredBookList = [...booksList]
       if (!form || !filteredBookList) return
       const keys = Object.keys(form)
       keys.forEach((key) => {
-        // console.log('keuy', key)
         if (
           form[key] === undefined ||
           form[key] === null ||
@@ -156,49 +150,44 @@ const MyBooksList = () => {
           (key === 'language' && form['language'] === 'all') ||
           (key === 'rating' && form['rating'] === 'all') ||
           (key === 'genre' && form['genre'].indexOf('all') !== -1)
-          // (key === 'isSaga' && form['isSaga'] === 'all')
         ) {
-          //continue
           return
         }
         for (let i = filteredBookList.length - 1; i >= 0; i--) {
           if (!filteredBookList[i].hasOwnProperty(key)) {
             filteredBookList.splice(i, 1)
           } else if (key === 'isSaga' || key === 'isAdaptation') {
-            // console.log('cc', key, filteredBookList[i][key], form[key])
             filteredBookList[i][key] !== form[key] &&
               filteredBookList.splice(i, 1)
           } else if (
             filteredBookList[i][key] &&
             key !== 'status' &&
+            key !== 'genre' &&
             filteredBookList[i][key]
               .toString()
               .toLowerCase()
               .indexOf(form[key].toString().toLowerCase()) === -1
           ) {
-            // console.log('1', key)
             filteredBookList.splice(i, 1)
-          } else if (
-            key === 'status' &&
-            form[key].filter(
-              (item) =>
-                filteredBookList[i][key]
-                  .toString()
-                  .toLowerCase()
-                  .indexOf(item.toString().toLowerCase()) !== -1
-            ).length === 0
-          ) {
-            // console.log(
-            //   form[key].filter(
-            //     (item) =>
-            //       filteredBookList[i][key]
-            //         .toString()
-            //         .toLowerCase()
-            //         .indexOf(item.toString().toLowerCase()) !== -1
-            //   )
-            // )
-            // console.log('jeste tutak')
-            filteredBookList.splice(i, 1)
+          } else if (key === 'status' && filteredBookList[i][key]) {
+            if (
+              form[key].every(
+                (keyValue) =>
+                  filteredBookList[i][key]
+                    .toLowerCase()
+                    .indexOf(keyValue.toLowerCase()) === -1
+              )
+            ) {
+              filteredBookList.splice(i, 1)
+            }
+          } else if (key === 'genre' && filteredBookList[i][key]) {
+            if (
+              form[key].some(
+                (keyValue) => filteredBookList[i][key].indexOf(keyValue) === -1
+              )
+            ) {
+              filteredBookList.splice(i, 1)
+            }
           }
         }
       })
@@ -217,6 +206,7 @@ const MyBooksList = () => {
     }
   }
   if (shallUpdate) return <div>Loading...</div>
+  if (isLoading) return <div>Loading...</div>
 
   return (
     <>
@@ -269,7 +259,7 @@ const MyBooksList = () => {
         </tbody>
         <tfoot></tfoot>
       </table>
-      {!filteredBooksList.length ? (
+      {isLoading ? (
         <div>Loading...</div>
       ) : (
         <Pagination
