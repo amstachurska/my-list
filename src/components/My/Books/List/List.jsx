@@ -273,7 +273,7 @@ const MyBooksList = () => {
         <div>Loading...</div>
       ) : (
         <Pagination
-          list={[...filteredBooksList]}
+          list={filteredBooksList}
           setPaginatedBookList={setPaginatedBookList}
         />
       )}
