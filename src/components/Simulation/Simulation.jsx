@@ -32,12 +32,12 @@ export const Simulation = ({
       <div className="simulation-container">
         {step === 1 && (
           <div className="simulation__step-1">
-            This is a simulation of system reinstalation.
+            This is a simulation of system reinstallation.
             {simulationCounter > 0 ? (
               <span>
                 Your system was previously reinstalled... You are reinstalling
-                if for {simulationCounter + 1} time. Read the next screan
-                carrefully
+                if for a {simulationCounter + 1} time. Read the next screan
+                carrefully.
               </span>
             ) : (
               <span> You have not run this simulation before.</span>
@@ -133,8 +133,8 @@ export const Simulation = ({
               <p className="simulation__step-2-comment">
                 <i>
                   {simulationCounter > 0
-                    ? 'There it is... The skip button. Now you can reinstall system without connecting to your email'
-                    : 'Where is skip button? No skip button? Well, whatever...I will have to log in...'}
+                    ? 'There it is... The "Skip" button. Now you can reinstall system without connecting to your email'
+                    : 'Where is "Skip" button? No "Skip" button? Well, whatever...I will have to log in...'}
                 </i>
               </p>
             </div>
@@ -149,55 +149,110 @@ export const Simulation = ({
               </p>
             )}
             {simulationCounter > 0 && (
-              <p className="simulation__step-3">
-                Now you can check for strange presence or behavoiur in the
+              <div className="simulation__step-3">
+                {/* Now you can check for strange presence or behavoiur in the
                 system - the application in this case.
+                <br /> */}
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  My personal experience with corrupted system reinstallation
+                </h2>
+                <p>
+                  In your regular system you can check logs and if you see that
+                  the logs were cleaned before you even bougth computer and that
+                  some action was being made, then you have a problem. (In my
+                  case computer which I bought at the end of August 2022). Logs,
+                  well... Everything is a kind of file (I mean something where
+                  the information is stored).
+                  <br />
+                  <br />
+                  You can be tricked into reinstalling or just have valid
+                  reasons. I reinstalled it and during that I had already seen
+                  that something is wrong - it needed connection with email.
+                  With my experience with seing that same e-mails in gmail were
+                  changed in the database it is difficult to pinpoint the cause.
+                  Apart that reinstallation file was corrupted, as I forced the
+                  connection with email.
+                </p>
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  Conclusions to which I came upon my experience
+                </h2>
+                <ul>
+                  <li>
+                    <b>
+                      Reinstalling system with files included in corrupted
+                      system makes no sense
+                    </b>
+                  </li>
+                  <li>
+                    <b>
+                      Downloading new system on corrupted system makes no sense
+                    </b>
+                    although sometimes control sums are available (I have seen
+                    them failing for the first trial of downloading and with
+                    next dowloading they were ok, seen that in October 2021 when
+                    I started IT studies and downloaded some necessary tools).
+                  </li>
+                  <li>
+                    <b>
+                      Only external trusted source of the system is the
+                      solution.
+                    </b>
+                  </li>
+                  <li>
+                    Do not allow the seller to open computer box in the shop
+                    even in your presence (Conclusion from August 2022).
+                  </li>
+                </ul>
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  How to realize it
+                </h2>
+                You can observe <b>strange behaviour</b>, in my case{' '}
+                <b>forcing to register using email</b> (checked in the internet,
+                it should not be required).
                 <br />
-                In your regular system you can check logs and if you see that
-                the logs were cleaned before you even bougth computer and that
-                some action was being made you have a problem. (My case computer
-                bought at the end of August 2022). Logs, well... Everything is a
-                kind of file (I mean something where the information is stored).
-                You can be tricked into reinstalling or just have valid reasons.
-                I reinstalled it and during that I had seen something is wrong
-                -it needed connection with email. With my experience with seing
-                that same e-mails in gmail were changed in the database it is
-                difficult to pinpoint the cause. Apart that reinstallation file
-                was corrupted.
                 <br />
-                The conclusion is: reinstalling system with files included in
-                corrupted system makes no sense. Also downloading new system on
-                corrupted system makes no sense although simetimes control sums
-                are available (I have seen them failing for the first trial of
-                downloading and with next dowloading they were ok, seen that in
-                October 2022 when I started IT studies and downloaded some
-                necessary tools). Only external trusted source of the system is
-                the solution. Do not allow the seller to open computer box in
-                the shop even in your presence (Also conclusion from August
-                2022).
+                It is good to realize one big problem with connected accounts.
+                <b>
+                  {' '}
+                  If someone has access to one email account then via connection
+                  he has an access to all connected.
+                </b>
                 <br />
-                You can observe strange behaviour, in my case forcing to
-                register using email (checked in the internet, it should not be
-                required). The same with other accounts connected with e-mail.
-                In this way you are giving access to anything connected (in my
-                case if was Linkedin connected with Gmail).
+                Not with admin provileges, it is company specific, but enough to
+                modify the data you have included in other applications, the one
+                which can be modified by you, so also by the one who pretend to
+                be you. Connected accounts only see the valid login. Valid in
+                the same way for person with admin privileges in original email
+                and person who cought your login information. In my case I did
+                had double-protection of email. It did not helped. It would
+                never help against admin. In this way you are giving access to
+                anything connected (In my case if was Linkedin connected with
+                Gmail).
                 <br />
-                Another thing is after loggin to some services, eg in my case
-                Amazon Prime Video, the list of recent movies and generally the
-                initial screen of web-page app changed on its own on the same
-                computer without changing setting neither of computer nor inside
-                web page app nor web page itself. It is probably not
-                Amazon-related thing but more system related and overlapping on
-                login information. And to be honest it is rather a good thing
-                becase it indicates that something is wrong (seen that on
-                computer bought in August 2022). Proper displayment of Teams
+                <br />
+                Another thing is after loggin to some services, in my case
+                Amazon Prime Video, the list of recent movies and generally{' '}
+                <b>
+                  the initial screen of web-page application changed on its own
+                  on the same computer without changing setting neither of
+                  computer nor inside web page application nor web page itself
+                </b>
+                . It is probably not Amazon-related thing but more system
+                related and overlapping of informations from logins of different
+                users. And to be honest it is rather <i>a good thing </i>becase
+                it indicates that something is wrong (seen that on computer
+                bought in August 2022). Proper displayment of Microsoft Teams
                 presence icon can be also an indicator (seen on different
-                computer in spring and summer 2022). Evering starts with the
-                notice and the wander. With email controlled, computer
-                controlled, that you have left... phone. Phone... not really.
-                Still, you can walk :)
+                computers in spring and summer 2022).
                 <br />
-                Having this type of situation - you can try to defend or simply
+                <br />
+                Evering starts with the notice and the wander. With email
+                controlled, computer controlled, that you have left... phone.
+                Phone... not really. Still, you can walk :)
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  What to do...
+                </h2>
+                Having this type of situation, you can try to defend or simply
                 ignore it, changes will be made to limit your posibilites,
                 distroy what can be distroyed, iritate you, lower your
                 credibility and observing rather than commiting crime which can
@@ -206,50 +261,89 @@ export const Simulation = ({
                 causes changes which can linit your movements and actions, which
                 can siomehow contain, immobiize or restrict you.
                 <br />
-                Oh, another thing. If you have nephew (my case) or kid, you can
-                get two almost identical toys for him (happened during my PhD
-                studies). They run on bateries and were making sounds. Upon
-                usage they differ between each other with time of working using
-                batery and then one of them broke - stoped working on its own.
-                Fortunatelly, my sister kept these toys. You can check inside -
-                the changes on processors done by computers in company and by
-                humans by hands probably differ. Still, it is my personal
-                impression. I did that this year when I started connecting dots
-                and got the toy. Fortunatelly, the quaility of Fisher Price's
-                toys is really good - they survive almost every treatment - no
-                other option for chosing.
+                And I will strongly advise you to try to record the changes. And
+                keep it safe outside of system and in safe place. If yuou think
+                that your flat is safe you are mistaken. I have seen data
+                removed from hard drive which I kept at home. Not everything
+                though. Just buy a regular safe. In this way you will make it
+                more difficult for ones targeting you. Don't make it easy for
+                them.
                 <br />
-                With other problems. With problem-generating computer you can
-                get password to email account changed on its own (then you
-                bought not recomennded VPN, autumn 2022). Still, after getting
-                access to email, getting codes you can install the softwere,
-                which helps.
                 <br />
+                <br />
+                Oh, another thing connected with items corruption.
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  Watch out for gifts from so-called work associates
+                </h2>
+                If you have nephew (my case) or kid, you can get two almost
+                identical toys for him (happened during my PhD studies). They
+                run on bateries and were making sounds. Upon usage they differ
+                between each other with time of working using batery and then
+                one of them broke - stoped working on its own. Fortunatelly, my
+                sister kept these toys. You can check inside -{' '}
+                <b>
+                  the changes on processors done by computers in company and by
+                  humans by hands probably differ
+                </b>
+                . Still, it is my personal impression. I checked this out that
+                this year when I started connecting dots and got the toy.
+                Fortunatelly, the quaility of Fisher Price's toys is really good
+                - they survive almost every treatment - no other option for
+                chosing.
+                <br />
+                <br />
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  Problems following corrupted system
+                </h2>
+                With my problem-generating computer I got{' '}
+                <b>password to email account changed on its own</b>. It was not
+                Gmail account. It happened just after I bought not recomennded
+                VPN in autumn 2022. Still, after getting access to email and
+                getting codes you can install the softwere, which helps. How I
+                knew it changes on its own? Previously I had problems with
+                computer accounts access. So to make sure that it is fine, I
+                wrote down the password to email on paper and always kept it in
+                my bag. And when I was working in Hawk-e I started to keep my
+                bug with me even going to toilet as one time after quicker than
+                expected visit in toilet (just for washing hands) I saw my bag
+                open. Writing down paswords might be not very safe but in my
+                case it served its purpose as in that way I could be sure that
+                the password I was typing was correct.
+                <br />
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  When did it start? Maybe computer related?
+                </h2>
                 Sounds computer related. Definitively not. My problems with
-                computer started during master studies. Previously with
-                computers from different companies . The first problem I had
+                computer started during master studies in 2007. And it was with
+                computers from different companies. The first problem I had
                 during master study was connected with system32 file, which I
-                have to replace manually. It would be about 16 years ago.
+                have to replace manually.
                 <br />
-                You can also have passwod to account on the computer changed. I
-                had in autumn 2021, among others, but one in autumn 2021 was
-                crucial (only officially approved programs were installed on the
-                computer). You can reset password for the local account on your
-                computer - meaning you can restore access on your own, there are
-                instructions in the internet. I strongly recommend that. When
-                you will do this, you go to system files folder where you see
-                among others the time them files were changed. Then you can
-                localize that change in respective file connected with described
-                problems. When I was doing that at the very beginning of 2022, I
-                realized that the changes were done in autum 2021, at that time
-                I was working in for 3 months in another town and was not home.
-                Moreover no one was home. Spooky...Still, somehow it was done,
-                the higher chance that personally rather than remotely. With
-                changing password I prefer previous possibility with going
-                through accessibility to nice blue screens instread of using,
-                coping and manipulating files in running system itself. Againg
-                checking the problems with system using this system tools makes
-                not sense.
+                So <b>not computer related.</b> <br />
+                And <b>not computer producer related</b>. <br />
+                <br />
+                <h2 style={{ color: 'white', margin: '20px' }}>
+                  My personal experience with computer passwords changed
+                </h2>
+                One can also be targeted by having passwod to account on the
+                personal computer changed. I had in autumn 2021, among others,
+                but one in autumn 2021 was crucial (only officially approved
+                programs were installed on the computer). You can reset password
+                for the local account on your computer - meaning you can restore
+                access on your own, there are instructions in the internet. I
+                strongly recommend that. When you will do this, you go to system
+                files folder where you see among others the time them files were
+                changed. Then you can localize that change in respective file
+                connected with described problems. When I was doing that at the
+                very beginning of 2022, I realized that the changes were done in
+                autum 2021, at that time I was working in for 3 months in
+                another town and was not home. Moreover no one was home.
+                Spooky...Still, somehow it was done, the higher chance that
+                personally rather than remotely. With changing password I prefer
+                previous possibility with going through accessibility to nice
+                blue screens instread of using, coping and manipulating files in
+                running system itself. Againg checking the problems with system
+                using this system tools makes not sense.
                 <br />
                 Now about coincidence. What is the chance that you have 2
                 different computers localized in 2 different places and that
@@ -325,7 +419,7 @@ export const Simulation = ({
                     Go to main page
                   </Button>
                 </div>
-              </p>
+              </div>
             )}
           </>
         )}
