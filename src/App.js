@@ -20,6 +20,17 @@ const App = () => {
   const [isSimulation, setIsSimulation] = useState(false)
 
   useEffect(() => {
+    const root = document.getElementById('root')
+    if (isSimulation) {
+      root.style.overflowY = 'hidden'
+      root.style.height = '100vh'
+    } else {
+      root.style.overflowY = 'initial'
+      root.style.height = 'auto'
+    }
+  }, [isSimulation])
+
+  useEffect(() => {
     if (simulationCounter > 0) {
       window.dispatchEvent(new Event('storage'))
 
