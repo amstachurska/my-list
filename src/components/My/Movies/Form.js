@@ -53,10 +53,12 @@ const MovieForm = (props) => {
     const { myValues } = props
     const movie = {
       ...myValues,
-      status: myValues.status.value,
-      cathegory: myValues.cathegory
-        .map((cathegory) => cathegory.value)
-        .sort((cathegory1, cathegory2) => (cathegory1 > cathegory2 ? 1 : -1)),
+      status: myValues?.status?.value,
+      cathegory:
+        myValues?.cathegory &&
+        myValues.cathegory
+          .map((cathegory) => cathegory.value)
+          .sort((cathegory1, cathegory2) => (cathegory1 > cathegory2 ? 1 : -1)),
     }
     isSaving.current = true
     if (id) {

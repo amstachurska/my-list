@@ -12,16 +12,21 @@ let books = require('../books.json')
 const MyBooksList = () => {
   const history = useHistory()
   const [isLoading, setIsLoading] = useState(true)
+  const [error, setError] = useState(null)
 
   const [sortSetting, setSortSetting] = useState({
     key: 'id',
-    order: 'des',
+    order: 'asc',
   })
   const [shallUpdate, setShallUpdate] = useState(false)
 
   useEffect(() => {
     if (shallUpdate) {
       fetchBooks()
+      setSortSetting({
+        key: 'id',
+        order: 'asc',
+      })
     }
   }, [shallUpdate])
 
@@ -64,7 +69,7 @@ const MyBooksList = () => {
           setFilteredBooksList([...booksData])
           setBooksList([...booksData])
         })
-        .catch((error) => console.log('error', error))
+        .catch((error) => setError(error))
         .finally((data) => {
           setShallUpdate(false)
           setIsLoading(false)
@@ -101,7 +106,6 @@ const MyBooksList = () => {
       key: keyType,
       order: order,
     })
-    console.log('ustawiam', filteredBooks)
   }
 
   const handleChange = (e) => {
@@ -234,38 +238,54 @@ const MyBooksList = () => {
           <a href="/">Book List</a>
         </Breadcrumb.Item>
       </Breadcrumb>
-      <table>
-        {/* <caption>Books</caption> */}
-        <thead>
-          <MyBooksListHeaderNames
-            onHeaderClick={onHeaderClick}
-            sortSetting={sortSetting}
-          />
-          <MyBooksListHeaderFilter
-            handleChange={handleChange}
-            form={form}
-            handleKeyDown={handleShift}
-          />
-        </thead>
-
-        <tbody>
-          {paginatedBookList.map((book) => (
-            <MyBooksListItem
-              key={`book-${book.id}`}
-              book={book}
-              setShallUpdate={setShallUpdate}
-            />
-          ))}
-        </tbody>
-        <tfoot></tfoot>
-      </table>
-      {isLoading ? (
-        <div>Loading...</div>
+      {error ? (
+        <div
+          style={{
+            margin: '20px',
+            border: '2px solid red',
+            borderRadius: '5px',
+            backgroundColor: 'pink',
+            padding: '20px',
+          }}
+        >
+          The following error occured when getting data for book list :{error}
+        </div>
       ) : (
-        <Pagination
-          list={filteredBooksList}
-          setPaginatedBookList={setPaginatedBookList}
-        />
+        <>
+          <table>
+            {/* <caption>Books</caption> */}
+            <thead>
+              <MyBooksListHeaderNames
+                onHeaderClick={onHeaderClick}
+                sortSetting={sortSetting}
+              />
+              <MyBooksListHeaderFilter
+                handleChange={handleChange}
+                form={form}
+                handleKeyDown={handleShift}
+              />
+            </thead>
+
+            <tbody>
+              {paginatedBookList.map((book) => (
+                <MyBooksListItem
+                  key={`book-${book.id}`}
+                  book={book}
+                  setShallUpdate={setShallUpdate}
+                />
+              ))}
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+          {isLoading ? (
+            <div>Loading...</div>
+          ) : (
+            <Pagination
+              list={filteredBooksList}
+              setPaginatedBookList={setPaginatedBookList}
+            />
+          )}
+        </>
       )}
     </>
   )

@@ -26,7 +26,7 @@ const MyBooksBoard = () => (
           width="150"
         />
       </Link>
-      <Link className="books-item grid-item" to="addBook">
+      <Link className="books-item grid-item" to="/my/books/add">
         <h2 className="books-item__header">Add book to the list</h2>
         <p>Form to add new book to the list</p>
         <img

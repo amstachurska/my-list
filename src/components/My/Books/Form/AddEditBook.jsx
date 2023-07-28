@@ -81,7 +81,7 @@ const AddEditBook = (props) => {
       </nav>
       <Form
         initialValues={getInitialValues(book)}
-        isEdit={id !== 'add' ? true : false}
+        isEdit={!!id ? true : false}
       />
     </>
   )

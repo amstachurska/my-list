@@ -25,11 +25,7 @@ const MyRoots = ({ match }) => (
         component={MyBooksBoard}
       />
       <Route exact path={`${match.path}/books/list`} component={MyBooksList} />
-      <Route
-        exact
-        path={`${match.path}/books/addBook`}
-        component={AddEditBook}
-      />
+      <Route exact path={`${match.path}/books/add`} component={AddEditBook} />
       {/* <Route exact path="/my/books/addBook" component={MyBooksForm} /> */}
       <Route exact path={`/my/books/:id`} component={AddEditBook} />
       <Route exact path="/my/introduction" component={Introduction} />

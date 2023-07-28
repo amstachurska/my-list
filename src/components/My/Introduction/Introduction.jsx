@@ -58,7 +58,7 @@ const Introduction = () => {
       </h2>
       <p>
         I do not own rights for various graphics included. I will try to provide
-        proper links in 'README' file in the future if I would be able to find
+        proper links in "README" file in the future if I would be able to find
         these items again.
       </p>
       <h2
