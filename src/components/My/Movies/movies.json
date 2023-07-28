@@ -1,0 +1,2292 @@
+{
+  "movies": [
+    {
+      "title": "Winter's tale",
+      "titlePl": "Zimowa opowieść",
+      "year": "2014",
+      "cathegory": ["fairy-tale", "fantasy", "wisdom"],
+      "isBook": true,
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-03-24",
+      "ranking": 5,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 3,
+      "directors": [
+        {
+          "name": "Akiva",
+          "surname": "Goldsman"
+        }
+      ],
+      "remarks": "Very wise movie. Beautifull.",
+      "id": "1"
+    },
+    {
+      "title": "The 5th wave",
+      "titlePl": "Piąta fala",
+      "year": "2016",
+      "cathegory": ["adventure", "aliens", "survival"],
+      "status": "watched",
+      "date": "2020-03-25",
+      "ranking": 4,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "J",
+          "surname": "Blakeson"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "title": "The client",
+      "titlePl": "Klient",
+      "year": "1994",
+      "cathegory": ["law", "thriller"],
+      "status": "watched",
+      "date": "2020-03-25",
+      "ranking": 4,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Joel",
+          "surname": "Schumaher"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "title": "12 angry men",
+      "titlePl": "Dwunastu gniewnych ludzi",
+      "year": "1957",
+      "cathegory": ["crime", "law", "psychological", "thriller"],
+      "status": "watched",
+      "date": "2020-04-22",
+      "ranking": 5,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 2,
+      "directors": [
+        {
+          "name": "Sidney",
+          "surname": "Lumet"
+        }
+      ],
+      "remarks": "Very wise movie. The movie is about jury board taking decision, staring with one person having doubts and followed with discussion about evidences. One of the best movies I have ever watched. About analysis, understanding and observation.",
+      "id": 4
+    },
+    {
+      "title": "Some like it hot",
+      "titlePl": "Pół żartem, pół serio",
+      "year": "1959",
+      "cathegory": ["adventure", "comedy", "romance"],
+      "status": "watched",
+      "date": "2020-04-23",
+      "ranking": 5,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Billy",
+          "surname": "Wilder"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "title": "The apartment",
+      "titlePl": "Garsoniera",
+      "year": "1960",
+      "cathegory": ["comedy", "drama", "romance"],
+      "status": "watched",
+      "date": "2020-04-24",
+      "ranking": "3",
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Bily",
+          "surname": "Wilder"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "title": "Hold the dark",
+      "titlePl": "Powstrzymać mrok",
+      "year": "2018",
+      "cathegory": ["psychological", "thriller"],
+      "status": "watched",
+      "date": "2020-04-25",
+      "ranking": 4,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Jeremy",
+          "surname": "Saulnier"
+        }
+      ],
+      "remarks": "Great music",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "title": "How to murder your wife",
+      "titlePl": "Jak zamordować własną żonę",
+      "date": "2020-05-02",
+      "ranking": 2,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "1965",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["comedy", "romance"],
+      "directors": [
+        {
+          "name": "Richard",
+          "surname": "Quine"
+        }
+      ],
+      "remarks": ""
+    },
+    {
+      "title": "Venom",
+      "titlePl": "Venom",
+      "year": "2018",
+      "cathegory": ["action", "aliens", "fantasy", "superheroes"],
+      "status": "watched",
+      "date": "2020-05-09",
+      "ranking": 4,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Ruben",
+          "surname": "Fleischer"
+        }
+      ],
+      "remarks": "Can be watched again as funny superhero movie, nice funny scene in the skyscraper. Voices.",
+      "id": 9
+    },
+    {
+      "title": "Deadpool",
+      "titlePl": "Deadpool",
+      "year": "2016",
+      "cathegory": ["action", "comedy", "fantasy", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-05-09",
+      "ranking": 4,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 2,
+      "directors": [
+        {
+          "name": "Tim",
+          "surname": "Miller"
+        }
+      ],
+      "remarks": "",
+      "id": 10
+    },
+    {
+      "id": 11,
+      "title": "Seven girlfriends",
+      "titlePl": "Siedem narzeczonych",
+      "date": "2020-02-01",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "1999",
+      "nrOfTimesWatched": 2,
+      "cathegory": ["comedy", "romance"],
+      "directors": [
+        {
+          "name": "Paul",
+          "surname": "Lazarus"
+        }
+      ],
+      "remarks": ""
+    },
+    {
+      "id": 12,
+      "title": "The expendables",
+      "titlePl": "Niezniszczalni",
+      "date": "2020-02-01",
+      "ranking": 4,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2010",
+      "nrOfTimesWatched": 3,
+      "isSaga": true,
+      "cathegory": ["action", "comedy"],
+      "directors": [
+        {
+          "name": "Sylvester",
+          "surname": "Stallone"
+        }
+      ],
+      "remarks": ""
+    },
+    {
+      "title": "Asterix le Gaulois",
+      "titlePl": "Asterix: Gall",
+      "year": "1967",
+      "cathegory": ["adventure", "animation", "comedy"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-02-01",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Ray",
+          "surname": "Goossens"
+        }
+      ],
+      "remarks": "",
+      "id": 13
+    },
+    {
+      "title": "Les douze travaux d'Asterix",
+      "titlePl": "12 prac Asterixa",
+      "year": "1976",
+      "cathegory": ["adventure", "animation", "comedy"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-02-01",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Albert",
+          "surname": "Uderzo"
+        },
+        {
+          "name": "Pierre",
+          "surname": "Watrin"
+        },
+        {
+          "name": "Henri",
+          "surname": "Gruel"
+        },
+        {
+          "name": "Rene",
+          "surname": "Goscinny"
+        }
+      ],
+      "remarks": "",
+      "id": 14
+    },
+    {
+      "title": "Asterix et Cleopatre",
+      "titlePl": "Asterix i Kleopatra",
+      "year": "1968",
+      "cathegory": ["adventure", "animation", "comedy"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-02-01",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Rene",
+          "surname": "Goscinny"
+        },
+        {
+          "name": "Albert",
+          "surname": "Uderzo"
+        }
+      ],
+      "remarks": "",
+      "id": 15
+    },
+    {
+      "title": "Kill Bill: vol. 1",
+      "titlePl": "Kill Bill",
+      "year": "2003",
+      "cathegory": ["action", "revenge", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-02-01",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Quentin",
+          "surname": "Tarantino"
+        }
+      ],
+      "remarks": "",
+      "id": 16
+    },
+    {
+      "title": "The great wall",
+      "titlePl": "Wielki mur",
+      "year": "2016",
+      "cathegory": ["action", "adventure", "fantasy"],
+      "status": "watched",
+      "date": "2020-05-13",
+      "ranking": 4,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 3,
+      "directors": [
+        {
+          "name": "Yimou",
+          "surname": "Zhang"
+        }
+      ],
+      "remarks": "Really nice from graphical perspective. Check other movies from this directors. Black powder.",
+      "id": 17
+    },
+    {
+      "title": "John Wick 3",
+      "titlePl": "John Wick: chapter 3 - parabellum",
+      "year": "2019",
+      "cathegory": ["action", "revenge", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-05-12",
+      "ranking": 5,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 2,
+      "directors": [
+        {
+          "name": "Chad",
+          "surname": "Stahelsky"
+        }
+      ],
+      "remarks": "Nice action scenes and funny scenes in waiting room and with the dog. Wick, yes John Wick serie - awsome.",
+      "id": 18
+    },
+    {
+      "id": 19,
+      "title": "The mummy",
+      "titlePl": "Mumia",
+      "date": "2020-05-27",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2017",
+      "nrOfTimesWatched": 2,
+      "isSaga": true,
+      "cathegory": ["action", "thriller"],
+      "directors": [
+        {
+          "name": "Alex",
+          "surname": "Kurtzman"
+        }
+      ],
+      "remarks": ""
+    },
+    {
+      "title": "Aquaman",
+      "titlePl": "Aquaman",
+      "year": "2018",
+      "cathegory": ["action", "fantasy", "superheroes", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-06-03",
+      "ranking": 4,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "James",
+          "surname": "Wan"
+        }
+      ],
+      "remarks": "Funny, not so much pathos, nice special effects",
+      "id": 20
+    },
+    {
+      "id": 21,
+      "title": "XXX",
+      "titlePl": "XXX",
+      "date": "2020-06-11",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2002",
+      "nrOfTimesWatched": 2,
+      "cathegory": ["action"],
+      "directors": [
+        {
+          "name": "Rob",
+          "surname": "Cohen"
+        }
+      ],
+      "remarks": "Scene in cafetheria.",
+      "isSaga": true
+    },
+    {
+      "id": 22,
+      "title": "Finding Dory",
+      "titlePl": "Gdzie jest Dory",
+      "date": "2020-06-11",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2016",
+      "nrOfTimesWatched": 2,
+      "cathegory": ["animation"],
+      "directors": [
+        {
+          "name": "Andrew",
+          "surname": "Staton"
+        }
+      ],
+      "remarks": "",
+      "isSaga": true
+    },
+    {
+      "id": 23,
+      "title": "Baywatch",
+      "titlePl": "Baywatch. Słoneczny patrol",
+      "date": "2020-06-10",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2017",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["action", "comedy"],
+      "directors": [
+        {
+          "name": "Seth",
+          "surname": "Gordon"
+        }
+      ],
+      "remarks": "",
+      "iaSaga": false
+    },
+    {
+      "id": 24,
+      "title": "Sing",
+      "titlePl": "Sing",
+      "date": "2020-06-14",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2016",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["animation"],
+      "directors": [
+        {
+          "name": "Garth",
+          "surname": "Jennings"
+        }
+      ],
+      "remarks": "",
+      "isSaga": false
+    },
+    {
+      "title": "Ant-man and the Wasp",
+      "titlePl": "Ant-man i Osa",
+      "year": "2018",
+      "cathegory": ["action", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-06-24",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Peyton",
+          "surname": "Reed"
+        }
+      ],
+      "remarks": "",
+      "id": 25
+    },
+    {
+      "id": 26,
+      "title": "Now you see me 2",
+      "titlePl": "Iluzja 2",
+      "date": "2020-06-27",
+      "ranking": 4,
+      "status": "watched",
+      "isWorthWatchingAgain": true,
+      "year": "2016",
+      "nrOfTimesWatched": 3,
+      "cathegory": ["adventure"],
+      "directors": [
+        {
+          "name": "John M.",
+          "surname": "Chu"
+        }
+      ],
+      "remarks": "Great scene with cards and rain scene. Now you see me serie - awsome.",
+      "isSaga": true
+    },
+    {
+      "title": "Avengers: infinity war",
+      "titlePl": "Avengers: wojna bez granic",
+      "year": "2018",
+      "cathegory": ["adventure", "fantasy", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-07-02",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 2,
+      "directors": [
+        {
+          "name": "Anthony",
+          "surname": "Russo"
+        },
+        {
+          "name": "Joe",
+          "surname": "Russo"
+        }
+      ],
+      "remarks": "",
+      "id": 27
+    },
+    {
+      "id": 28,
+      "title": "The fate of the furious (Fast & Furious 8)",
+      "titlePl": "Szybcy i wściekli 8",
+      "date": "2020-07-16",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2017",
+      "nrOfTimesWatched": 2,
+      "cathegory": ["action"],
+      "directors": [
+        {
+          "name": "F Gary",
+          "surname": "Grey"
+        }
+      ],
+      "remarks": "",
+      "isSaga": true
+    },
+    {
+      "title": "Suicide squad",
+      "titlePl": "Legion samobójców",
+      "year": "2016",
+      "cathegory": ["action", "fantasy", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-07-15",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 2,
+      "directors": [
+        {
+          "name": "David",
+          "surname": "Ayer"
+        }
+      ],
+      "remarks": "",
+      "id": 29
+    },
+    {
+      "title": "Sausage party",
+      "titlePl": "Sausage party",
+      "year": "2016",
+      "cathegory": ["adult", "adventure", "animation"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-07-08",
+      "ranking": 1,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Conrad",
+          "surname": "Vernon"
+        },
+        {
+          "name": "Greg",
+          "surname": "Tiernan"
+        }
+      ],
+      "remarks": "",
+      "id": 30
+    },
+    {
+      "title": "The gentelmen",
+      "titlePl": "Dżentelmenni",
+      "year": "2019",
+      "cathegory": ["action", "adventure", "comedy"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-07-30",
+      "ranking": 4,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Guy",
+          "surname": "Ritchie"
+        }
+      ],
+      "remarks": "Watch again and pay atantion to where people are watching. Funny.",
+      "id": 31
+    },
+    {
+      "title": "Knives out",
+      "titlePl": "Na noże",
+      "year": "2019",
+      "cathegory": ["comedy", "crime", "drama"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-08-01",
+      "ranking": 2,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Rian",
+          "surname": "Johnson"
+        }
+      ],
+      "remarks": "Parody on crime stories. Few funny moments.",
+      "id": 32
+    },
+    {
+      "title": "Avengers: endgame",
+      "titlePl": "Avengers: koniec gry",
+      "year": "2019",
+      "cathegory": ["action", "adventure", "marvel", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-08-03",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Anthony",
+          "surname": "Russo"
+        },
+        {
+          "name": "Joe",
+          "surname": "Russo"
+        }
+      ],
+      "remarks": "",
+      "id": 33
+    },
+    {
+      "title": "Birds of prey (and the fabuluous emancipation of one Harley Quinn",
+      "titlePl": "Ptaki nocy (i fantastyczna emancypacja pewnej Harley Quinn",
+      "year": "2020",
+      "cathegory": ["action", "marvel", "sci-fi"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-08-16",
+      "ranking": 2,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Cathy",
+          "surname": "Yan"
+        }
+      ],
+      "remarks": "",
+      "id": 34
+    },
+    {
+      "title": "I, Frankenstein",
+      "titlePl": "Ja, Frankenstein",
+      "year": "2014",
+      "cathegory": ["action", "demons", "fantasy"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-08-05",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Stuart",
+          "surname": "Beattie"
+        }
+      ],
+      "remarks": "Nice to watch",
+      "id": 35
+    },
+    {
+      "title": "Alice through the looking glass",
+      "titlePl": "Alicja po drugiej stronie lustra",
+      "year": "2016",
+      "cathegory": ["adventure", "family", "fantasy"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-08-07",
+      "ranking": 2,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "James",
+          "surname": "Bobin"
+        }
+      ],
+      "remarks": "",
+      "id": 36
+    },
+    {
+      "title": "The hunt",
+      "titlePl": "Polowanie",
+      "year": "2020",
+      "cathegory": ["action", "thriller"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-08-06",
+      "ranking": 5,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Craig",
+          "surname": "Zobel"
+        }
+      ],
+      "remarks": "One of the best movies I have ever watched. Great screenplay, parody as well as realistic beginning, great main role, awesome scene in the car. Awesome!",
+      "id": 37
+    },
+    {
+      "id": 38,
+      "title": "Rio Bravo",
+      "titlePl": "Rio Bravo",
+      "date": "2020-08-04",
+      "ranking": 4,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "1959",
+      "nrOfTimesWatched": 1,
+      "isSaga": false,
+      "cathegory": ["western"],
+      "directors": [
+        {
+          "name": "Howard",
+          "surname": "Hawks"
+        }
+      ],
+      "remarks": "Very good movie. Funny, not boring."
+    },
+    {
+      "id": 39,
+      "title": "Unhinged",
+      "titlePl": "Nieobliczalny",
+      "date": "2020-08-19",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2020",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["thriller"],
+      "directors": [
+        {
+          "name": "Derrick",
+          "surname": "Borte"
+        }
+      ],
+      "remarks": ""
+    },
+    {
+      "title": "Resident evil: the final chapter",
+      "titlePl": "Resident evil: ostatni rozdział",
+      "year": "2016",
+      "cathegory": ["action", "horror", "zombie"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-08-21",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Paul",
+          "surname": "W.S. Anderson"
+        }
+      ],
+      "remarks": "",
+      "id": 40
+    },
+    {
+      "id": 41,
+      "title": "Babyteeth",
+      "titlePl": "Babyteeth",
+      "date": "2020-08-20",
+      "ranking": 2,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2019",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["drama"],
+      "directors": [
+        {
+          "name": "Shannon",
+          "surname": "Murphy"
+        }
+      ],
+      "remarks": "",
+      "isSaga": false
+    },
+    {
+      "title": "The secret life of pets",
+      "titlePl": "Sekretne życie zwierzaków domowych",
+      "year": "2016",
+      "cathegory": ["animals", "animation", "comedy"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-09-09",
+      "ranking": 4,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Chris",
+          "surname": "Renaud"
+        },
+        {
+          "name": "Yarrow",
+          "surname": "Cheney"
+        }
+      ],
+      "remarks": "",
+      "id": 42
+    },
+    {
+      "title": "The secret life of pets 2",
+      "titlePl": "Sekretne życie zwierzaków domowych 2",
+      "year": "2019",
+      "cathegory": ["animals", "animation", "comedy"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-09-09",
+      "ranking": 4,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Chris",
+          "surname": "Renaud"
+        }
+      ],
+      "remarks": "",
+      "id": 43
+    },
+    {
+      "id": 44,
+      "title": "Ying",
+      "titleEn": "Shadow",
+      "titlePl": "Cień",
+      "date": "2020-09-09",
+      "ranking": 4,
+      "status": "watched",
+      "isWarthWatchingAgain": false,
+      "year": "2018",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["action", "drama"],
+      "directors": [
+        {
+          "name": "Yimou",
+          "surname": "Zhang"
+        }
+      ],
+      "remarks": "",
+      "isSaga": false
+    },
+    {
+      "id": 45,
+      "title": "Last knights",
+      "titlePl": "Ostatni rycerze",
+      "date": "2020-10-04",
+      "ranking": 4,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2015",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["adventure", "knights"],
+      "directors": [
+        {
+          "name": "Kazuaki",
+          "surname": "Kiriya"
+        }
+      ],
+      "remarks": "",
+      "isSaga": false
+    },
+    {
+      "title": "The international",
+      "titlePl": "Infiltracja",
+      "year": "2009",
+      "cathegory": ["action", "thriller"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-10-04",
+      "ranking": 4,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Tom",
+          "surname": "Twyker"
+        }
+      ],
+      "remarks": "",
+      "id": 46
+    },
+    {
+      "title": "The incredibles",
+      "titlePl": "Iniemamocni",
+      "year": "2004",
+      "cathegory": ["action", "animation", "comedy", "family", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-10-05",
+      "ranking": 2,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Brad",
+          "surname": "Bird"
+        }
+      ],
+      "remarks": "",
+      "id": 47
+    },
+    {
+      "title": "The incredibles 2",
+      "titlePl": "Iniemamocni 2",
+      "year": "2018",
+      "cathegory": ["action", "animation", "comedy", "family", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-10-06",
+      "ranking": 2,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Brad",
+          "surname": "Bird"
+        }
+      ],
+      "remarks": "",
+      "linkedMovies": [
+        {
+          "id": 47,
+          "label": "The incredibles (Iniemamocni) - 2004",
+          "value": 47
+        }
+      ],
+      "id": 48
+    },
+    {
+      "id": 49,
+      "title": "Deadpool 2",
+      "titlePl": "Deadpool 2",
+      "date": "2020-10-07",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2018",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["action", "comedy", "fantasy", "superheroes"],
+      "directors": [
+        {
+          "name": "David",
+          "surname": "Leitch"
+        }
+      ],
+      "remarks": "",
+      "isSaga": true
+    },
+    {
+      "id": 50,
+      "title": "Black panther",
+      "titlePl": "Czarna pantera",
+      "date": "2021-01-01",
+      "ranking": 3,
+      "status": "watched",
+      "isWorthWatchingAgain": false,
+      "year": "2018",
+      "isSaga": true,
+      "nrOfTimesWatched": 1,
+      "cathegory": ["action", "fantasy", "superheroes"],
+      "directors": [
+        {
+          "name": "Ryan",
+          "surname": "Coogler"
+        }
+      ],
+      "reamarks": ""
+    },
+    {
+      "title": "Total recall",
+      "titlePl": "Pamięć absolutna",
+      "year": "2012",
+      "cathegory": ["action", "future", "sci-fi", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-11-05",
+      "ranking": 4,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Len",
+          "surname": "Wiseman"
+        }
+      ],
+      "remarks": "Conversation about present/past.",
+      "id": 51
+    },
+    {
+      "title": "Total recall",
+      "titlePl": "Pamięc absolutna",
+      "year": "1990",
+      "cathegory": ["action", "future", "sci-fi", "thriller"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2020-11-12",
+      "ranking": 2,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Paul",
+          "surname": "Verhoeven"
+        }
+      ],
+      "remarks": "",
+      "id": 52
+    },
+    {
+      "title": "Blade runner",
+      "titlePl": "Łowca androidów",
+      "year": "1982",
+      "cathegory": ["sci-fi", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-11-20",
+      "ranking": "4",
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Ridley",
+          "surname": "Scott"
+        }
+      ],
+      "remarks": "Remark about fear.",
+      "id": 53
+    },
+    {
+      "title": "Blade runner 2049",
+      "titlePl": "Blade runner 2049",
+      "year": "2017",
+      "cathegory": ["sci-fi", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-03-24",
+      "ranking": "3",
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 0,
+      "directors": [
+        {
+          "name": "Denis",
+          "surname": "Villeneuve"
+        }
+      ],
+      "remarks": "You have never experience a miracle (Nigdy nie doświadczyłeś cudu). We all are searching for something real (Wszyscy szukamy czegoś prawdziwego). Przechodzenie / voise (głos). Everyone thinks that details matter. This is not the way the memory works. The fealings are important Wszyscy myślą, że liczą się szczegóły. To nie tak działa pamięć. Ważne są uczucia.) Ways how to reponsd (Sposoby odpowiedzi). If you were designed. Love or mathematical precision - predistination (predystynacja). Black eyes (Czarne oczy)",
+      "id": 54
+    },
+    {
+      "title": "Justice league",
+      "titlePl": "Liga sprawiedliwości",
+      "year": "2017",
+      "cathegory": ["action", "fantasy", "sci-fi", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2020-10-30",
+      "ranking": 3,
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Zack",
+          "surname": "Snyder"
+        }
+      ],
+      "remarks": "",
+      "id": 55
+    },
+    {
+      "id": 56,
+      "title": "Warcraft",
+      "titlePl": "Warcraft - początek",
+      "ranking": 3,
+      "status": "watched",
+      "isWartchWatchingAgain": false,
+      "date": "2020-12-12",
+      "year": "2016",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["adventure", "fantasy", "game"],
+      "directors": [
+        {
+          "name": "Duncan",
+          "surname": "Jones"
+        }
+      ],
+      "remarks": "",
+      "isSaga": false
+    },
+    {
+      "id": 57,
+      "title": "Arrival",
+      "titlePl": "Nowy początek",
+      "ranking": 5,
+      "status": "watched",
+      "date": "2021-02-13",
+      "year": "2016",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["aliens", "fantasy", "sci-fi"],
+      "directors": [
+        {
+          "name": "Denis",
+          "surname": "Villeneuve"
+        }
+      ],
+      "remarks": "Very interesting movie connected with non-linear time",
+      "isSaga": false,
+      "isAdaptation": true
+    },
+    {
+      "title": "Gods of Egypt",
+      "titlePl": "Bogowie Egiptu",
+      "year": "2016",
+      "cathegory": ["adventure", "fantasy"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2021-02-19",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Alex",
+          "surname": "Proyas"
+        }
+      ],
+      "remarks": "",
+      "id": 58
+    },
+    {
+      "id": 59,
+      "title": "Dark tower",
+      "titlePl": "Mroczna wieża",
+      "ranking": 5,
+      "status": "watched",
+      "date": "2021-02-08",
+      "year": "2017",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["adventure", "fantasy", "whispers", "wisdom"],
+      "directors": [
+        {
+          "name": "Nikolaj",
+          "surname": "Arcell"
+        }
+      ],
+      "remarks": "Credo. Whispers/words. 'There's always a battle. Always. But no more. Isn't that why we're losing? Because everyone stopped believing'. People-animals. Fake skins. Ended with Walter's whistle and 'be moved'.",
+      "isSaga": false,
+      "isAdaptation": true
+    },
+    {
+      "title": "Thor: Ragnarock",
+      "titlePl": "Thor: Ragnarock",
+      "year": "2017",
+      "cathegory": ["adventure", "fantasy", "marvel", "superheroes"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-02-14",
+      "ranking": "4",
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Taika",
+          "surname": "Waititi"
+        }
+      ],
+      "remarks": "",
+      "id": 60
+    },
+    {
+      "title": "Moana",
+      "titlePl": "Vaiana: skarb oceanu",
+      "year": "2016",
+      "cathegory": ["animation"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2021-02-15",
+      "ranking": "5",
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Ron",
+          "surname": "Clements"
+        },
+        {
+          "name": "John",
+          "surname": "Musker"
+        }
+      ],
+      "remarks": "Great music, great songs - You are welcome, How far I'll go",
+      "id": 61
+    },
+    {
+      "title": "Constantine",
+      "titlePl": "Constantine",
+      "year": "2005",
+      "cathegory": ["comics", "demons", "religious"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2021-02-11",
+      "ranking": 5,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Francis",
+          "surname": "Lawrence"
+        }
+      ],
+      "remarks": "'Heaven and hell are right here. Behind every wall, every window. The world behind the world, and we're smack in the middle. ... The influence peddlers. They can only whisper in our ears, but a single world can give you courage or turn your favorite pleasure into your worst nightmare.' And farm hypo vs plan. You see them, they see you. Whatever killed the Son of God, will give birth to the son of the devil. You have to ask for absolution to be forgiven. 52 Time slowing down. There is a plan for all of us. He works His work in a mysterious ways.",
+      "id": 62
+    },
+    {
+      "title": "Fifty shades of Grey",
+      "titlePl": "Pięćdziesiąt twarzy Greya",
+      "year": "2015",
+      "cathegory": ["adult", "romance"],
+      "isBook": true,
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-02-19",
+      "ranking": "3",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Sam",
+          "surname": "Taylor-Johnson"
+        }
+      ],
+      "remarks": "",
+      "id": 63
+    },
+    {
+      "id": 64,
+      "title": "Matrix",
+      "titlePl": "Matrix",
+      "date": "2021-01-31",
+      "isWorthWatchingAgain": true,
+      "ranking": 5,
+      "status": "watched",
+      "year": "1999",
+      "nrOfTimesWatched": 1,
+      "cathegory": ["sci-fi"],
+      "directors": [
+        {
+          "name": "Lilly",
+          "surname": "Wachowski"
+        },
+        {
+          "name": "Lana",
+          "surname": "Wachowski"
+        }
+      ],
+      "remarks": "Great movie. I watched it first time as a child without prior knowing what it was about. Awsome experience. Watched several times since then.",
+      "isSaga": true,
+      "isAdaptation": false
+    },
+    {
+      "title": "The Transporter",
+      "titlePl": "Transporter",
+      "year": "2002",
+      "cathegory": ["action"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-02-10",
+      "ranking": 5,
+      "isWorthWatchingAgain": true,
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Corey",
+          "surname": "Yuen"
+        },
+        {
+          "name": "Lois",
+          "surname": "Leterrier"
+        }
+      ],
+      "remarks": "Oil scene. Knee. Ending song.",
+      "id": 65
+    },
+    {
+      "title": "Transporter 2",
+      "titlePl": "Transporter 2",
+      "year": "2005",
+      "cathegory": ["action"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-02-27",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Lois",
+          "surname": "Leterrier"
+        }
+      ],
+      "linkedMovies": [
+        {
+          "id": 65,
+          "label": "The Transporter (Transporter) - 2002",
+          "value": 65
+        }
+      ],
+      "id": 66
+    },
+    {
+      "title": "The illusionist",
+      "titlePl": "Iluzjonista",
+      "year": "2006",
+      "cathegory": ["fantasy"],
+      "status": "watched",
+      "date": "2021-03-20",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Neil",
+          "surname": "Burger"
+        }
+      ],
+      "id": 67
+    },
+    {
+      "title": "13",
+      "titlePl": "13",
+      "year": "2010",
+      "cathegory": ["thriller"],
+      "status": "watched",
+      "date": "2021-03-24",
+      "ranking": "3",
+      "isWorthWatchingAgain": false,
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Gela",
+          "surname": "Babluani"
+        }
+      ],
+      "id": 68
+    },
+    {
+      "title": "Angels & demons",
+      "titlePl": "Anioły i demony",
+      "year": "2009",
+      "date": "2021-03-25",
+      "ranking": "3",
+      "cathegory": ["thriller"],
+      "isBook": true,
+      "isSaga": true,
+      "status": "watched",
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "Ron",
+          "surname": "Howard"
+        }
+      ],
+      "remarks": "Nice music",
+      "id": 69
+    },
+    {
+      "title": "Star trek",
+      "titlePl": "Star trek",
+      "year": "2009",
+      "cathegory": ["sci-fi"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-03-14",
+      "ranking": 4,
+      "nrOfTimesWatched": 1,
+      "isWorthWatchingAgain": true,
+      "directors": [
+        {
+          "name": "J.J.",
+          "surname": "Abrams"
+        }
+      ],
+      "linkedMovies": [
+        {
+          "id": 71,
+          "label": "Star trek into darkness (Star trek: w ciemność.) - 2013",
+          "value": 71
+        }
+      ],
+      "id": 70,
+      "remarks": "Spock (Star Treck) / Homles (Arthur Conan Doyle): `Excluding impossible whatever stays must be the truth.` `If you're gonna ride in the Kentucky Derby, you don't leave your prize stallion in the stable. Spock: A curious metaphor, doctor, as a stallion must first be broken before it can reach its potential.` Mindhunters eye-patches; 1:22 (suppose vs can)"
+    },
+    {
+      "title": "Star trek into darkness",
+      "titlePl": "Star trek: w ciemność.",
+      "year": "2013",
+      "cathegory": ["sci-fi"],
+      "isSaga": true,
+      "ranking": 4,
+      "status": "watched",
+      "date": "2021-03-17",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "J. J.",
+          "surname": "Abrams"
+        }
+      ],
+      "linkedMovies": [
+        {
+          "id": 70,
+          "label": "Star trek (Star trek) - 2009",
+          "value": 70
+        }
+      ],
+      "id": 71,
+      "remarks": "I have sensed that you conscience. Without it I wouldn't have been able to convince you to the truth (I Wyczułem że ma pan sumienie. Bez tego nie zdołałbym przekonać pana do prawdy) - Khan. 4 numers as coordinates (4 liczby jako koordynaty). Coordinates - Europe - moon of Jupiter (Koordynaty - Europa - księżyc Jowisza). 1:10 - intelect + savagery."
+    },
+    {
+      "title": "The da Vinci code",
+      "titlePl": "Kod da Vinci",
+      "year": "2006",
+      "cathegory": ["thriller"],
+      "isBook": true,
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-04-05",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Ron",
+          "surname": "Howard"
+        }
+      ],
+      "remarks": "Leeting criminals out vs in. Watching history.",
+      "linkedMovies": [
+        {
+          "id": 69,
+          "label": "Angels & demons (Anioły i demony) - 2009",
+          "value": 69
+        }
+      ],
+      "id": 72
+    },
+    {
+      "title": "Stephanie",
+      "titlePl": "Stephanie",
+      "year": "2017",
+      "cathegory": ["horror"],
+      "status": "watched",
+      "date": "2021-04-09",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Akiva",
+          "surname": "Goldsman"
+        }
+      ],
+      "remarks": "Lack of support / understanding from parents. I am scared. Inside that's all you. All the way. The good and the bad. That's for you to control. That's for you to change. If you want to. The fear and the anger and the Doubt. They would call the monster.  When you've got those feelings, the bad feeling. All you have to do is to make them small. Don't let the bad things get big",
+      "id": 73
+    },
+    {
+      "title": "The lion king",
+      "titlePl": "Król lew",
+      "year": "1994",
+      "cathegory": ["animals", "animation", "family"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-04-21",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Rob",
+          "surname": "Minkoff"
+        },
+        {
+          "name": "Roger",
+          "surname": "Allers"
+        }
+      ],
+      "id": 74
+    },
+    {
+      "title": "The shadow effect",
+      "titlePl": "Żołnierz doskonały",
+      "year": "2017",
+      "cathegory": ["thriller"],
+      "status": "watched",
+      "date": "2021-05-31",
+      "ranking": "5",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Obin",
+          "surname": "Olson"
+        }
+      ],
+      "id": 75
+    },
+    {
+      "title": "Transporter 3",
+      "titlePl": "Transporter 3",
+      "year": "2008",
+      "cathegory": ["action"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-05-31",
+      "ranking": "5",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Oliver",
+          "surname": "Megaton"
+        }
+      ],
+      "linkedMovies": [
+        {
+          "id": 65,
+          "label": "The Transporter (Transporter) - 2002",
+          "value": 65
+        },
+        {
+          "id": 66,
+          "label": "Transporter 2 (Transporter 2) - 2005",
+          "value": 66
+        }
+      ],
+      "id": 76
+    },
+    {
+      "title": "The one",
+      "titlePl": "Tylko jeden",
+      "year": "2001",
+      "cathegory": ["action", "sci-fi"],
+      "status": "watched",
+      "date": "2021-05-20",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "James",
+          "surname": "Wong"
+        }
+      ],
+      "remarks": "Alternate universes.",
+      "id": 77
+    },
+    {
+      "title": "Pacific rim",
+      "titlePl": "Pacific rim",
+      "year": "2013",
+      "cathegory": ["action", "sci-fi"],
+      "status": "watched",
+      "date": "2021-05-20",
+      "ranking": "5",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Guillermo",
+          "surname": "del Toro"
+        }
+      ],
+      "remarks": "Great music. Drift.",
+      "id": 78
+    },
+    {
+      "title": "Mortal combat",
+      "titlePl": "Mortal combat",
+      "year": "2021",
+      "cathegory": ["action", "fantasy"],
+      "status": "watched",
+      "date": "2021-05-20",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Simon",
+          "surname": "McQuoid"
+        }
+      ],
+      "isWorthWatchingAgain": true,
+      "remarks": "",
+      "id": 79
+    },
+    {
+      "title": "Cowboys & aliens",
+      "titlePl": "Kowboje i obcy",
+      "year": "2011",
+      "cathegory": ["western", "sci-fi"],
+      "status": "watched",
+      "date": "2021-05-20",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Jon",
+          "surname": "Favreau"
+        }
+      ],
+      "remarks": "",
+      "id": 80
+    },
+    {
+      "title": "Captain Marvel",
+      "titlePl": "Kapitan Marvel",
+      "year": "2019",
+      "cathegory": ["action", "sci-fi"],
+      "status": "watched",
+      "date": "2021-05-20",
+      "ranking": "5",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Anna",
+          "surname": "Boden"
+        },
+        {
+          "name": "Ryan",
+          "surname": "Fleck"
+        }
+      ],
+      "remarks": "",
+      "id": 81
+    },
+    {
+      "title": "Bai fa mo nu zhuan zhi ming yue tian gue",
+      "titlePl": "Wojowniczka z księżycowego królestwa",
+      "year": "2014",
+      "cathegory": ["action", "fantasy"],
+      "status": "watched",
+      "date": "2021-05-20",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Kang",
+          "surname": "Kiao"
+        },
+        {
+          "name": "Wang",
+          "surname": "Bing"
+        }
+      ],
+      "remarks": "",
+      "id": 82
+    },
+    {
+      "title": "Terminator: genisys",
+      "titlePl": "Terminator: genisys",
+      "year": "2015",
+      "cathegory": ["action", "sci-fi"],
+      "isSaga": true,
+      "status": "watched",
+      "date": "2021-06-07",
+      "ranking": "5",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Alan",
+          "surname": "Taylor"
+        }
+      ],
+      "id": 83
+    },
+    {
+      "title": "Spy",
+      "titlePl": "Agentka",
+      "year": "2015",
+      "cathegory": ["action", "comedy"],
+      "status": "watched",
+      "date": "2021-06-11",
+      "ranking": "5",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Paul",
+          "surname": "Feig"
+        }
+      ],
+      "id": 84
+    },
+    {
+      "title": "Wrath of man",
+      "titlePl": "Jeden gniewny człowiek",
+      "year": "2021",
+      "cathegory": ["action", "thriller"],
+      "status": "watched",
+      "date": "2021-06-04",
+      "ranking": "4",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Guy",
+          "surname": "Richie"
+        }
+      ],
+      "id": 85
+    },
+    {
+      "title": "Passengers",
+      "titlePl": "Pasażerowie",
+      "year": "2016",
+      "cathegory": ["adventure", "sci-fi"],
+      "isSaga": false,
+      "status": "watched",
+      "date": "2021-06-07",
+      "ranking": "5",
+      "nrOfTimesWatched": "4",
+      "directors": [
+        {
+          "name": "Morten",
+          "surname": "Tyldum"
+        }
+      ],
+      "id": 86
+    },
+    {
+      "title": "Starsky & Hutch",
+      "titlePl": "Starsky i Hutch",
+      "year": "2004",
+      "cathegory": ["comedy", "crime"],
+      "status": "watched",
+      "date": "2021-06-05",
+      "ranking": "3",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Todd",
+          "surname": "Philips"
+        }
+      ],
+      "id": 87
+    },
+    {
+      "title": "Hitman",
+      "titlePl": "Hitman",
+      "year": "2007",
+      "cathegory": ["action", "thriller"],
+      "isSaga": true,
+      "status": "inProgress",
+      "directors": [
+        {
+          "name": "Xavier",
+          "surname": "Gens"
+        }
+      ],
+      "linkedMovies": [
+        {
+          "id": 89,
+          "label": "Hitman: agent 47 (Hitman: agent 47) - 2015",
+          "value": 89
+        }
+      ],
+      "id": 88
+    },
+    {
+      "title": "Hitman: agent 47",
+      "titlePl": "Hitman: agent 47",
+      "year": "2015",
+      "cathegory": ["action", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "5",
+      "date": "2021-07-01",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Alexander",
+          "surname": "Bach"
+        }
+      ],
+      "linkedMovies": [
+        {
+          "id": 88,
+          "label": "Hitman (Hitman) - 2007",
+          "value": 88
+        }
+      ],
+      "id": 89
+    },
+    {
+      "title": "The swan princess",
+      "titlePl": "Księżniczka łabędzi",
+      "year": "1994",
+      "cathegory": ["animation", "fairy tale"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-09-05",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Richard",
+          "surname": "Rich"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 90
+    },
+    {
+      "title": "2067",
+      "titlePl": "2067",
+      "year": "2020",
+      "cathegory": ["sci-fi", "time"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-09-04",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Seth",
+          "surname": "Larney"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 91
+    },
+    {
+      "title": "Nobody",
+      "titlePl": "Nikt",
+      "year": "2021",
+      "cathegory": ["thriller", "action"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "5",
+      "date": "2021-08-31",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Ilya",
+          "surname": "Naishuller"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 92
+    },
+    {
+      "title": "Snake eyes: G.I.Joe origins",
+      "titlePl": "Snake eyes: geneza G.I.Joe",
+      "year": "2021",
+      "cathegory": ["action"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-08-31",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Robert",
+          "surname": "Schwentke"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 93
+    },
+    {
+      "title": "Bright",
+      "titlePl": "Bright",
+      "year": "2017",
+      "cathegory": ["fantasy", "action"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-09-11",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "David",
+          "surname": "Ayer"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 94
+    },
+    {
+      "title": "Jungle cruise",
+      "titlePl": "Wyprawa do dżungli",
+      "year": "2021",
+      "cathegory": ["fantasy", "adventure"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-09-12",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Jaume",
+          "surname": "Collet-Serra"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 95
+    },
+    {
+      "title": "Doctor Strange",
+      "titlePl": "Doktor Strange",
+      "year": "2016",
+      "cathegory": ["fantasy", "adventure"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-11-06",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Scott",
+          "surname": "Derrickson"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 96
+    },
+    {
+      "title": "Spider-man: homecoming",
+      "titlePl": "Spider-man: homecoming",
+      "year": "2017",
+      "cathegory": ["fantasy", "adventure", "action", "sci-fi"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-11-07",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Jon",
+          "surname": "Watts"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 97
+    },
+    {
+      "title": "The giver",
+      "titlePl": "Dawca pamięci",
+      "year": "2014",
+      "cathegory": ["drama", "sci-fi"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "5",
+      "date": "2021-10-30",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Phillip",
+          "surname": "Noyce"
+        }
+      ],
+      "linkedMovies": [],
+      "remarks": "Great movie. Rosemary song. Precision of language.",
+      "id": 98
+    },
+    {
+      "title": "Dolittle",
+      "titlePl": "Doktor Dolittle",
+      "year": "2020",
+      "cathegory": ["family", "fantasy", "comedy"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-10-30",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Stephen",
+          "surname": "Gaghan"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 99
+    },
+    {
+      "title": "Godzilla: King of the monsters",
+      "titlePl": "Godzilla II: król potworów",
+      "year": "2019",
+      "cathegory": ["action", "sci-fi"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-11-07",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Michael",
+          "surname": "Doughetry"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 100
+    },
+    {
+      "title": "Godzilla vs Kong",
+      "titlePl": "Godzilla vs Kong",
+      "year": "2021",
+      "cathegory": ["action", "sci-fi"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "4",
+      "date": "2021-11-08",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Adam",
+          "surname": "Wingard"
+        }
+      ],
+      "linkedMovies": [100, 102],
+      "id": 101
+    },
+    {
+      "title": "Kong: skull island",
+      "titlePl": "Kong: wyspa czaszki",
+      "year": "2017",
+      "cathegory": ["adventure", "fantasy"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-11-09",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Jordan",
+          "surname": "Vogt-Roberts"
+        }
+      ],
+      "linkedMovies": [101],
+      "id": 102
+    },
+    {
+      "title": "Eternals",
+      "titlePl": "Eternals",
+      "year": "2021",
+      "cathegory": ["action", "sci-fi"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-11-12",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Chloe",
+          "surname": "Zhao"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 103
+    },
+    {
+      "title": "Dune",
+      "titlePl": "Diuna",
+      "year": "2021",
+      "cathegory": ["sci-fi"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "3",
+      "date": "2021-11-13",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Denis",
+          "surname": "Villeneuve"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 104
+    },
+    {
+      "title": "The last witch hunter",
+      "titlePl": "Łowca czarownic",
+      "year": "2015",
+      "cathegory": ["adventure", "fantasy"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "4",
+      "date": "2021-11-21",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Breck",
+          "surname": "Eisner"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 105
+    },
+    {
+      "title": "Edge of tomorrow",
+      "titlePl": "Na skraju jutra",
+      "year": "2014",
+      "cathegory": ["action", "sci-fi"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": "4",
+      "date": "2021-11-21",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Doug",
+          "surname": "Liman"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 106
+    },
+    {
+      "title": "Jumanji: welcome to the jungle",
+      "titlePl": "Jumanji: przygoda w dżungli",
+      "year": "2017",
+      "cathegory": ["fantasy", "adventure"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "4",
+      "date": "2021-11-24",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Jake",
+          "surname": "Kasdan"
+        }
+      ],
+      "linkedMovies": [108],
+      "id": 107
+    },
+    {
+      "title": "Jumanji: the next level",
+      "titlePl": "Jumanji: następny poziom",
+      "year": "2019",
+      "cathegory": ["adventure", "fantasy"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "4",
+      "date": "2021-11-25",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Jake",
+          "surname": "Kasdan"
+        }
+      ],
+      "linkedMovies": [107],
+      "id": 108
+    },
+    {
+      "title": "Divergent",
+      "titlePl": "Niezgodna",
+      "year": "2014",
+      "cathegory": ["adventure", "fantasy"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "5",
+      "date": "2021-12-04",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Neil",
+          "surname": "Burger"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 109
+    },
+    {
+      "title": "The maze runner",
+      "titlePl": "Więzień labiryntu",
+      "year": "2014",
+      "cathegory": ["action", "sci-fi", "thriller"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": "4",
+      "date": "2021-12-08",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Wes",
+          "surname": "Ball"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 110
+    },
+    {
+      "title": "World war z",
+      "titlePl": "World war z",
+      "year": "2013",
+      "cathegory": ["action", "horror"],
+      "isSaga": false,
+      "status": "watched",
+      "ranking": 4,
+      "date": "2021-12-06",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Mark",
+          "surname": "Forster"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 111
+    },
+    {
+      "title": "Wonder woman",
+      "titlePl": "Wonder woman",
+      "year": "2017",
+      "cathegory": ["action", "sci-fi"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": 3,
+      "date": "2021-12-12",
+      "nrOfTimesWatched": "1",
+      "directors": [
+        {
+          "name": "Patty",
+          "surname": "Jenkins"
+        }
+      ],
+      "linkedMovies": [],
+      "id": 112
+    },
+    {
+      "title": "Fifty shades darker",
+      "titlePl": "Ciemniejsza strona Greya",
+      "year": "2017",
+      "cathegory": ["romance"],
+      "isSaga": true,
+      "status": "watched",
+      "ranking": 3,
+      "date": "2021-12-15",
+      "nrOfTimesWatched": 1,
+      "directors": [
+        {
+          "name": "James",
+          "surname": "Foley"
+        }
+      ],
+      "linkedmovies": [],
+      "id": 113
+    }
+  ]
+}

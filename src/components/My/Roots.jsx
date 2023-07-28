@@ -5,10 +5,7 @@ import React from 'react'
 
 import { Redirect, Route, Switch, withRouter } from 'react-router-dom'
 
-import MyBooksRoots from './Books/Roots'
-import MyMovies from './Movies/Movies'
 import TodayILearnt from './programing/TodayILearnt'
-import AnimeForm from '../../containers/anime/AnimeForm'
 import MovieForm from './Movies/Form'
 import AnimeList from '../../containers/anime/AnimeList'
 import AnimeBoard from '../../containers/anime/Board'
@@ -16,6 +13,7 @@ import Introduction from './Introduction/Introduction'
 import MyBooksBoard from './Books/Board'
 import MyBooksList from './Books/List/List'
 import AddEditBook from './Books/Form/AddEditBook'
+import MoviesWrapper from './Movies/MoviesWrapper'
 
 const MyRoots = ({ match }) => (
   <>
@@ -35,7 +33,7 @@ const MyRoots = ({ match }) => (
       {/* <Route exact path="/my/books/addBook" component={MyBooksForm} /> */}
       <Route exact path={`/my/books/:id`} component={AddEditBook} />
       <Route exact path="/my/introduction" component={Introduction} />
-      <Route exact path="/my/movies" component={MyMovies} />
+      <Route exact path="/my/movies" component={MoviesWrapper} />
       <Route exact path="/my/movies/add" component={MovieForm} />
       <Route exact path="/my/movies/:id" component={MovieForm} />
       <Route exact path="/my/programming" component={TodayILearnt} />

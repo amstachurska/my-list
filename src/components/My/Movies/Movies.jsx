@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
 import { useHistory } from 'react-router'
 
-import allActions from '../../../store/allActions'
 import { MoviesFilter, MoviesHeader, MoviesItem } from './moviesList'
 
-const MyMovies = () => {
-  const movies = useSelector((state) => state.movies.movies)
-  const isPending = useSelector((state) => state.movies.isPending)
-  const orderWay = useSelector((state) => state.movies.way)
-  const orderBy = useSelector((state) => state.movies.field)
-  const dispatchAction = useDispatch()
+const MyMovies = ({ isPending, movies, sortMovies }) => {
   const [filteredMovies, setFilteredMovies] = useState([])
   const [filters, setFilters] = useState({})
   const history = useHistory()
@@ -51,15 +44,6 @@ const MyMovies = () => {
     setFilteredMovies(filtredMovies)
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [filters, movies])
-
-  useEffect(() => {
-    dispatchAction(allActions.moviesActions.getMovies('id'))
-  }, [dispatchAction])
-
-  const sortMovies = (field, e) => {
-    e.preventDefault()
-    dispatchAction(allActions.moviesActions.getMovies(field))
-  }
 
   if (isPending !== false)
     return <h1 style={{ margin: '50px' }}>Loading movies...</h1>

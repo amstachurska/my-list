@@ -1,17 +1,17 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import classNames from 'class-names'
 import PropTypes from 'prop-types'
-import { useSelector } from 'react-redux'
+
+import { SortContext } from '../MoviesWrapper'
 
 const MoviesHeaderItem = ({ label, sortMovies, value }) => {
-  const orderBy = useSelector((state) => state.movies.field)
-  const orderWay = useSelector((state) => state.movies.way)
+  const order = useContext(SortContext)
 
   return (
     <th>
       <button
         className={classNames('movies-list__header-button', {
-          '--sorted': orderBy === value,
+          '--sorted': order.orderBy === value,
         })}
         disabled={value === 'cathegory'}
         onClick={(e) => sortMovies(value, e)}
@@ -19,8 +19,12 @@ const MoviesHeaderItem = ({ label, sortMovies, value }) => {
       >
         <>
           {label}
-          {orderBy === value &&
-            (orderWay === 'asc' ? <span>&uarr;</span> : <span>&darr;</span>)}
+          {order.orderBy === value &&
+            (order.orderWay === 'asc' ? (
+              <span>&uarr;</span>
+            ) : (
+              <span>&darr;</span>
+            ))}
         </>
       </button>
     </th>

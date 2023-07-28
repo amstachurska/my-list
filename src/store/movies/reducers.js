@@ -21,7 +21,7 @@ const initialState = {
   movies: [],
   movie: {},
   field: 'id',
-  way: 'asc',
+  way: 'desc',
 }
 export const moviesList = (state = initialState, action) => {
   switch (action.type) {
