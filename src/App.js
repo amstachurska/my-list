@@ -34,17 +34,21 @@ const App = () => {
     if (simulationCounter > 0) {
       window.dispatchEvent(new Event('storage'))
 
-      const distraction = document.createElement('div')
-      distraction.style.width = '30px'
-      distraction.style.height = '30px'
-      distraction.style.backgroundColor = 'red'
-      distraction.style.position = 'absolute'
-      distraction.style.left = 0
-      distraction.style.top = 0
-      distraction.style.zIndex = '999'
-      distraction.style.borderRadius = '15px'
-      distraction.id = 'distraction'
-      document.getElementById('root').appendChild(distraction)
+      if (simulationCounter === 1) {
+        const distraction = document.createElement('div')
+        distraction.style.width = '30px'
+        distraction.style.height = '30px'
+        distraction.style.backgroundColor = 'red'
+        distraction.style.position = 'absolute'
+        distraction.style.left = 0
+        distraction.style.top = 0
+        distraction.style.zIndex = '999'
+        distraction.style.borderRadius = '15px'
+        distraction.id = 'distraction'
+        document.getElementById('root').appendChild(distraction)
+      }
+
+      const distraction = document.getElementById('distraction')
 
       const intervalId = setInterval(() => {
         distraction.style.transform = `translate(${
